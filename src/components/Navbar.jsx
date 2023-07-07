@@ -11,8 +11,8 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-            <div>
-                <h1 className='font-[Megrim] font-thin text-2xl text-white cursor-pointer glow'>AKHILESH BITLA</h1>
+            <div className='reveal-name'>
+                <h1 className='font-[Megrim] font-thin text-2xl text-white cursor-pointer'>AKHILESH BITLA <span className='hidden'>-</span></h1>
             </div>
 
             {/* menu */}

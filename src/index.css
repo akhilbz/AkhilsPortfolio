@@ -59,10 +59,26 @@
   transform: skewX(20deg);
 }
 
-.highlight-impact {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+.reveal-name:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: reveal-animation 3s ease-in-out;
 }
+
+@keyframes reveal-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
 @layer base {
   body {
     @apply font-[Raleway];
