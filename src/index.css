@@ -1,15 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap'); */
+.mobile-linkedin {
+  --tw-bg-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.mobile-github {
+  color: #333333;
+}
+
+.mobile-contact {
+  color: #a18fd8;
+}
+
+.mobile-resume {
+  color: #6fc2b0;
+}
+
+.navbar_btns {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar_btns:hover {
+  text-decoration: underline;
+  text-decoration: solid;
+}
+
+.title-name {
+  font-family: 'Poiret One', cursive;
+}
+.parallelogram-top {
+  background-color: #FFA86E;
+  width: 800px;
+  height: 85px;
+  transform: skewX(20deg);
+}
+
+.parallelogram-top h2 {
+  transform: skewX(-20deg);
+}
+
+.parallelogram-btm {
+  background-color: #333333 !important;
+  width: 750px;
+  height: 85px;
+  transform: skewX(-20deg);
+}
+
+.parallelogram-btm p {
+  transform: skewX(20deg);
+}
+
+.highlight-impact {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
 @layer base {
   body {
-    @apply font-[Quicksand];
-    /* font-weight: 100 */
+    @apply font-[Raleway];
+    font-weight: 200;
   }
   li {
     @apply px-4;
