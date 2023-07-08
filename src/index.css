@@ -25,13 +25,12 @@
   color: #6fc2b0;
 }
 
-.navbar_btns {
+.navbar-btns {
   transition: all 0.3s ease-in-out;
 }
 
-.navbar_btns:hover {
-  text-decoration: underline;
-  text-decoration: solid;
+.navbar-btns:hover {
+  font-weight: 500;
 }
 
 .title-name {
@@ -39,8 +38,8 @@
 }
 .parallelogram-top {
   background-color: #FFA86E;
-  width: 800px;
-  height: 85px;
+  /* width: 800px; */
+  /* height: 85px; */
   transform: skewX(20deg);
 }
 
@@ -50,8 +49,8 @@
 
 .parallelogram-btm {
   background-color: #333333 !important;
-  width: 750px;
-  height: 85px;
+  /* width: 750px;
+  height: 85px; */
   transform: skewX(-20deg);
 }
 
@@ -78,6 +77,18 @@
   }
 }
 
+.home-about-spacer {
+  aspect-ratio: 1512/250;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-about-layer {
+  background-image: url('./assets/layers.svg');
+}
 
 @layer base {
   body {
