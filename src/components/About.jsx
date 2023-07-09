@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import portPic1 from "../assets/port-pic1.jpg";
-import portPic2 from "../assets/port-pic2.jpg";
+import portPic1 from "../assets/port-pic1.jpeg";
+import portPic2 from "../assets/port-pic2.jpeg";
 import portPic3 from "../assets/port-pic3.jpg";
-import portPic4 from "../assets/port-pic4.jpeg";
+import portPic4 from "../assets/port-pic4.jpg";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled, RxDot } from "react-icons/rx";
 const About = () => {
