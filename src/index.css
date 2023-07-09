@@ -8,6 +8,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (min-width: 854px) {
+  .custom-sm {
+    width: 600px;
+    height: 70px;
+  }
+}
 .mobile-linkedin {
   --tw-bg-opacity: 1;
   color: rgb(37 99 235 / var(--tw-bg-opacity));

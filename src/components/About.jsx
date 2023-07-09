@@ -38,11 +38,11 @@ const About = () => {
     return (
         <div name="about" className="w-full h-[fit-content] bg-[#ff4c52]">
             <div className="flex flex-col justify-center items-center w-full h-[fit-content]">
-                <div className="w-full h-[fit-content] sm:grid sm:grid-cols-2 gap-8">
+                <div className="w-full h-[fit-content] md:grid md:grid-cols-2 gap-8">
                     <div className="sm:text-left sm:my-[0px] sm:h-[fit-content] justify-center flex flex-col">
                         <p className="text-5xl sm:text-7xl font-bold title-name justify-center flex text-[#FAF0E6]">My Story</p>
-                        <div className="py-5 px-3 sm:justify-center items-start w-full h-[full] sm:pb-[650px] sm:pl-[110px]">
-                            <p className="text-[#FAF0E6] pl-[50px] font-medium text-xl">Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of 
+                        <div className="py-5 md:pl-[80px] justify-center items-start w-full h-[fit-content]">
+                            <p className="text-[#FAF0E6] flex justify-center pl-5 font-medium text-xl">Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of 
                             the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                             when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
                             but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
@@ -50,7 +50,7 @@ const About = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="justify-center items-start flex flex-col mx-[170px] mt-[-30px] pb-[-5px] pl-3 px-1 relative rounded-2xl bg-center bg-cover h-[645px] w-[415px] ">
+                    <div className="justify-center items-center flex flex-col sm:mx-[170px] sm:mt-[-30px] sm:pb-[-5px] sm:pl-3 relative rounded-2xl bg-center bg-cover h-[645px]  ">
                     <div style={{backgroundImage: `url(${gallery[currIndex].url})` }} className="group w-[390px] h-[590px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                     <div className="hidden group-hover:block justify-start text-3xl p-2 text-white cursor-pointer">
                         <BsChevronCompactLeft onClick={prevSlide} size={35} />
