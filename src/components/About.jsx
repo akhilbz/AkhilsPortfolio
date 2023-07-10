@@ -9,16 +9,16 @@ const About = () => {
     const [currIndex, setCurrIndex] = useState(0);
     const gallery = [
         {
-            url: portPic4
-        },
-        {
-            url: portPic3
+            url: portPic1
         },
         {
             url: portPic2
         },
         {
-            url: portPic1
+            url: portPic3
+        },
+        {
+            url: portPic4
         },
     ];
     const prevSlide = () => {
@@ -51,7 +51,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="justify-center items-center flex flex-col sm:mx-[170px] sm:mt-[-30px] sm:pb-[-5px] sm:pl-3 relative rounded-2xl bg-center bg-cover h-[645px]  ">
-                    <div style={{backgroundImage: `url(${gallery[currIndex].url})` }} className="group w-[390px] h-[590px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
+                    <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)    ' }} className=" group w-[390px] h-[590px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                     <div className="hidden group-hover:block justify-start text-3xl p-2 text-white cursor-pointer">
                         <BsChevronCompactLeft onClick={prevSlide} size={35} />
                     </div>
@@ -60,7 +60,7 @@ const About = () => {
                         <BsChevronCompactRight onClick={nextSlide} size={35}/>
                     </div>
                     </div> 
-                    <div className="flex flex-row justify-center items-center  px-[147px] ">
+                    <div className="flex flex-row justify-center items-center md:pb-8 mt-2 px-[147px] ">
                         {gallery.map((image, imageIndex) => (
                             <div key={imageIndex} onClick={() => goToImage(imageIndex)} className="text-2xl cursor-pointer">
                                {imageIndex == currIndex ? <RxDotFilled style={{color: "white"}}/> : <RxDot style={{color: "white"}}/>}

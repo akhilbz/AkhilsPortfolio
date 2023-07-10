@@ -8,12 +8,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width: 854px) {
-  .custom-sm {
-    width: 600px;
-    height: 70px;
+.glitch-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text {
+  font-size: 4rem;
+  color: #ff4c52; /* Set the desired text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Set the desired text shadow */
+  animation: glitch-animation 2s infinite;
+}
+
+@keyframes glitch-animation {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  20% {
+    text-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8);
+  }
+  40% {
+    text-shadow: 2px -2px 4px rgba(255, 255, 255, 0.8);
+  }
+  60% {
+    text-shadow: -2px 2px 4px rgba(255, 255, 255, 0.8);
+  }
+  80% {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 }
+
 .mobile-linkedin {
   --tw-bg-opacity: 1;
   color: rgb(37 99 235 / var(--tw-bg-opacity));
@@ -96,6 +123,18 @@
   background-image: url('./assets/layers.svg');
 }
 
+.about-edu-spacer {
+  aspect-ratio: 1512/250;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-edu-layer {
+  background-image: url('./assets/layers2.svg');
+}
 @layer base {
   body {
     @apply font-[Raleway];
