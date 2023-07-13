@@ -16,6 +16,7 @@ import Webpack from '../assets/webpack.png';
 import Ruby from '../assets/ruby.png';
 import Rails from '../assets/rails.png';
 import Tailwind from '../assets/tailwind.png';
+import Eyes from '../assets/cloud-eyes.gif';
 const Experience = () => {
   return (
     <>
@@ -27,30 +28,49 @@ const Experience = () => {
             <div className="w-full h-[fit-content] flex-col ">  
                 <div className="flex justify-between pr-[125px] pb-[50px] mt-8">
                 <h2 className="text-4xl sm:text-6xl md:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] inline-flex sm:justify-start ml-2" style={{textDecoration: 'underline'}}>Internships</h2>
-                    <div className='flex justify-end ml-4 w-[400px] h-[400px] bg-[#FFC300] items-end'></div>
+                    <div className='flex flex-col pt-2 justify-start ml-4 w-[400px] h-[400px] bg-[#FFC300] items-center'>
+                        <h1 className='tiers-font text-7xl flex py-3'>Tier 1</h1>
+                        <img src={Eyes} className='w-[200px] h-[200px] py-2'/>
+                        <p className='font-bold p-2 text-lg'>Searching for my next, <span className='text-[#4f4b4b] text-xl'>notable</span> <span className='border-b-2 border-[#ff9717] text-2xl text-slate-50'>Internship.</span></p>
+                    </div>
                 </div>
                 
                 <div className="flex justify-end pr-[318px] ">
                     
                     <div className="pr-9 pt-[390px]">
-                        <div className='flex justify-end ml-4 w-[20px] h-[20px] bg-[#A63800] items-end'></div>
+                        <div className='flex justify-center ml-4 w-[20px] h-[20px] bg-[#A63800] items-center'>
+                        <p className='tiers-font my-1 text-[#FFFFE6]' style={{ fontSize: '0.6rem'}}>T8</p>
+                        </div>
                     </div>
                     <div className="pr-9 pt-[398px]">
-                        <div className='flex justify-end ml-4 w-[30px] h-[30px] bg-[#DC6E00] items-end'></div>
+                        <div className='flex justify-center ml-4 w-[30px] h-[30px] bg-[#DC6E00] items-center'>
+                        <p className='tiers-font my-1 text-[#CCCCCC]' style={{ fontSize: '1rem'}}>T7</p>
+                        </div>
                     </div>
                     <div className="pr-9 pt-[386px]">
-                        <div className='flex justify-end ml-4 w-[50px] h-[50px] bg-[#E57B00] items-end'></div>
+                        <div className='flex justify-center ml-4 w-[50px] h-[50px] bg-[#E57B00] items-center'>
+                        <p className='tiers-font my-1 text-[#b6b4b4] text-2xl'>T6</p>
+                        </div>
                     </div>
                     <div className="pr-9 pt-[350px]">
-                        <div className='flex justify-end ml-4 w-[75px] h-[75px] bg-[#ED8800] items-end'></div>
+                        <div className='flex justify-center ml-4 w-[75px] h-[75px] bg-[#ED8800] items-center'>
+                        <p className='tiers-font my-1 text-[#808080] text-3xl'>T5</p>
+                        </div>
                     </div>
                     <div className="pr-9 pt-[310px]">
-                        <div className='flex justify-end ml-4 w-[100px] h-[100px] bg-[#F29600] items-end'></div>
+                        <div className='flex justify-center ml-4 w-[100px] h-[100px] bg-[#F29600] items-center'>
+                        <p className='tiers-font my-1 text-[#595959] text-4xl'>T4</p>
+                        </div>
                     </div>
                     <div className="pr-9 pt-[210px]">
-                        <div className='flex justify-end ml-4 w-[150px] h-[150px] bg-[#F7A500] items-end'></div>
+                        <div className='flex justify-center ml-4 w-[150px] h-[150px] bg-[#F7A500] items-center'>
+                        <p className='tiers-font my-1 text-[#333333] text-3xl'>Tier 3</p>
+                        </div>
                     </div>
-                    <div className='flex justify-end ml-4 w-[300px] h-[300px] bg-[#FAB000] items-end'></div>
+                    <div className='flex justify-center ml-4 w-[300px] h-[300px] bg-[#FAB000] items-end'>
+                        {/* <img src={Innobits} alt="" /> */}
+                        <p className='tiers-font my-1 text-[#2b2a2a] text-2xl'>Tier 2</p>
+                    </div>
                 </div>
             </div>
             <div className="pt-4">
