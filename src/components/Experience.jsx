@@ -18,16 +18,42 @@ import Rails from '../assets/rails.png';
 import Tailwind from '../assets/tailwind.png';
 const Experience = () => {
   return (
+    <>
     <div className='bg-[#140021]'>
         <div className="flex flex-col justify-center w-full h-full pb-6">
             <div className="items-center flex flex-col justify-center">
-                <h1 className='text-5xl sm:text-6xl md:text-7xl font-bold title-name flex justify-center text-[#a18fd8] '>Experience</h1>
+                <h1 className='text-5xl sm:text-6xl md:text-7xl font-bold title-name flex justify-center text-[#a18fd8]'>Experience</h1>
             </div>
-            <div className="">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold title-name text-[#FFFFE6] pt-3 sm:pl-[80px] flex justify-center sm:justify-start ml-2" style={{textDecoration: 'underline'}}>Internships</h2>
-
+            <div className="w-full h-[fit-content] flex-col ">  
+                <div className="flex justify-between pr-[125px] pb-[50px] mt-8">
+                <h2 className="text-4xl sm:text-6xl md:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] inline-flex sm:justify-start ml-2" style={{textDecoration: 'underline'}}>Internships</h2>
+                    <div className='flex justify-end ml-4 w-[400px] h-[400px] bg-[#FFC300] items-end'></div>
+                </div>
+                
+                <div className="flex justify-end pr-[318px] ">
+                    
+                    <div className="pr-9 pt-[390px]">
+                        <div className='flex justify-end ml-4 w-[20px] h-[20px] bg-[#A63800] items-end'></div>
+                    </div>
+                    <div className="pr-9 pt-[398px]">
+                        <div className='flex justify-end ml-4 w-[30px] h-[30px] bg-[#DC6E00] items-end'></div>
+                    </div>
+                    <div className="pr-9 pt-[386px]">
+                        <div className='flex justify-end ml-4 w-[50px] h-[50px] bg-[#E57B00] items-end'></div>
+                    </div>
+                    <div className="pr-9 pt-[350px]">
+                        <div className='flex justify-end ml-4 w-[75px] h-[75px] bg-[#ED8800] items-end'></div>
+                    </div>
+                    <div className="pr-9 pt-[310px]">
+                        <div className='flex justify-end ml-4 w-[100px] h-[100px] bg-[#F29600] items-end'></div>
+                    </div>
+                    <div className="pr-9 pt-[210px]">
+                        <div className='flex justify-end ml-4 w-[150px] h-[150px] bg-[#F7A500] items-end'></div>
+                    </div>
+                    <div className='flex justify-end ml-4 w-[300px] h-[300px] bg-[#FAB000] items-end'></div>
+                </div>
             </div>
-            <div className="">
+            <div className="pt-4">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold title-name text-[#FFFFE6] pt-3 sm:pl-[80px] flex justify-center sm:justify-start ml-2" style={{textDecoration: 'underline'}}>My Tech Stack</h2>
                 <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#FFA86E] pt-3 sm:pl-[240px] pl-[215px]'><span className='border-b-4 border-spacing-y-6 hover:border-[#FFFFE6] border-spacing-8 duration-500 border-[#140021] px-1 inline'>Proficient</span></h3>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 md:pl-[225px] pl-[90px]">
@@ -102,6 +128,8 @@ const Experience = () => {
             </div>
         </div>
     </div>
+    <div className="exper-prjs-spacer exper-prjs-layer"></div>
+    </>
   );
 };
 

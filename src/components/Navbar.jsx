@@ -25,7 +25,7 @@ const Navbar = () => {
             </ul>
 
             {/** Hamburger */}
-            <div onClick={handleClick} className='md:hidden z-[300]'>
+            <div onClick={handleClick} className='md:hidden z-[300] duration-500'>
                 {!nav ? <HiOutlineMenuAlt4 style={{ color: '#333333'}}/> : <AiOutlineClose style={{ color: '#333333'}}/>}
             </div>
             

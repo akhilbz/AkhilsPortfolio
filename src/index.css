@@ -55,7 +55,7 @@
 .ut-animate {
   animation-name: ut-animation;
   animation-iteration-count: infinite;
-  animation-duration: 4s;
+  animation-duration: 7s;
   animation-timing-function: ease-in-out; 
 }
 
@@ -176,6 +176,19 @@
 
 .edu-exper-layer {
   background-image: url('./assets/layers3.svg');
+}
+
+.exper-prjs-spacer {
+  aspect-ratio: 1512/350;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.exper-prjs-layer {
+  background-image: url('./assets/layers6.svg');
 }
 @layer base {
   body {
