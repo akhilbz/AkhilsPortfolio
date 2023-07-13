@@ -70,6 +70,7 @@ const About = () => {
                     </div>   
                 </div>
             </div>
+            <div className="about-edu-spacer about-edu-layer"></div>
         </div>
     )
 }

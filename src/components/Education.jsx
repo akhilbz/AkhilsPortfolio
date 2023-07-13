@@ -11,12 +11,12 @@ const Education = () => {
         <div className="w-full h-full sm:flex bg-[#FFA86E] justify-start md:pl-[80px] sm:pt-6 pt-2 md:grid-cols-2 ">
             <div  className=" sm:w-[750px] items-start justify-center sm:h-[620px] p-3">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold title-name justify-center flex text-[#FFFFE6] pb-3">Education</h1>
-                <img src={utAustin} alt="" className='rounded-2xl justify-center flex' style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}/>
-                <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold title-name justify-center flex text-[#FFFFE6] pt-3'>University of Texas at Austin</h1>
+                <img src={utAustin} alt="" className='rounded-2xl justify-center mb-4 flex' style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}/>
+                <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold title-name justify-center ut-font ut-animate rounded-xl pb-2 flex pt-3'>University of Texas at Austin</h1> 
             </div>
             <div className="sm:items-start sm:w-[730px] sm:h-[auto] justify-center sm:flex-col">
                 <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold justify-center flex text-[#333333] cns-edu-title sm:pt-4 pt-3'> College of Natural Sciences</h3>
-                <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-[#FFFFE6] pt-2 pb-2 cns-edu-title md:pr-[160px] '><div className='text-[#a18fd8] text-2xl sm:text-3xl md:text-4xl rounded-xl h-[fit-content] bg-[#333333] hover:bg-[#FFFFE6] hover:text-[#FFA86E] duration-[1200ms] pr-1 pl-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
+                <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-[#FFFFE6] pt-2 pb-2 cns-edu-title md:pr-[160px] '><div className='text-[#a18fd8] text-2xl sm:text-3xl bg-[#333333] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
                 <div className="rounded-2xl bg-[#333333] ml-4 mr-4 pt-1 h-[fit-content] mb-5" style={{ boxShadow: '0px 2px 10px rgba(0, 0, 0, 0.75)' }}>
                     <p className='text-xl font-bold text-[#FFA86E] flex justify-start pl-8 pt-1' style={{textDecoration: 'underline'}}>Relevant Coursework:</p>
                     <p className='text-lg font-bold text-[#a18fd8] flex justify-start pl-8 pt-1'>~Freshman Year~</p>
@@ -56,6 +56,7 @@ const Education = () => {
                 </div>
             </div>
         </div>
+        <div className="edu-exper-spacer edu-exper-layer"></div>
         </>
     )
 }

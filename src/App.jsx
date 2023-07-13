@@ -9,11 +9,8 @@ function App() {
     <div className="h-[fit-content]">
       <Navbar />
       <Home />
-      <div className="home-about-spacer home-about-layer"></div>
       <About />
-      <div className="about-edu-spacer about-edu-layer"></div>
       <Education />
-      <div className="edu-exper-spacer edu-exper-layer"></div>
       <Experience />
     </div>
   )

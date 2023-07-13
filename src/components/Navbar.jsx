@@ -17,7 +17,7 @@ const Navbar = () => {
 
             {/* menu */}
             <ul className='hidden md:flex font-medium text-[#333333]'>
-                <li className='hover:scale-110 navbar-btns duration-500 '><span className=' border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Home</span></li>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Home</span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>My Story</span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Education</span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Experience</span></li>
@@ -49,22 +49,22 @@ const Navbar = () => {
             {/** Socials */}
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-tr-2xl hover:rounded-br-2xl'>
                         <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             LinkedIn <FaLinkedin size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#333333]'>
                         <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             GitHub <FaGithub size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#a18fd8]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#a18fd8]'>
                         <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Contact <BsFillPersonLinesFill size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl duration-300 bg-[#6fc2b0] rounded-br-2xl'>
                         <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Resume <BiFile size={30} />
                         </a>

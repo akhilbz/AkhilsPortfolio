@@ -4,42 +4,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.glitch-effect {
-  position: relative;
-  display: inline-block;
-}
-
-.glitch-text {
-  font-size: 4rem;
-  color: #ff4c52; /* Set the desired text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Set the desired text shadow */
-  animation: glitch-animation 2s infinite;
-}
-
-@keyframes glitch-animation {
+@keyframes year-animation {
   0% {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* background-color: #333333; */
+    color: #a18fd8;
   }
-  20% {
-    text-shadow: -2px -2px 4px rgba(255, 255, 255, 0.8);
+  25% {
+    /* background-color: #FFFFE6; */
+    color: #6fc2b0;
   }
-  40% {
-    text-shadow: 2px -2px 4px rgba(255, 255, 255, 0.8);
+  50% {
+    /* background-color: #FFFFE6; */
+    color: #FFA86E;
   }
-  60% {
-    text-shadow: -2px 2px 4px rgba(255, 255, 255, 0.8);
-  }
-  80% {
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  75% {
+    /* background-color: #FFFFE6; */
+    color: #FFFFE6;
   }
   100% {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* background-color: #333333; */
+    color: #a18fd8;
   }
 }
+
+.year {
+  animation-name: year-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out; 
+}
+@keyframes ut-animation {
+  0% {
+    background-color: #BF5700;
+    color: #FFFFE6;
+  }
+  50% {
+    background-color: #FFFFE6;
+    color: #BF5700;
+  }
+  100% {
+    background-color: #BF5700;
+    color: #FFFFE6;
+  }
+}
+.ut-animate {
+  animation-name: ut-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out; 
+}
+
+
 
 .mobile-linkedin {
   --tw-bg-opacity: 1;
@@ -73,6 +93,10 @@
 .cns-edu-title {
   font-family: 'Share Tech', sans-serif;
 
+}
+
+.ut-font {
+  font-family: 'Libre Baskerville', serif;
 }
 .parallelogram-top {
   background-color: #FFA86E;
@@ -142,7 +166,7 @@
 }
 
 .edu-exper-spacer {
-  aspect-ratio: 1512/250;
+  aspect-ratio: 1512/350;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
