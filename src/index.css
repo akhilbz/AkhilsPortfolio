@@ -145,7 +145,7 @@
 }
 
 .home-about-spacer {
-  aspect-ratio: 1512/250;
+  aspect-ratio: 1512/400;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -158,7 +158,7 @@
 }
 
 .about-edu-spacer {
-  aspect-ratio: 1512/250;
+  aspect-ratio: 1512/350;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;

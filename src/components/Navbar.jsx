@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#FFFFE6] text-gray-300 z-[1000]">
             <div className='flex'>
-                <h1 className='font-[Megrim] glitch text-2xl text-[#333333] cursor-pointer hover:scale-110 duration-700 '>AKHILESH BITLA</h1>
+                <h1 className='font-[Megrim] font-bold glitch text-3xl text-[#333333] cursor-pointer hover:scale-110 duration-700 '>AKHILESH BITLA</h1>
             </div>
 
             {/* menu */}
