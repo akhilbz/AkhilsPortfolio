@@ -19,13 +19,23 @@ const Education = () => {
 
             </div>
 
-            <div className="w-full h-full flex justify-center items-start">
+            <div className="w-full h-full flex justify-start items-center flex-col my-1">
             {/* <div className="flex items-start justify-between sm:w-full h-[700px] md:grid-cols-2"> */}
                 <div className="flex-col flex justify- items-end ">
                     {/* <h1 className='text-3xl sm:text-3xl md:text-4xl font-bold title-name justify-center ut-font ut-animate rounded-xl pb-2 flex pt-3'>University of Texas at Austin</h1>  */}
                     <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-[#FFFFE6] pt-2 cns-edu-title '><div className='text-[#a18fd8] text-2xl sm:text-3xl bg-[#333333] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
                     <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold sm:justify-end justify-center flex text-[#333333] cns-edu-title '> College of Natural Sciences</h3>
-                </div>
+                    </div>
+                    <div className="flex-col mx-[75px] my-5 rounded-2xl bg-[#FFFFE6] w-[fit-content] py-2">
+                    <p className='flex justify-center px-5 font-bold pb-1' style={{ textIndent: '50px', fontSize: '1.05rem'}}>I’m a rising Sophomore pursuing a CS degree with an Entrepreneurship Minor at the University of Texas at Austin. 
+                        I have already completed Data Structures, Discrete Math and Computer Architecture and Organization in my coursework. In Fall 2023, 
+                        I will be learning Operating Systems and Algorithms in the Spring. This will conclude my core requirements for my degree.</p>
+                    <p className='flex justify-center px-5 font-bold pb-1' style={{ textIndent: '50px', fontSize: '1.05rem'}}>Some of the organizations I’ve been part of are Texas ACM and Freetail Hackers. With a team of three friends, 
+                        I have participated in Freetail Hacker’s HackTX 2022 competition and received a “Best Overall on a Beginners’ Track Award.”
+                         More info in Projects section.</p>
+                    <p className='flex justify-center px-5 font-bold pb-1' style={{ textIndent: '50px', fontSize: '1.05rem'}}>During my Sophomore year, I wish to participate in Texas Momentum or Texas Convergent, Texas Luminescence, and FreeTail Hackers. 
+                        Moreover, I am excited to work on my personal projects to expand my full-stack development knowledge.</p>
+                    </div>
             </div>
         </div>
         <div className="w-full h-full flex flex-col justify-center items-center bg-[#F7E3B6]">

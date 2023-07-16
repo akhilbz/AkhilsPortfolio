@@ -12,16 +12,16 @@ const Navbar = () => {
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#FFFFE6] text-gray-300 z-[1000]">
             <div className='flex'>
-                <h1 className='font-[Megrim] font-bold glitch text-3xl text-[#333333] cursor-pointer hover:scale-110 duration-700 '>AKHILESH BITLA</h1>
+                <h1 className='font-[Megrim] font-bold glitch text-3xl text-[#001220] cursor-pointer hover:scale-110 duration-700 '>AKHILESH BITLA</h1>
             </div>
 
             {/* menu */}
-            <ul className='hidden md:flex font-medium text-[#333333]'>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Home</span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>My Story</span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Education</span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Experience</span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#333333] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Projects</span></li>
+            <ul className='hidden md:flex font-medium text-[#001220]'>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Home</span></li>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>My Story</span></li>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Education</span></li>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Experience</span></li>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Projects</span></li>
             </ul>
 
             {/** Hamburger */}

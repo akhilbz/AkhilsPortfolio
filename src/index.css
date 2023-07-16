@@ -144,6 +144,10 @@
   }
 }
 
+.hover-tier2:hover p {
+  border-color: #333333;
+}
+
 .home-about-spacer {
   aspect-ratio: 1512/400;
   width: 100%;

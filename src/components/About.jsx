@@ -38,20 +38,26 @@ const About = () => {
     return (
         <div name="about" className="w-full h-[fit-content] bg-[#F7E3B6]">
             <div className="flex flex-col justify-center items-center w-full h-[fit-content]">
-                <div className="w-full h-[fit-content] md:grid md:grid-cols-2 gap-8 mt-5">
-                    <div className="sm:text-left sm:my-[0px] sm:h-[fit-content] justify-center flex flex-col">
-                        <p className="text-5xl sm:text-7xl font-bold title-name justify-center flex text-[#001220]">My Story</p>
-                        <div className="py-5 md:pl-[80px] justify-center items-start w-full h-[fit-content]">
-                            <p className="text-[#001220] flex justify-center pl-5 font-medium text-xl">Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of 
-                            the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-                            xxx`sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </p>
+                <div className="w-full h-[fit-content] md:grid md:grid-cols-2  ">
+                    <div className="sm:text-left md:pl-[80px] sm:my-[0px] sm:h-[fit-content] items-center flex flex-col">
+                        <p className="text-5xl sm:text-7xl font-bold title-name justify-center flex pb-4 text-[#333333]">My Story</p>
+                        <div className="py-5 text-[#FFFFE6] bg-[#333333] justify-center items-start w-[fit-content] h-[fit-content] rounded-2xl m-3">
+                            <p className=" flex justify-center px-5 font-bold pb-[2px]" style={{ textIndent: '50px', fontSize: '1.05rem'}}>Hello! My name is Akhilesh Bitla. Before I delve in, thank you for checking out my portfolio! 
+                            I really appreciate you for spending time reading about me and my work! As you probably can see, I still have a long way to go, 
+                            but I am a dedicated, passionate, and diligent student, pushing through my limits to establish a successful career.</p>
+                            <p className=" flex justify-center px-5 font-bold pb-[2px]" style={{ textIndent: '50px', fontSize: '1.05rem'}}>Embarking on a journey with CS has been a bumpy road with all sorts of twists and turns for me, and I barely started Sophomore year. 
+                            Its a pot-load of an adventure! Sometimes it can be pretty scary and stressful. Other times, it can be as exciting as winning the lottery! 
+                            Definitely, a huge mood-swinger, and I’m sure all of my CS-major buddies can relate to this.</p>
+                            <p className=" flex justify-center px-5 font-bold pb-[2px]" style={{ textIndent: '50px', fontSize: '1.05rem'}}>Most importantly, throughout my entire academic career, I have learned to embrace mistakes and cultivate a growth mindset. 
+                            I firmly believe that this mindset is not only essential for education but also crucial for excelling in internships and thriving in my professional journey. 
+                            It is this mindset that has fueled my passion for various aspects of Computer Science.</p>
+                            <p className="flex justify-center px-5 font-bold" style={{ textIndent: '50px', fontSize: '1.05rem'}}>From intricate algorithms that power efficient data processing to elegant design principles that form user-friendly interfaces, I am captivated by the endless possibilities within the realm of computer science. 
+                            Delving into full stack development presents an exciting opportunity to enhance my expertise by exploring the powerful integration between backend and frontend components 
+                            and gaining a comprehensive grasp of the holistic development process.</p>
                         </div>
                     </div>
-                    <div className="justify-center items-center flex flex-col sm:mx-[170px] sm:mb-[30px] sm:pb-[-5px] sm:pl-3 relative rounded-2xl bg-center bg-cover h-[645px] ">
-                    <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)    ' }} className=" group w-[390px] h-[590px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
+                    <div className="justify-center items-center flex flex-col sm:mx-[170px] sm:mb-[30px] sm:pb-[-5px] sm:pl-3 relative rounded-2xl bg-center bg-cover h-[645px] md:mt-[105px]">
+                    <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group w-[390px] h-[590px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                     <div className="hidden group-hover:block justify-start text-3xl p-2 text-white cursor-pointer">
                         <BsChevronCompactLeft onClick={prevSlide} size={35} />
                     </div>
