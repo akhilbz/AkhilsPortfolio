@@ -158,7 +158,7 @@
 }
 
 .home-about-layer {
-  background-image: url('./assets/layers.svg');
+  background-image: url('./assets/layer-transitions/layers.svg');
 }
 
 .about-edu-spacer {
@@ -171,7 +171,7 @@
 }
 
 .about-edu-layer {
-  background-image: url('./assets/layers2.svg');
+  background-image: url('./assets/layer-transitions/layers2.svg');
 }
 
 .edu-exper-spacer {
@@ -184,7 +184,7 @@
 }
 
 .edu-exper-layer {
-  background-image: url('./assets/layers3.svg');
+  background-image: url('./assets/layer-transitions/layers3.svg');
 }
 
 .exper-prjs-spacer {
@@ -197,7 +197,7 @@
 }
 
 .exper-prjs-layer {
-  background-image: url('./assets/layers6.svg');
+  background-image: url('./assets/layer-transitions/layers6.svg');
 }
 @layer base {
   body {

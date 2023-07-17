@@ -1,24 +1,24 @@
 import React from 'react'
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import React_logo from '../assets/react.png';
-import Java from '../assets/java.png';
-import JS from '../assets/javascript.png';
-import C from '../assets/C.png';
-import Bootstrap from '../assets/bootstrap.png';
-import Redux from '../assets/redux.svg';
-import Flutter from '../assets/flutter.png';
-import Dart from '../assets/Dart_logo.png';
-import MySQL from '../assets/MySQL.png';
-import MongoDB from '../assets/mongo.png';
-import Node from '../assets/node.png';
-import Webpack from '../assets/webpack.png';
-import Ruby from '../assets/ruby.png';
-import Rails from '../assets/rails.png';
-import Tailwind from '../assets/tailwind.png';
+import HTML from '../assets/stack-icons/html.png';
+import CSS from '../assets/stack-icons/css.png';
+import React_logo from '../assets/stack-icons/react.png';
+import Java from '../assets/stack-icons/java.png';
+import JS from '../assets/stack-icons/javascript.png';
+import C from '../assets/stack-icons/C.png';
+import Bootstrap from '../assets/stack-icons/bootstrap.png';
+import Redux from '../assets/stack-icons/redux.svg';
+import Flutter from '../assets/stack-icons/flutter.png';
+import Dart from '../assets/stack-icons/Dart_logo.png';
+import MySQL from '../assets/stack-icons/MySQL.png';
+import MongoDB from '../assets/stack-icons/mongo.png';
+import Node from '../assets/stack-icons/node.png';
+import Webpack from '../assets/stack-icons/webpack.png';
+import Ruby from '../assets/stack-icons/ruby.png';
+import Rails from '../assets/stack-icons/rails.png';
+import Tailwind from '../assets/stack-icons/tailwind.png';
 import Eyes from '../assets/cloud-eyes.gif';
 // import Innobits from '../assets/innobits.jpeg';
-import Bitsila from '../assets/bitsila.png';
+import Bitsila from '../assets/stack-icons/bitsila.png';
 const Experience = () => {
   return (
     <>
