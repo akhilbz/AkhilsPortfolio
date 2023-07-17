@@ -31,7 +31,6 @@ const About = () => {
         const newIndex = isLastSlide ? 0 : currIndex + 1;
         setCurrIndex(newIndex);
     }
-
     const goToImage = (imageIndex) => {
         setCurrIndex(imageIndex);
     }
