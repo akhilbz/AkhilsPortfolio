@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HTML from '../assets/stack-icons/html.png';
 import CSS from '../assets/stack-icons/css.png';
 import React_logo from '../assets/stack-icons/react.png';
@@ -20,6 +20,7 @@ import Eyes from '../assets/cloud-eyes.gif';
 // import Innobits from '../assets/innobits.jpeg';
 import Bitsila from '../assets/stack-icons/bitsila.png';
 const Experience = () => {
+    const [bitsilaDiv, setBitsilaDiv] = useState(true);
   return (
     <>
     <div className='bg-[#140021]'>
@@ -27,10 +28,50 @@ const Experience = () => {
             <div className="items-center flex flex-col justify-center">
                 <h1 className='text-5xl sm:text-6xl md:text-7xl font-bold title-name flex justify-center text-[#a18fd8]'>Experience</h1>
             </div>
-            <div className="w-full h-[fit-content] flex-col ">  
-                <div className="flex md:justify-between justify-center sm:pr-[125px] pb-[50px] mt-8">
-                <h2 className="text-4xl sm:text-6xl md:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center sm:ml-2" style={{textDecoration: 'underline'}}>Internships</h2>
-                    <div className='md:flex hidden flex-col justify-start ml-4 w-[400px] h-[400px] bg-[#FFC300] items-center hover:scale-110 duration-500' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
+            <div className="w-full h-[fit-content] flex-col">  
+                <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-start items-center xl:pr-[125px] sm:pr-[80px] lg:pb-[50px] mt-8">
+                <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
+                
+                <div className="lg:hidden flex flex-col items-center w-full h-[fit-content] relative">
+                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg w-[450px] sm:w-full h-[fit-content] sm:hidden flex-col p-3 mb-3  text-[#FAB000] bg-[#333333] rounded-2xl duration-500 absolute">
+                        <p className='font-bold'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
+                            providing ideas and suggestions for the design of the UI/UX of the product Enstore.</p>
+                        <p className='font-bold'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
+                        <p className='font-bold'>&#8226; Programming Languages: Dart & Flutter</p>
+                    </div>
+                    <div id='bitsila-div' onClick={() => {
+                        var bitsila = document.getElementById("bitsila-div");
+                        var bitsilaText = document.getElementById("bitsila-text");
+                        var techStack = document.getElementById("tech-stack");
+                        if (bitsilaDiv) {
+                            bitsila.style.marginTop = "200px";
+                            bitsilaText.classList.add("show");
+                            var techStackHeight = bitsila.offsetHeight + 200;
+                            techStack.style.marginTop = techStackHeight + 'px';
+                            setBitsilaDiv(false); 
+                        } else {
+                            bitsila.style.marginTop= "0px";
+                            bitsilaText.classList.remove("show");
+                            var techStackHeight = bitsila.offsetHeight;
+                            techStack.style.marginTop = techStackHeight + 'px';
+                            setBitsilaDiv(true); 
+                        }   
+                    }} className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] h-[250px] bg-[#FAB000] items-center rounded-2xl duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>                       
+                            <div className="rounded-2xl flex-col flex justify-center items-center mx-7 my-7 bg-slate-50 h-[135px] click w-[230px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
+                            <a href='https://www.bitsila.com/' target="_blank">
+                                <img src={Bitsila} alt="" className='h-[75px] w-[75px]'/>
+                                <p className='text-[#fc4c04] font-bold border-b-2 border-white hover:border-[#333333] duration-500 flex justify-center'>Bitsila</p>
+                            </a>
+                            </div>
+                        
+                        <div className="bg-[#333333] pl-3 w-full p-2 mt-3" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
+                            <p className='font-bold text-xs text-[#a19c9c]'><span className=' border-b-2 text-sm  text-slate-50 border-[#ff9717] hover:scale-105 inline-flex duration-500'>Summer Intern</span>  &#8226; Innobits Solutions</p>
+                            <p className='font-bold text-xs flex text-[#a19c9c]'>June 2021 - Aug 2021 (Bangalore, India)</p>
+                        </div>
+                        </div>
+                    </div>   
+
+                    <div className='lg:flex hidden flex-col justify-start ml-4 w-[400px] h-[400px] bg-[#FFC300] items-center hover:scale-110 duration-500' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
                         <h1 className='tiers-font text-7xl flex pr-3 py-3'>#1</h1>
                         <img src={Eyes} className='w-[200px] h-[200px] py-2'/>
                         <div className="bg-[#333333] pl-3 p-3" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
@@ -39,8 +80,7 @@ const Experience = () => {
                     </div>
                 </div>
                 
-                <div className=" justify-end pr-[318px] md:flex hidden">
-                    
+                <div className=" justify-end pr-[318px] lg:flex hidden ">
                     <div className="pr-9 pt-[390px]">
                         <div className='flex flex-col justify-center ml-4 w-[20px] h-[20px] bg-[#A63800] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(166, 56, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#FFFFE6]' style={{ fontSize: '0.6rem'}}>#8</p>
@@ -54,19 +94,16 @@ const Experience = () => {
                     <div className="pr-9 pt-[386px]">
                         <div className='flex flex-col justify-center ml-4 w-[50px] h-[50px] bg-[#E57B00] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(229, 123, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#b6b4b4] text-2xl'>#6</p>
-                        {/* <div className="bg-[#333333] w-full h-[5px]"></div> */}
                         </div>
                     </div>
                     <div className="pr-9 pt-[350px]">
                         <div className='flex flex-col justify-center ml-4 w-[75px] h-[75px] bg-[#ED8800] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(237, 136, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#808080] text-4xl'>#5</p>
-                        {/* <div className="bg-[#333333] w-full h-[10px] mt-2"></div> */}
                         </div>
                     </div>
                     <div className="pr-9 pt-[310px]">
                         <div className='flex flex-col justify-center ml-4 w-[100px] h-[100px] bg-[#F29600] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(242, 150, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#595959] text-5xl'>#4</p>
-                        {/* <div className="bg-[#333333] w-full h-[18px] mt-3"></div> */}
                         </div>
                     </div>
                     <div className="pr-9 pt-[210px]">
@@ -79,7 +116,7 @@ const Experience = () => {
                     <div className='flex flex-col ml-4 w-[300px] h-[300px] bg-[#FAB000] items-center hover:scale-110 duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>
                     <p className='tiers-font my-1 text-[#2b2a2a] text-4xl flex pb-1'>#2</p>
                     <a href='https://www.bitsila.com/' target="_blank">
-                        <div className="rounded-2xl flex-col flex justify-center items-center    bg-slate-50 h-[135px] click w-[230px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
+                        <div className="rounded-2xl flex-col flex justify-center items-center bg-slate-50 h-[135px] click w-[230px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                             <img src={Bitsila} alt="" className='h-[75px] w-[75px]'/>
                            <p className='text-[#fc4c04] font-bold border-b-2 border-spacing-y-6 border-white border-spacing-8 duration-500'>Bitsila</p>
                         </div>
@@ -91,10 +128,10 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-            <div className="pt-8">
+            <div id="tech-stack" className="mt-[240px] pt-8 relative">
                 <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold title-name text-[#FFFFE6] pt-3 flex justify-center" style={{textDecoration: 'underline'}}>My Tech Stack</h2>
                 <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#FFA86E] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-[#FFFFE6] border-spacing-8 duration-500 border-[#140021] px-1 inline'>Proficient</span></h3>
-                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 md:pl-[225px] pl-[90px]">
+                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] pl-[90px]">
                     <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
                         <img src={Java} alt="Java-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2'>Java</p>
@@ -129,7 +166,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#6fc2b0] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-[#FFFFE6] border-spacing-8 duration-500 border-[#140021] px-1 inline'>Developing</span></h3>
-                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 md:pl-[225px] pl-[90px]">
+                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] pl-[90px]">
                     <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 ">
                         <img src={Redux} alt="Redux-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6]  my-2'>Redux</p>

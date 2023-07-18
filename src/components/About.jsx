@@ -50,7 +50,7 @@ const About = () => {
                             <p className=" flex justify-center px-5 font-bold pb-[2px]" style={{ textIndent: '50px', fontSize: '1.05rem'}}>Most importantly, throughout my entire academic career, I have learned to embrace mistakes and cultivate a growth mindset. 
                             I firmly believe that this mindset is not only essential for education but also crucial for excelling in internships and thriving in my professional journey. 
                             It is this mindset that has fueled my passion for various aspects of Computer Science.</p>
-                            <p className="flex justify-center px-5 font-bold" style={{ textIndent: '50px', fontSize: '1.05rem'}}>From intricate algorithms that power efficient data processing to elegant design principles that form user-friendly interfaces, I am captivated by the endless possibilities within the realm of computer science. 
+                            <p className=" flex justify-center px-5 font-bold" style={{ textIndent: '50px', fontSize: '1.05rem'}}>From intricate algorithms that power efficient data processing to elegant design principles that form user-friendly interfaces, I am captivated by the endless possibilities within the realm of computer science. 
                             Delving into full stack development presents an exciting opportunity to enhance my expertise by exploring the powerful integration between backend and frontend components 
                             and gaining a comprehensive grasp of the holistic development process.</p>
                         </div>

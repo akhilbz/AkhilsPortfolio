@@ -187,6 +187,24 @@
   background-image: url('./assets/layer-transitions/layers3.svg');
 }
 
+#bitsila-text {
+
+  opacity: 0;
+  display: hidden;
+  transition: opacity 0.1s ease-in-out;
+}
+
+#tech-stack {
+  transition: margin-top 0.3s ease-in-out;
+}
+
+#bitsila-text.show {
+  /** w-[450px] h-[fit-content]  */
+  display: block;
+  opacity: 1;
+}
+
+
 .exper-prjs-spacer {
   aspect-ratio: 1512/350;
   width: 100%;
