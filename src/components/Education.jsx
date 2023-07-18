@@ -81,7 +81,7 @@ const Education = () => {
         <div className="w-full h-full flex flex-col justify-center items-center bg-[#F7E3B6]">
             <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold justify-end flex title-name text-[#FFFFE6]">Entrepreneurship Minor</h2>
             <h3 className='text-xl sm:text-2xl md:text-3xl font-bold justify-end flex text-[#333333] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
-            <div className=" md:w-full w-[fit-content]">
+            {/* <div className="sm:w-full w-[fit-content] flex-col"> */}
             <div className="mt-2 w-[fit-content] md:w-full flex-col lg:flex-row flex lg:items-start items-center ">
                 <div className="flex lg:ml-[70px] lg:flex-col flex-row justify-center items-start w-[fit-content]">
                     <div className="hover:scale-95 duration-500 flex bg-[#333333] mb-3 rounded-2xl md:w-[250px] md:h-[250px] w-[200px] h-[200px] items-center ml-2 lg:ml-[0px]" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
@@ -91,28 +91,44 @@ const Education = () => {
                         <img src={harkey} alt="" className='ml-6 rounded-2xl  md:w-[200px] md:h-[200px] w-[150px] h-[150px]' style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)' }}/>
                     </div>
                 </div> 
-                <div className="flex-col lg:flex-row lg:flex sm:justify-start justify-center sm:items-start items-center sm:ml-3">
-                    <div className="rounded-2xl bg-center bg-cover h-[645px]">
+                <div className="flex-col xl:flex-row xl:flex sm:justify-start justify-center sm:items-start items-center sm:ml-3">
+                    <div className="rounded-2xl bg-center bg-cover ">
                         <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group md:w-[700px] md:h-[512px] w-[500px] h-[312px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
-                        <div className="hidden group-hover:block justify-start text-3xl p-2 text-white cursor-pointer">
+                        <div className="hidden group-hover:block justify-start text-3xl p-2 text-[#FFFFE6] cursor-pointer">
                             <BsChevronCompactLeft onClick={prevSlide} size={35} />
                         </div>
                         <div className=""></div>
-                        <div className="hidden group-hover:block justify-end text-3xl p-2 text-white cursor-pointer">
+                        <div className="hidden group-hover:block justify-end text-3xl p-2 text-[#FFFFE6] cursor-pointer">
                             <BsChevronCompactRight onClick={nextSlide} size={35}/>
                         </div>
                         </div> 
-                        <div className="flex flex-row justify-center items-center md:pb-8 mt-2 px-[147px] ">
+                        <div className="flex flex-row justify-center items-center md:pb-8 mt-2 px-[147px]">
                             {gallery.map((image, imageIndex) => (
                                 <div key={imageIndex} onClick={() => goToImage(imageIndex)} className="text-2xl cursor-pointer">
-                                {imageIndex == currIndex ? <RxDotFilled style={{color: "#001220"}}/> : <RxDot style={{color: "#001220"}}/>}
+                                {imageIndex == currIndex ? <RxDotFilled style={{color: "#FFFFE6"}}/> : <RxDot style={{color: "#FFFFE6"}}/>}
                                 </div>
                             ))}
                         </div>  
                         </div>
                     </div> 
+                    <div className='hidden lg:block xl:w-[fit-content] w-0 xl:h-[512px] h-0 xl:bg-[#ffffe6] mx-3 p-3 rounded-2xl font-bold' style={{overflow: 'hidden'}}>
+                        <p className='hidden xl:block'>Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        It was popularised in the 1960s with the release of Letraset xxx`sheets containing Lorem Ipsum passages, 
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
                 </div>
-            </div>
+                <div className="flex-col justify-start">
+                    <div className='xl:hidden lg:ml-[70px] lg:w-[968px] md:w-[700px] w-[500px] xl:w-[fit-content] h-[fit-content] justify-center bg-[#ffffe6] mx-3 p-3 rounded-2xl font-bold' style={{overflow: 'hidden'}}>
+                        <p className='xl:hidden block'>Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                        It was popularised in the 1960s with the release of Letraset xxx`sheets containing Lorem Ipsum passages, 
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            {/* </div> */}
         </div>
        
         <div className="edu-exper-spacer edu-exper-layer"></div>

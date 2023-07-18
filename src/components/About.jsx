@@ -69,7 +69,7 @@ const About = () => {
                     <div className="flex flex-row justify-center items-center md:pb-8 mt-2 px-[147px] ">
                         {gallery.map((image, imageIndex) => (
                             <div key={imageIndex} onClick={() => goToImage(imageIndex)} className="text-2xl cursor-pointer">
-                               {imageIndex == currIndex ? <RxDotFilled style={{color: "#001220"}}/> : <RxDot style={{color: "#001220"}}/>}
+                               {imageIndex == currIndex ? <RxDotFilled style={{color: "#FFFFE6"}}/> : <RxDot style={{color: "#FFFFE6"}}/>}
                             </div>
                         ))}
                     </div>  
