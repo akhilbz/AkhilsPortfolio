@@ -23,7 +23,7 @@ const Experience = () => {
     const [bitsilaDiv, setBitsilaDiv] = useState(true);
   return (
     <>
-    <div className='bg-[#140021]'>
+    <div id="exper-main" className='bg-[#140021]'>
         <div className="flex flex-col justify-center w-full h-full pb-6">
             <div className="items-center flex flex-col justify-center">
                 <h1 className='text-5xl sm:text-6xl md:text-7xl font-bold title-name flex justify-center text-[#a18fd8]'>Experience</h1>
@@ -33,7 +33,7 @@ const Experience = () => {
                 <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
                 
                 <div className="lg:hidden flex flex-col items-center w-full h-[fit-content] relative">
-                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg w-[450px] sm:w-full h-[fit-content] sm:hidden flex-col p-3 mb-3  text-[#FAB000] bg-[#333333] rounded-2xl duration-500 absolute">
+                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg w-[450px] sm:w-full h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-[#FAB000] bg-[#333333] rounded-2xl duration-500 absolute">
                         <p className='font-bold'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
                             providing ideas and suggestions for the design of the UI/UX of the product Enstore.</p>
                         <p className='font-bold'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
@@ -43,13 +43,23 @@ const Experience = () => {
                         var bitsila = document.getElementById("bitsila-div");
                         var bitsilaText = document.getElementById("bitsila-text");
                         var techStack = document.getElementById("tech-stack");
+                        var exper_main = document.getElementById("exper-main");
+                        var exper_main_width = window.getComputedStyle(exper_main).width.slice(0, -2);
+                        console.log(exper_main_width);
                         if (bitsilaDiv) {
-                            bitsila.style.marginTop = "200px";
+                            var techStackHeight = bitsila.offsetHeight;
+                            // if (exper_main_width > 900) {
+                            //     bitsila.style.marginTop = "190px";
+                            //     techStackHeight += 190;
+                            // } else {
+                                bitsila.style.marginTop = "200px";
+                                techStackHeight += 200;   
+                            // }
                             bitsilaText.classList.add("show");
-                            var techStackHeight = bitsila.offsetHeight + 200;
                             techStack.style.marginTop = techStackHeight + 'px';
                             setBitsilaDiv(false); 
                         } else {
+                            console.log("false");
                             bitsila.style.marginTop= "0px";
                             bitsilaText.classList.remove("show");
                             var techStackHeight = bitsila.offsetHeight;
