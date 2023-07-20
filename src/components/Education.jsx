@@ -91,9 +91,9 @@ const Education = () => {
                         <img src={harkey} alt="" className='ml-6 rounded-2xl  md:w-[200px] md:h-[200px] w-[150px] h-[150px]' style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)' }}/>
                     </div>
                 </div> 
-                <div className="flex-col xl:flex-row xl:flex sm:justify-start justify-center sm:items-start items-center sm:ml-3">
+                <div className="flex-col xl:flex-row xl:flex sm:justify-start justify-center sm:items-start items-center sm:ml-3 ">
                     <div className="rounded-2xl bg-center bg-cover ">
-                        <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group md:w-[700px] md:h-[512px] w-[500px] h-[312px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
+                        <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group md:w-[700px] md:h-[512px] w-[480px] h-[312px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                         <div className="hidden group-hover:block justify-start text-3xl p-2 text-[#FFFFE6] cursor-pointer">
                             <BsChevronCompactLeft onClick={prevSlide} size={35} />
                         </div>
@@ -120,7 +120,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className="flex-col justify-start">
-                    <div className='xl:hidden lg:ml-[70px] lg:w-[968px] md:w-[700px] w-[500px] xl:w-[fit-content] h-[fit-content] justify-center bg-[#ffffe6] mx-3 p-3 rounded-2xl font-bold' style={{overflow: 'hidden'}}>
+                    <div className='xl:hidden lg:ml-[70px] lg:w-[968px] md:w-[700px] w-[480px] xl:w-[fit-content] h-[fit-content] justify-center bg-[#ffffe6] mx-3 p-3 rounded-2xl font-bold' style={{overflow: 'hidden'}}>
                         <p className='xl:hidden block'>Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 

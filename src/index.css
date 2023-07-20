@@ -186,7 +186,6 @@
 .edu-exper-layer {
   background-image: url('./assets/layer-transitions/layers3.svg');
 }
-
 #bitsila-text {
 
   opacity: 0;
@@ -204,6 +203,10 @@
   opacity: 1;
 }
 
+#bitsila-div:hover #tap-read {
+  font-weight: 700;
+  transition-duration: 500ms;
+}
 
 .exper-prjs-spacer {
   aspect-ratio: 1512/350;

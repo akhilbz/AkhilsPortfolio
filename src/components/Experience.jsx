@@ -17,6 +17,7 @@ import Ruby from '../assets/stack-icons/ruby.png';
 import Rails from '../assets/stack-icons/rails.png';
 import Tailwind from '../assets/stack-icons/tailwind.png';
 import Eyes from '../assets/cloud-eyes.gif';
+
 // import Innobits from '../assets/innobits.jpeg';
 import Bitsila from '../assets/stack-icons/bitsila.png';
 const Experience = () => {
@@ -33,7 +34,7 @@ const Experience = () => {
                 <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
                 
                 <div className="lg:hidden flex flex-col items-center w-full h-[fit-content] relative">
-                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg w-[450px] sm:w-full h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-[#FAB000] bg-[#333333] rounded-2xl duration-500 absolute">
+                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg sm:w-[550px] md:w-[700px] w-[450px] h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-[#FAB000] bg-[#333333] rounded-2xl duration-500 absolute">
                         <p className='font-bold'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
                             providing ideas and suggestions for the design of the UI/UX of the product Enstore.</p>
                         <p className='font-bold'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
@@ -66,11 +67,12 @@ const Experience = () => {
                             techStack.style.marginTop = techStackHeight + 'px';
                             setBitsilaDiv(true); 
                         }   
-                    }} className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] h-[250px] bg-[#FAB000] items-center rounded-2xl duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>                       
-                            <div className="rounded-2xl flex-col flex justify-center items-center mx-7 my-7 bg-slate-50 h-[135px] click w-[230px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
+                    }} className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] sm:w-[350px] z-30 h-[250px] sm:h-[280px] hover:intern_description cursor-pointer hover:scale-105 bg-[#FAB000] items-center rounded-2xl duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>    
+                            <p id="tap-read" className='text-[#333333] h-0 font-light'>{bitsilaDiv ? "Tap to read" : "Close"}</p>               
+                            <div className="rounded-2xl flex-col flex justify-center items-center mx-7 my-7 z-50 bg-slate-50 h-[135px] sm:h-[165px] click w-[230px] sm:w-[275px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                             <a href='https://www.bitsila.com/' target="_blank">
-                                <img src={Bitsila} alt="" className='h-[75px] w-[75px]'/>
-                                <p className='text-[#fc4c04] font-bold border-b-2 border-white hover:border-[#333333] duration-500 flex justify-center'>Bitsila</p>
+                                <img src={Bitsila} alt="" className='h-[75px] sm:h-[125px] w-[75px] sm:w-[125px]'/>
+                                <p className='text-[#fc4c04] font-bold hover:underline duration-500 flex justify-center'>Bitsila</p>
                             </a>
                             </div>
                         
