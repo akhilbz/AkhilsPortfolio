@@ -30,8 +30,15 @@ const Experience = () => {
                 <h1 className='text-5xl sm:text-6xl md:text-7xl font-bold title-name flex justify-center text-[#a18fd8]'>Experience</h1>
             </div>
             <div className="w-full h-[fit-content] flex-col">  
-                <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-start items-center xl:pr-[125px] sm:pr-[80px] lg:pb-[50px] mt-8">
+                <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-start items-center xl:pr-[125px] sm:pr-[80px] lg:pb-[50px] mt-8">      
+                <h2 className="md:flex lg:hidden text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>          
+                <div className="lg:flex hidden lg:flex-col">
                 <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
+                <div className="bg-[#333333] ml-[80px] xl:h-[300px] h-[250px] flex-col xl:w-[700px] w-[550px] rounded-2xl">
+                    <p className='p-3'>hello</p>
+                </div>
+                </div>  
+
                 <div className="lg:hidden flex w-full justify-center items-center">
                     <div className='flex-col sm:ml-[80px] flex justify-start w-[320px] sm:w-[360px] h-[320px] sm:h-[340px] bg-[#FFC300] items-center rounded-2xl hover:scale-110 duration-500 mb-8' style={{boxShadow: '0px 8px 20px rgba(255, 195, 0, 0.6)'}}>
                             <img src={Eyes} className='w-[200px] h-[200px] py-2 mt-3'/>
