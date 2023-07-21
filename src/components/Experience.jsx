@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import HTML from '../assets/stack-icons/html.png';
 import CSS from '../assets/stack-icons/css.png';
 import React_logo from '../assets/stack-icons/react.png';
@@ -17,11 +17,28 @@ import Ruby from '../assets/stack-icons/ruby.png';
 import Rails from '../assets/stack-icons/rails.png';
 import Tailwind from '../assets/stack-icons/tailwind.png';
 import Eyes from '../assets/cloud-eyes.gif';
+import { AiOutlineClose } from 'react-icons/ai';
 
 // import Innobits from '../assets/innobits.jpeg';
 import Bitsila from '../assets/stack-icons/bitsila.png';
 const Experience = () => {
     const [bitsilaDiv, setBitsilaDiv] = useState(true);
+
+    function showContent(paragraphs) {
+        const container = document.getElementById("exper-description");
+        paragraphs.forEach((paragraph) => {
+          container.appendChild(paragraph);
+        });
+      }
+
+      function clearContent() {
+        const container = document.getElementById("exper-description");
+        const paragraphs = container.querySelectorAll("p");
+        paragraphs.forEach((paragraph) => {
+        paragraph.remove();
+        });
+      }
+
   return (
     <>
     <div id="exper-main" className='bg-[#140021]'>
@@ -33,10 +50,17 @@ const Experience = () => {
                 <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-start items-center xl:pr-[125px] sm:pr-[80px] lg:pb-[50px] mt-8">      
                 <h2 className="md:flex lg:hidden text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>          
                 <div className="lg:flex hidden lg:flex-col">
-                <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
-                <div className="bg-[#333333] ml-[80px] xl:h-[300px] h-[250px] flex-col xl:w-[700px] w-[550px] rounded-2xl">
-                    <p className='p-3'>hello</p>
-                </div>
+                    <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
+                    <div id='exper-div' className="hidden bg-[#333333] ml-[80px] xl:h-[270px] h-[250px] flex-col xl:w-[700px] w-[550px] rounded-2xl">
+                        <div className="flex-row flex justify-between w-full p-3 mr-2">
+                            <h3 className='text-[#FFFFE6] text-xl font-bold'>Description:</h3>
+                            <AiOutlineClose onClick={() => {
+                                const experDiv = document.getElementById('exper-div');
+                                experDiv.style.display = 'none';
+                            }} className='hover:text-[#FFFFE6] text-[#7e7e7c]' size={22}/>
+                        </div>
+                        <div id='exper-description' className="flex-col p-3 text-[#FFFFE6] text-lg font-bold"></div>
+                    </div>
                 </div>  
 
                 <div className="lg:hidden flex w-full justify-center items-center">
@@ -54,6 +78,7 @@ const Experience = () => {
                         <p className='font-bold'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
                         <p className='font-bold'>&#8226; Programming Languages: Dart & Flutter</p>
                     </div>
+                    {/* Mobile Version */}
                     <div id='bitsila-div' onClick={() => {
                         var bitsila = document.getElementById("bitsila-div");
                         var bitsilaText = document.getElementById("bitsila-text");
@@ -91,7 +116,17 @@ const Experience = () => {
                         </div>
                     </div>   
 
-                    <div className='lg:flex hidden flex-col justify-start ml-4 xl:w-[400px] w-[350px] xl:h-[400px] h-[350px] bg-[#FFC300] items-center hover:scale-110 duration-500' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
+                    <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "Searching for SWE internships, particularly in Full Stack development.";
+                        const descriptions = [p1];
+                        showContent(descriptions);
+                        }} className='lg:flex hidden flex-col justify-start ml-4 xl:w-[400px] w-[350px] xl:h-[400px] h-[350px] bg-[#FFC300] items-center hover:scale-110 duration-500' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
                         <h1 className='tiers-font text-7xl flex pr-3 py-3'>#1</h1>
                         <img src={Eyes} className='xl:w-[200px] w-[150px] h-[150px] xl:h-[200px] py-2'/>
                         <div className="bg-[#333333] pl-3 p-3 mt-1" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
@@ -100,45 +135,120 @@ const Experience = () => {
                     </div>
                 </div>
                 
-                <div className="justify-end xl:pr-[285px] pr-[170px] lg:flex hidden ">
-                    <div className="pr-9 pt-[390px]">
-                        <div className='xl:flex hidden flex-col justify-center ml-4 w-[20px] h-[20px] bg-[#A63800] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(166, 56, 0, 0.6)' }}>
+                <div className="justify-end xl:pr-[340px] pr-[170px] pt-3 lg:flex hidden ">
+                    <div className="pr-3 pt-[290px]">
+                        <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "#8";
+                        const descriptions = [p1];
+                        showContent(descriptions);
+                        }} className='lg:flex hidden flex-col justify-center ml-4 w-[20px] h-[20px] bg-[#A63800] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(166, 56, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#FFFFE6]' style={{ fontSize: '0.6rem'}}>#8</p>
                         </div>
                     </div>
-                    <div className="pr-9 pt-[398px]">
-                        <div className='xl:flex hidden flex-col justify-center ml-4 w-[30px] h-[30px] bg-[#DC6E00] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(220, 110, 0, 0.6)' }}>
+                    <div className="pr-7 pt-[330px]">
+                        <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "#7";
+                        const descriptions = [p1];
+                        showContent(descriptions);
+                        }} className='lg:flex hidden flex-col justify-center ml-4 w-[40px] h-[40px] bg-[#DC6E00] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(220, 110, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#CCCCCC]' style={{ fontSize: '1rem'}}>#7</p>
                         </div>
                     </div>
-                    <div className="pr-9 pt-[386px]">
-                        <div className='lg:flex hidden flex-col justify-center ml-4 w-[50px] h-[50px] bg-[#E57B00] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(229, 123, 0, 0.6)' }}>
+                    <div className="pr-[35px] pt-[370px]">
+                        <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "#6";
+                        const descriptions = [p1];
+                        showContent(descriptions);
+                        }} className='lg:flex hidden flex-col justify-center ml-4 w-[60px] h-[60px] bg-[#E57B00] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(229, 123, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#b6b4b4] text-2xl'>#6</p>
                         </div>
                     </div>
-                    <div className="pr-9 pt-[350px]">
-                        <div className='lg:flex hidden flex-col justify-center ml-4 w-[75px] h-[75px] bg-[#ED8800] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(237, 136, 0, 0.6)' }}>
+                    <div className="pr-[35px] pt-[370px]">
+                        <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "#5";
+                        const descriptions = [p1];
+                        showContent(descriptions);
+                        }} className='lg:flex hidden flex-col justify-center ml-4 w-[75px] h-[75px] bg-[#ED8800] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(237, 136, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#808080] text-4xl'>#5</p>
                         </div>
                     </div>
-                    <div className="pr-9 pt-[310px]">
-                        <div className='flex flex-col justify-center ml-4 w-[100px] h-[100px] bg-[#F29600] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(242, 150, 0, 0.6)' }}>
+                    <div className="pr-[55px] pt-[330px]">
+                        <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "#4";
+                        const descriptions = [p1];
+                        showContent(descriptions);
+                        }} className='flex flex-col justify-center ml-4 w-[100px] h-[100px] bg-[#F29600] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(242, 150, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#595959] text-5xl'>#4</p>
                         </div>
                     </div>
-                    <div className="pr-9 pt-[210px]">
-                        <div className='flex flex-col justify-center w-[150px] h-[150px] bg-[#F7A500] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(247, 165, 0, 0.6)' }}>
+                    <div className="pr-[60px] pt-[240px]">
+                        <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "#3";
+                        const p2 = document.createElement("p");
+                        p2.innerHTML = "No description, but I'd like to use this space to talk about myfuture goals. (Look through #3-#8)";
+                        const descriptions = [p1, p2];
+                        showContent(descriptions);
+                        }} className='flex flex-col justify-center w-[150px] h-[150px] bg-[#F7A500] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(247, 165, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#333333] text-6xl py-3 '>#3</p>
                         <div className="bg-[#333333] w-full h-[30px] mt-1  items-start flex-col px-1" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}><div className="border-b-[1px] flex p-2 border-[#ff9717]"></div></div>
-
-                        </div>
                     </div>
-                    <div className='flex flex-col w-[300px] h-[300px] bg-[#FAB000] items-center hover:scale-110 duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>
+                    </div>
+                    <div onClick={() => { 
+                        clearContent();
+                        const experDiv = document.getElementById('exper-div');
+                        const description = document.getElementById('exper-description');
+                        experDiv.style.display = 'flex';
+                        description.style.transitionDuration = '500ms';
+                        const p1 = document.createElement("p");
+                        p1.innerHTML = "&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by providing ideas and suggestions for the design of the UI/UX of the product Bitsila.";
+                        const p2 = document.createElement("p");
+                        p2.innerHTML = "  &#8226; Developed backend APIs and implemented UI/UX for web and mobile applications";
+                        const p3 = document.createElement("p");
+                        p3.innerHTML = "&#8226; Programming Languages: Dart & Flutter";
+                        const descriptions = [p1, p2, p3];
+                        showContent(descriptions);
+                        }} className='flex flex-col w-[300px] h-[300px] bg-[#FAB000] items-center hover:scale-110 duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>
                     <p className='tiers-font my-1 text-[#2b2a2a] text-4xl flex pb-1'>#2</p>
                     <a href='https://www.bitsila.com/' target="_blank">
                         <div className="rounded-2xl flex-col flex justify-center items-center bg-slate-50 h-[135px] click w-[230px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                             <img src={Bitsila} alt="" className='h-[75px] w-[75px]'/>
-                           <p className='text-[#fc4c04] font-bold border-b-2 border-spacing-y-6 border-white border-spacing-8 duration-500'>Bitsila</p>
+                           <p className='text-[#fc4c04] font-bold hover:underline duration-500'>Bitsila</p>
                         </div>
                     </a>
                     <div className="bg-[#333333] pl-3 w-full p-3 mt-4" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
