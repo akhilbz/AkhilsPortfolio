@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import HTML from '../assets/stack-icons/html.png';
 import CSS from '../assets/stack-icons/css.png';
 import React_logo from '../assets/stack-icons/react.png';
@@ -18,7 +18,7 @@ import Rails from '../assets/stack-icons/rails.png';
 import Tailwind from '../assets/stack-icons/tailwind.png';
 import Eyes from '../assets/cloud-eyes.gif';
 import Medal from '../assets/medal.png';
-// import Particles from '../particles_script.js';
+import { loadSlim } from "tsparticles-slim";
 import { AiOutlineClose } from 'react-icons/ai';
 
 import Bitsila from '../assets/stack-icons/bitsila.png';
@@ -40,6 +40,19 @@ const Experience = () => {
         });
       }
 
+      const particlesInit = useCallback(async engine => {
+        console.log(engine);
+        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+        // starting from v2 you can add only the features you need reducing the bundle size
+        //await loadFull(engine);
+        await loadSlim(engine);
+    }, []);
+
+    const particlesLoaded = useCallback(async container => {
+        console.log(container);
+    }, []);
+
   return (
     <>
     <div id="exper-main" className='bg-[#140021]'>
@@ -56,18 +69,36 @@ const Experience = () => {
                 <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-start items-center xl:pr-[125px] sm:pr-[80px] lg:pb-[50px] mt-8">      
                 <h2 className="md:flex lg:hidden text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>          
                 <div className="lg:flex hidden lg:flex-col">
-                    <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
-                    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-                    <div id="particles-div" className='flex ml-[80px] h-[280px] w-[800px] bg-[#a18fd8] rounded-2xl'></div>
-                    <script type='text/javascript' src="../particles/particles.min.js"></script>
-                    <script type='text/javascript' src="../particles_script.js"></script>
+                    <div className="flex-col">
+                    <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7  sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
+                    
+                    <div id='intern-div' className="ml-[80px] h-[fit-content] xl:w-[700px] lg:w-[600px] bg-[#a18fd8] rounded-2xl flex-row flex">
+                        <div className='flex p-1 justify-between flex-row'>
+                            {/* <div className="flex-col flex items-center justify-center w-[400px]"> */}
+                                <iframe className='rounded-2xl' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.2742994472255!2d-97.73919222421218!3d30.286251874802797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59c9f7a3771%3A0xa54e5a846367f0c1!2sGates-Dell%20Complex!5e0!3m2!1sen!2sus!4v1690046160116!5m2!1sen!2sus" 
+                                width="300" height="260" style={{border: '0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            {/* </div> */}
+                            <div className="flex flex-col justify-end xl:w-[400px] lg:w-[300px] p-1 ">
+                                <form method='POST' action='https://getform.io/f/c3ee09be-c274-41e2-b2be-4455ff899d6b' className='flex flex-col max-w-[400px] items-center'>
+                                    <h1 className='text-xl text-[#FFFFE6] font-semibold border-b-4 border-[#140021] rounded'>Contact Me</h1>
+                                    <input className=' mt-3 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded' type='text' placeholder='Name' name='name'/>
+                                    <input className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded' type='text' placeholder='Email' name='email'/>
+                                    <textarea name='message' className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded' placeholder='Quick Message'/>
+                                <button className='flex  justify-center text-xl  xl:ml-[160px] ml-[60px]'>
+                                    <span className='border-2 rounded hover:bg-[#FFFFE6] duration-500 text-[#FFFFE6] hover:text-[#333333] hover:font-medium'>&nbsp;Let's Connect&nbsp;</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                     <div id='exper-div' className="hidden bg-[#333333] ml-[80px] xl:h-[270px] h-[250px] flex-col xl:w-[700px] w-[550px] rounded-2xl">
                         <div className="flex-row flex justify-between w-full p-3 mr-2">
                             <h3 className='text-[#FFFFE6] text-xl font-bold'>Description:</h3>
                             <AiOutlineClose onClick={() => {
                                 const experDiv = document.getElementById('exper-div');
+                                const internDiv = document.getElementById('intern-div');
                                 experDiv.style.display = 'none';
+                                internDiv.style.display = 'flex';
                             }} className='hover:text-[#FFFFE6] text-[#7e7e7c] duration-300' size={22}/>
                         </div>
 
@@ -127,32 +158,40 @@ const Experience = () => {
                         </div>
                         </div>
                     </div>   
-
-                    <div onClick={() => { 
-                        clearContent();
-                        const experDiv = document.getElementById('exper-div');
-                        const description = document.getElementById('exper-description');
-                        experDiv.style.display = 'flex';
-                        description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "Searching for SWE internships, particularly in Full Stack development.";
-                        const descriptions = [p1];
-                        showContent(descriptions);
-                        }} className='lg:flex hidden flex-col justify-start ml-4 xl:w-[400px] w-[350px] xl:h-[400px] h-[350px] bg-[#FFC300] items-center hover:scale-110 duration-500 cursor-pointer' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
-                        <h1 className='tiers-font text-7xl flex pr-3 py-[11px]'>#1</h1>
-                        <img src={Medal} className='xl:w-[200px] w-[150px] h-[150px] xl:h-[200px] mb-1 bg-[#d9d9d9] rounded-2xl'/>
-                        <div className="bg-[#333333] pl-3 p-3 mt-1" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
-                        <p className='font-bold text-base lg:text-lg text-[#a19c9c]'>Searching for my next, <span className='text-[#ff9717] text-lg lg:text-xl'>notable</span> &nbsp; <span className='border-b-2 border-[#ff9717] hover:scale-110 inline-flex duration-500 text-xl lg:text-2xl text-slate-50'>Internship.</span></p>
+                    <div className="">
+                        <div className=" w-full overflow-hidden inline justify-end xl:pl-[100px] lg:pl-[30px] pt-[90px] xl:pt-0">
+                            <div onClick={() => { 
+                                clearContent();
+                                const experDiv = document.getElementById('exper-div');
+                                const internDiv = document.getElementById('intern-div');
+                                const description = document.getElementById('exper-description');
+                                experDiv.style.display = 'flex';
+                                internDiv.style.display = 'none';
+                                description.style.transitionDuration = '500ms';
+                                const p1 = document.createElement("p");
+                                p1.innerHTML = "Searching for SWE internships, particularly in Full Stack development.";
+                                const descriptions = [p1];
+                                showContent(descriptions);
+                                }} className='lg:flex hidden flex-col justify-start ml-8 xl:w-[400px] w-[300px] xl:h-[400px] h-[300px] bg-[#FFC300] items-center hover:scale-110 duration-500 cursor-pointer' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
+                                <h1 className='tiers-font text-7xl flex pr-3 py-[11px]'>#1</h1>
+                                <img src={Medal} className='xl:w-[200px] w-[110px] h-[110px] xl:h-[200px] mb-1 bg-[#d9d9d9] rounded-2xl'/>
+                                <div className="bg-[#333333] pl-3 p-3 mt-1" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
+                                <p className='font-bold text-sm xl:text-lg text-[#a19c9c]'>Searching for my next, <span className='text-[#ff9717] text-base xl:text-lg'>notable</span> &nbsp; <span className='border-b-2 border-[#ff9717] hover:scale-110 inline-flex duration-500 text-lg xl:text-2xl text-slate-50'>Internship.</span></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div className="justify-end xl:pr-[340px] pr-[170px] pt-3 lg:flex hidden ">
+                <div id='two-to-eight' className="w-full flex justify-center">
+                <div className="justify-end  pr-[170px] pt-3 lg:flex hidden">
                     <div className="pr-3 pt-[290px]">
                         <div onClick={() => { 
                         clearContent();
                         const experDiv = document.getElementById('exper-div');
                         const description = document.getElementById('exper-description');
+                        const internDiv = document.getElementById('intern-div');
+                        internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
@@ -168,6 +207,8 @@ const Experience = () => {
                         clearContent();
                         const experDiv = document.getElementById('exper-div');
                         const description = document.getElementById('exper-description');
+                        const internDiv = document.getElementById('intern-div');
+                        internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
@@ -183,6 +224,8 @@ const Experience = () => {
                         clearContent();
                         const experDiv = document.getElementById('exper-div');
                         const description = document.getElementById('exper-description');
+                        const internDiv = document.getElementById('intern-div');
+                        internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
@@ -198,6 +241,8 @@ const Experience = () => {
                         clearContent();
                         const experDiv = document.getElementById('exper-div');
                         const description = document.getElementById('exper-description');
+                        const internDiv = document.getElementById('intern-div');
+                        internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
@@ -213,6 +258,8 @@ const Experience = () => {
                         clearContent();
                         const experDiv = document.getElementById('exper-div');
                         const description = document.getElementById('exper-description');
+                        const internDiv = document.getElementById('intern-div');
+                        internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
@@ -228,6 +275,8 @@ const Experience = () => {
                         clearContent();
                         const experDiv = document.getElementById('exper-div');
                         const description = document.getElementById('exper-description');
+                        const internDiv = document.getElementById('intern-div');
+                        internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
@@ -243,6 +292,8 @@ const Experience = () => {
                         clearContent();
                         const experDiv = document.getElementById('exper-div');
                         const description = document.getElementById('exper-description');
+                        const internDiv = document.getElementById('intern-div');
+                        internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
@@ -253,19 +304,20 @@ const Experience = () => {
                         p3.innerHTML = "&#8226; Programming Languages: Dart & Flutter";
                         const descriptions = [p1, p2, p3];
                         showContent(descriptions);
-                        }} className='flex flex-col w-[300px] h-[300px] bg-[#FAB000] items-center hover:scale-110 duration-500 ' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>
+                        }} className='flex flex-col xl:w-[300px] w-[250px] xl:h-[300px] h-[250px] bg-[#FAB000] items-center hover:scale-110 duration-500 ' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>
                     <p className='tiers-font my-1 text-[#2b2a2a] text-4xl flex pb-1'>#2</p>
                     <a href='https://www.bitsila.com/' target="_blank">
-                        <div className="rounded-2xl flex-col flex justify-center items-center bg-slate-50 h-[135px] click w-[230px] mb-2" >
-                            <img src={Bitsila} alt="" className='h-[75px] w-[75px]'/>
+                        <div className="rounded-2xl flex-col flex justify-center items-center bg-slate-50 xl:h-[135px] xl:w-[230px] h-[100px] w-[180px]  mb-2" >
+                            <img src={Bitsila} alt="" className='xl:h-[75px] xl:w-[75px] h-[50px] w-[50px]'/>
                            <p className='text-[#fc4c04] font-bold hover:underline duration-500'>Bitsila</p>
                         </div>
                     </a>
                     <div className="bg-[#333333] pl-3 w-full p-3 mt-4" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
-                        <p className='font-bold text-sm text-[#a19c9c]'><span className=' border-b-2 text-lg  text-slate-50 border-[#ff9717] hover:scale-105 inline-flex duration-500'>Summer Intern</span>  &#8226; Innobits Solutions</p>
-                        <p className='font-bold text-sm flex text-[#a19c9c]'>June 2021 - Aug 2021 (Bangalore, India)</p>
+                        <p className='font-bold text-sm text-[#a19c9c]'><span className=' border-b-2 xl:text-lg text-md text-slate-50 border-[#ff9717] hover:scale-105 inline-flex duration-500'>Summer Intern</span>  &#8226; Innobits Solutions</p>
+                        <p className='font-bold xl:text-sm text-xs flex text-[#a19c9c]'>June 2021 - Aug 2021 (Bangalore, India)</p>
                     </div>
                     </div>
+                </div>
                 </div>
             </div>
             <div id="tech-stack" className="mt-[240px] lg:mt-[40px] pt-[50px] relative">

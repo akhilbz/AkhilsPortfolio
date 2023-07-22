@@ -38,7 +38,7 @@ const About = () => {
         <div name="about" className="w-full h-[fit-content] bg-[#F7E3B6]">
             <div className="flex flex-col justify-center items-center w-full h-[fit-content]">
                 <div className="w-full h-[fit-content] xl:grid xl:grid-cols-2  ">
-                    <div className="sm:text-left lg:pl-[60px] sm:my-[0px] sm:h-[fit-content] items-center flex flex-col">
+                    <div className="sm:text-left lg:pl-[60px] sm:mx-[40px] sm:h-[fit-content] items-center flex flex-col">
                         <p className="text-5xl sm:text-8xl font-bold title-name justify-center flex pb-2 text-[#333333]" style={{ textDecoration: 'underline'}}>My Story</p>
                         <div className="py-2 text-[#FFFFE6] bg-[#333333] justify-center items-start w-[fit-content] h-[fit-content] rounded-2xl sm:mt-3 m-2">
                             <p className=" flex justify-center px-5 font-bold pb-[2px]" style={{ textIndent: '50px', fontSize: '1.05rem'}}>Hello! My name is Akhilesh Bitla. Before I delve in, thank you for checking out my portfolio! 
@@ -55,8 +55,8 @@ const About = () => {
                             and gaining a comprehensive grasp of the holistic development process.</p>
                         </div>
                     </div>
-                    <div className="pt-2">
-                    <div className="justify-center items-center flex flex-col sm:mx-[170px]  relative rounded-2xl bg-center bg-cover h-[645px] ">
+                    <div className="sm:pt-[140px]">
+                    <div className="justify-center items-center flex flex-col sm:mx-[170px] relative rounded-2xl bg-center bg-cover h-[645px] ">
                     <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group w-[390px] h-[590px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                     <div className="hidden group-hover:block justify-start text-3xl p-2 text-white cursor-pointer">
                         <BsChevronCompactLeft onClick={prevSlide} size={35} />
