@@ -17,9 +17,10 @@ import Ruby from '../assets/stack-icons/ruby.png';
 import Rails from '../assets/stack-icons/rails.png';
 import Tailwind from '../assets/stack-icons/tailwind.png';
 import Eyes from '../assets/cloud-eyes.gif';
+import Medal from '../assets/medal.png';
+// import Particles from '../particles_script.js';
 import { AiOutlineClose } from 'react-icons/ai';
 
-// import Innobits from '../assets/innobits.jpeg';
 import Bitsila from '../assets/stack-icons/bitsila.png';
 const Experience = () => {
     const [bitsilaDiv, setBitsilaDiv] = useState(true);
@@ -43,29 +44,40 @@ const Experience = () => {
     <>
     <div id="exper-main" className='bg-[#140021]'>
         <div className="flex flex-col justify-center w-full h-full pb-6">
-            <div className="items-center flex flex-col justify-center">
-                <h1 className='text-5xl sm:text-6xl md:text-7xl font-bold title-name flex justify-center text-[#a18fd8]'>Experience</h1>
+            <div className="flex flex-col items-center">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold title-name text-[#a18fd8]">Experience</h1>
+                <div className="lg:flex hidden justify-end w-full overflow-hidden">
+                    <div className="bg-[#ff9717] h-8 flex justify-start items-center pl-1 w-[fit-content] mr-[-300px] hover:mr-[0px] duration-500 rounded-bl-2xl rounded-tl-2xl" style={{boxShadow: '0px 0px 20px rgba(255, 151, 23, 0.6)'}}>
+                        <p className='text-xl  ml-2 font-bold '>Note: &nbsp;&nbsp;  Tap <span className='bg-[#333333] text-[#ffc300] rounded-sm py-2'>&nbsp;yellow tiles&nbsp;</span> for description&nbsp;</p>
+                    </div>
+                </div>
             </div>
             <div className="w-full h-[fit-content] flex-col">  
                 <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-start items-center xl:pr-[125px] sm:pr-[80px] lg:pb-[50px] mt-8">      
                 <h2 className="md:flex lg:hidden text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>          
                 <div className="lg:flex hidden lg:flex-col">
                     <h2 className="text-4xl md:text-6xl lg:text-8xl font-bold title-name text-[#FFFFE6] pb-7 sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
+                    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+                    <div id="particles-div" className='flex ml-[80px] h-[280px] w-[800px] bg-[#a18fd8] rounded-2xl'></div>
+                    <script type='text/javascript' src="../particles/particles.min.js"></script>
+                    <script type='text/javascript' src="../particles_script.js"></script>
                     <div id='exper-div' className="hidden bg-[#333333] ml-[80px] xl:h-[270px] h-[250px] flex-col xl:w-[700px] w-[550px] rounded-2xl">
                         <div className="flex-row flex justify-between w-full p-3 mr-2">
                             <h3 className='text-[#FFFFE6] text-xl font-bold'>Description:</h3>
                             <AiOutlineClose onClick={() => {
                                 const experDiv = document.getElementById('exper-div');
                                 experDiv.style.display = 'none';
-                            }} className='hover:text-[#FFFFE6] text-[#7e7e7c]' size={22}/>
+                            }} className='hover:text-[#FFFFE6] text-[#7e7e7c] duration-300' size={22}/>
                         </div>
+
                         <div id='exper-description' className="flex-col p-3 text-[#FFFFE6] text-lg font-bold"></div>
                     </div>
                 </div>  
 
                 <div className="lg:hidden flex w-full justify-center items-center">
                     <div className='flex-col sm:ml-[80px] flex justify-start w-[320px] sm:w-[360px] h-[320px] sm:h-[340px] bg-[#FFC300] items-center rounded-2xl hover:scale-110 duration-500 mb-8' style={{boxShadow: '0px 8px 20px rgba(255, 195, 0, 0.6)'}}>
-                            <img src={Eyes} className='w-[200px] h-[200px] py-2 mt-3'/>
+                            <img src={Medal} className='w-[200px] h-[200px] mt-3 mb-1 bg-[#d9d9d9] rounded-2xl' style={{boxShadow: '0px 8px 20px rgba(255, 195, 0, 0.6)'}}/>
                             <div className="bg-[#333333] pl-3 p-3 mt-2 sm:mt-7 h-[fit-content] click w-[full] " style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                             <p className='font-bold text-md text-[#a19c9c]'>Searching for my next, <span className='text-[#ff9717] text-lg'>notable</span> &nbsp; <span className='border-b-2 border-[#ff9717] hover:scale-110 inline-flex duration-500 text-xl text-slate-50'>Internship.</span></p>
                             </div>
@@ -102,7 +114,7 @@ const Experience = () => {
                         }   
                     }} className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] sm:w-[350px] z-30 h-[250px] sm:h-[280px] hover:intern_description cursor-pointer hover:scale-105 bg-[#FAB000] items-center rounded-2xl duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>    
                             <p id="tap-read" className='text-[#333333] h-0 font-light text-sm'>{bitsilaDiv ? "Tap to read" : "Close"}</p>               
-                            <div className="rounded-2xl flex-col flex justify-center items-center mx-7 my-7 z-50 bg-slate-50 h-[135px] sm:h-[165px] click w-[230px] sm:w-[275px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
+                            <div className="rounded-2xl flex-col flex justify-center items-center mx-7 my-7 z-50 bg-slate-50 h-[135px] sm:h-[165px] click w-[230px] sm:w-[275px] mb-2" >
                             <a href='https://www.bitsila.com/' target="_blank">
                                 <img src={Bitsila} alt="" className='h-[75px] sm:h-[125px] w-[75px] sm:w-[125px]'/>
                                 <p className='text-[#fc4c04] font-bold hover:underline duration-500 flex justify-center'>Bitsila</p>
@@ -126,9 +138,9 @@ const Experience = () => {
                         p1.innerHTML = "Searching for SWE internships, particularly in Full Stack development.";
                         const descriptions = [p1];
                         showContent(descriptions);
-                        }} className='lg:flex hidden flex-col justify-start ml-4 xl:w-[400px] w-[350px] xl:h-[400px] h-[350px] bg-[#FFC300] items-center hover:scale-110 duration-500' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
-                        <h1 className='tiers-font text-7xl flex pr-3 py-3'>#1</h1>
-                        <img src={Eyes} className='xl:w-[200px] w-[150px] h-[150px] xl:h-[200px] py-2'/>
+                        }} className='lg:flex hidden flex-col justify-start ml-4 xl:w-[400px] w-[350px] xl:h-[400px] h-[350px] bg-[#FFC300] items-center hover:scale-110 duration-500 cursor-pointer' style={{boxShadow: '0px 8px 32px rgba(255, 195, 0, 0.6)'}}>
+                        <h1 className='tiers-font text-7xl flex pr-3 py-[11px]'>#1</h1>
+                        <img src={Medal} className='xl:w-[200px] w-[150px] h-[150px] xl:h-[200px] mb-1 bg-[#d9d9d9] rounded-2xl'/>
                         <div className="bg-[#333333] pl-3 p-3 mt-1" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                         <p className='font-bold text-base lg:text-lg text-[#a19c9c]'>Searching for my next, <span className='text-[#ff9717] text-lg lg:text-xl'>notable</span> &nbsp; <span className='border-b-2 border-[#ff9717] hover:scale-110 inline-flex duration-500 text-xl lg:text-2xl text-slate-50'>Internship.</span></p>
                         </div>
@@ -220,9 +232,7 @@ const Experience = () => {
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
                         p1.innerHTML = "#3";
-                        const p2 = document.createElement("p");
-                        p2.innerHTML = "No description, but I'd like to use this space to talk about myfuture goals. (Look through #3-#8)";
-                        const descriptions = [p1, p2];
+                        const descriptions = [p1];
                         showContent(descriptions);
                         }} className='flex flex-col justify-center w-[150px] h-[150px] bg-[#F7A500] items-center hover:scale-110 duration-500' style={{ boxShadow: '0px 2px 16px rgba(247, 165, 0, 0.6)' }}>
                         <p className='tiers-font my-1 text-[#333333] text-6xl py-3 '>#3</p>
@@ -243,10 +253,10 @@ const Experience = () => {
                         p3.innerHTML = "&#8226; Programming Languages: Dart & Flutter";
                         const descriptions = [p1, p2, p3];
                         showContent(descriptions);
-                        }} className='flex flex-col w-[300px] h-[300px] bg-[#FAB000] items-center hover:scale-110 duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>
+                        }} className='flex flex-col w-[300px] h-[300px] bg-[#FAB000] items-center hover:scale-110 duration-500 ' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>
                     <p className='tiers-font my-1 text-[#2b2a2a] text-4xl flex pb-1'>#2</p>
                     <a href='https://www.bitsila.com/' target="_blank">
-                        <div className="rounded-2xl flex-col flex justify-center items-center bg-slate-50 h-[135px] click w-[230px] mb-2" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
+                        <div className="rounded-2xl flex-col flex justify-center items-center bg-slate-50 h-[135px] click w-[230px] mb-2" >
                             <img src={Bitsila} alt="" className='h-[75px] w-[75px]'/>
                            <p className='text-[#fc4c04] font-bold hover:underline duration-500'>Bitsila</p>
                         </div>
@@ -258,7 +268,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-            <div id="tech-stack" className="mt-[240px] pt-[50px] relative">
+            <div id="tech-stack" className="mt-[240px] lg:mt-[40px] pt-[50px] relative">
                 <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold title-name text-[#FFFFE6] pt-3 flex justify-center" style={{textDecoration: 'underline'}}>My Tech Stack</h2>
                 <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#FFA86E] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-[#FFFFE6] border-spacing-8 duration-500 border-[#140021] px-1 inline'>Proficient</span></h3>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] pl-[90px]">
