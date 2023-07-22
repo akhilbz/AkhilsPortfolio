@@ -4,7 +4,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const Home = () => {
     return (
         <>
-        <div className="w-full h-screen bg-[#FFFFE6] z-10 px-8 sm:px-0 ">
+        <div name="home" className="w-full h-screen bg-[#FFFFE6] z-10 px-8 sm:px-0 ">
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-[750px]">
                 <div className="flex ">
                 <p className="text-[#a18fd8] text-2xl sm:text-3xl font-light ">Welcome!&nbsp;</p>
@@ -16,7 +16,7 @@ const Home = () => {
                 and meaningful <span className="highlight-impact top-2 font-[Anton] text-2xl text-[#FFFFE6]" style={{ position: 'relative', top: '2px' }}>IMPACT</span> on people's everyday lives.</p></div>
             </div>
         </div>
-        <div className="home-about-spacer home-about-layer"></div>
+        <div name="about" className="home-about-spacer home-about-layer"></div>
         </>
     )
 }

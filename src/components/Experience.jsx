@@ -40,19 +40,6 @@ const Experience = () => {
         });
       }
 
-      const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
-    }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        console.log(container);
-    }, []);
-
   return (
     <>
     <div id="exper-main" className='bg-[#140021]'>
@@ -78,14 +65,14 @@ const Experience = () => {
                                 <iframe className='rounded-2xl flex justify-center' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.2742994472255!2d-97.73919222421218!3d30.286251874802797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59c9f7a3771%3A0xa54e5a846367f0c1!2sGates-Dell%20Complex!5e0!3m2!1sen!2sus!4v1690046160116!5m2!1sen!2sus" 
                                 width="300" height="260" style={{border: '0'}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                            <div className="flex flex-col justify-end xl:w-[400px] lg:w-[300px] p-4 ">
+                            <div className="flex flex-col justify-end w-[fit-content] p-4  h-[fit-content]">
                                 <form method='POST' action='https://getform.io/f/c3ee09be-c274-41e2-b2be-4455ff899d6b' className='flex flex-col max-w-[400px] items-center'>
                                     <h1 className='text-xl text-[#FFFFE6] font-semibold border-b-4 border-[#140021] rounded'>Contact Me</h1>
-                                    <input className=' mt-3 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded' type='text' placeholder='Name' name='name'/>
-                                    <input className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded' type='text' placeholder='Email' name='email'/>
-                                    <textarea name='message' className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded' placeholder='Quick Message'/>
+                                    <input className=' mt-3 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' type='text' placeholder='Name' name='name'/>
+                                    <input className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' type='text' placeholder='Email' name='email'/>
+                                    <textarea name='message' className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' placeholder='Quick Message'/>
                                 <button className='flex  justify-center text-xl pt-1 xl:ml-[160px] ml-[60px]'>
-                                    <span className='border-2 rounded hover:bg-[#FFFFE6] duration-500 text-[#FFFFE6] hover:text-[#333333] hover:font-medium'>&nbsp;Let's Connect&nbsp;</span></button>
+                                    <span className='border-2 border-white rounded hover:bg-[#FFFFFF] duration-500 text-[#FFFFFF] hover:text-[#333333] hover:font-medium'>&nbsp;Let's Connect&nbsp;</span></button>
                                 </form>
                             </div>
                         </div>

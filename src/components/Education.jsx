@@ -51,9 +51,9 @@ const Education = () => {
     }
     return (
         <>
-        <div className="w-full h-full sm:flex bg-[#F7E3B6] flex pt-[75px] lg:flex-row flex-col">
+        <div name="education"  className="w-full h-full sm:flex bg-[#F7E3B6] flex pt-[100px] lg:flex-row flex-col ">
             <div  className=" flex-col flex items-center justify-center h-[fit-content] lg:pl-[80px] w-full px-2 pb-2">
-            <h1 className="text-6xl sm:text-6xl md:text-8xl font-bold title-name justify-center flex text-[#FFFFE6] pb-4" style={{ textDecoration: 'underline'}}>Education</h1>
+            <h1 className="text-6xl sm:text-6xl md:text-8xl font-bold title-name justify-center flex text-[#333333] pb-4" style={{ textDecoration: 'underline'}}>Education</h1>
                 <img src={utAustin} alt="" className='rounded-2xl justify-center mb-4 w-[700px] flex' style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}/>
                 {/* <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold title-name justify-center ut-font ut-animate rounded-xl pb-2 flex pt-3'>University of Texas at Austin</h1> 
                 <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-[#FFFFE6] pt-2 cns-edu-title '><div className='text-[#a18fd8] text-2xl sm:text-3xl bg-[#333333] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
@@ -62,23 +62,23 @@ const Education = () => {
             </div>
 
             <div className="w-[fit-content] h-[fit-content] flex justify-start items-center flex-col sm:pt-3 pt-1">
-                <div className="flex-col flex justify-center lg:items-end ">
+                <div className="flex-col flex lg:items-end ">
                     <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-[#FFFFE6] cns-edu-title '><div className='text-[#a18fd8] text-2xl sm:text-3xl bg-[#333333] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
                     <h3 className='text-2xl sm:text-3xl font-bold lg:justify-end justify-center flex text-[#333333] cns-edu-title '> College of Natural Sciences</h3>
                     </div>
-                    <div className="flex-col lg:my-[40px] my-5 rounded-2xl bg-[#FFFFE6] w-[fit-content] mx-[100px] py-2">
-                    <p className='flex justify-center px-3 font-bold pb-1' style={{ textIndent: '50px', fontSize: '1.05rem'}}>I’m a rising Sophomore pursuing a CS degree with an Entrepreneurship Minor at the University of Texas at Austin. 
+                    <div className="flex-col lg:my-[40px] my-5 rounded-2xl w-[fit-content] mx-[100px] py-2 text-black">
+                    <p className='flex justify-center px-3 font-normal mb-4'>I’m a rising Sophomore pursuing a CS degree with an Entrepreneurship Minor at the University of Texas at Austin. 
                         I have completed Data Structures, Discrete Math and Computer Architecture and Organization in my coursework. In Fall 2023, 
                         I will be learning Operating Systems. Then Algorithms in the Spring. This will conclude my core requirements for my degree.</p>
-                    <p className='flex justify-center px-3 font-bold pb-1' style={{ textIndent: '50px', fontSize: '1.05rem'}}>Some of the organizations I’ve been part of are Texas ACM and Freetail Hackers. With a team of three friends, 
+                    <p className='flex justify-center px-3 font-normal mb-4'>Some of the organizations I’ve been part of are Texas ACM and Freetail Hackers. With a team of three friends, 
                         I have participated in Freetail Hacker’s HackTX 2022 competition and received a “Best Overall on a Beginners’ Track Award.”
                          More info in Projects section.</p>
-                    <p className='flex justify-center px-3 font-bold pb-1' style={{ textIndent: '50px', fontSize: '1.05rem'}}>During my Sophomore year, I'm planning on participating in either Texas Momentum or Texas Convergent, Texas Luminescence, and FreeTail Hackers' Hackathons. 
+                    <p className='flex justify-center px-3 font-normal mb-4'>During my Sophomore year, I'm planning on participating in either Texas Momentum or Texas Convergent, Texas Luminescence, and FreeTail Hackers' Hackathons. 
                         Moreover, I am excited to work on my personal projects to expand my full-stack development knowledge.</p>
                     </div>
             </div>
         </div>
-        <div className="w-full h-full flex flex-col justify-center items-center bg-[#F7E3B6] pt-[75px]">
+        <div className="w-full h-full flex flex-col justify-center items-center bg-[#F7E3B6] pt-[140px]">
             <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold justify-end flex title-name text-[#FFFFE6]">Entrepreneurship Minor</h2>
             <h3 className='text-xl sm:text-2xl md:text-3xl font-bold justify-end flex text-[#333333] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
             {/* <div className="sm:w-full w-[fit-content] flex-col"> */}
@@ -111,7 +111,7 @@ const Education = () => {
                         </div>  
                         </div>
                     </div> 
-                    <div className='hidden lg:block xl:w-[fit-content] w-0 xl:h-[512px] h-0 xl:bg-[#ffffe6] mx-3 p-3 rounded-2xl font-bold' style={{overflow: 'hidden'}}>
+                    <div className='hidden lg:block xl:w-[fit-content] w-0 xl:h-[512px] h-0  mx-3 p-3 rounded-2xl font-normal' style={{overflow: 'hidden'}}>
                         <p className='hidden xl:block'>Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
@@ -120,7 +120,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className="flex-col justify-start">
-                    <div className='xl:hidden lg:ml-[70px] lg:w-[968px] md:w-[700px] w-[480px] xl:w-[fit-content] h-[fit-content] justify-center bg-[#ffffe6] mx-3 p-3 rounded-2xl font-bold' style={{overflow: 'hidden'}}>
+                    <div className='xl:hidden lg:ml-[70px] lg:w-[968px] md:w-[700px] w-[480px] xl:w-[fit-content] h-[fit-content] justify-center mx-3 p-3 rounded-2xl font-normal' style={{overflow: 'hidden'}}>
                         <p className='xl:hidden block'>Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
@@ -131,7 +131,7 @@ const Education = () => {
             {/* </div> */}
         </div>
        
-        <div className="edu-exper-spacer edu-exper-layer"></div>
+        <div name="experience" className="edu-exper-spacer edu-exper-layer"></div>
         </>
     )
 }
