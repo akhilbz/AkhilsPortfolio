@@ -21,7 +21,7 @@ const Navbar = () => {
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
                     <Link to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
-                    <Link to="about" smooth={true} offset={300} duration={700}>My Story</Link></span></li>
+                    <Link to="about" smooth={true} offset={250} duration={700}>My Story</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
                     <Link to="edu" smooth={true} offset={550} duration={700}>Education</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
