@@ -78,7 +78,7 @@ const Experience = () => {
                         </div>
                     </div>
                     </div>
-                    <div id='exper-div' className="hidden bg-[#333333] ml-[80px] xl:h-[300px] h-[300px] flex-col xl:w-[700px] w-[600px] rounded-2xl">
+                    <div id='exper-div' className="hidden bg-[#333333] ml-[80px] xl:h-[300px] h-[30`0px] flex-col xl:w-[700px] w-[600px] rounded-2xl">
                         <div className="flex-row flex justify-between w-full p-3 mr-2">
                             <h3 className='text-[#FFFFE6] text-xl font-bold'>Description:</h3>
                             <AiOutlineClose onClick={() => {

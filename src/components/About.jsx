@@ -40,7 +40,7 @@ const About = () => {
                 <div className="w-full h-[fit-content] xl:grid xl:grid-cols-2  ">
                     <div className="lg:pl-[90px] sm:h-[fit-content] items-center flex flex-col">
                         <p className="text-5xl sm:text-8xl font-bold title-name justify-center flex pb-2 text-[#333333]" style={{ textDecoration: 'underline'}}>My Story</p>
-                        <div name="edu" className=" py-2 text-[#000000] justify-center  w-[fit-content] h-[fit-content] rounded-2xl sm:mt-[20px] mx-2">
+                        <div name="edu" className=" py-2 text-[#000000] justify-center  w-[fit-content] h-[fit-content] rounded-2xl sm:mt-[20px] mx-5">
                             <p className=" flex justify-center  font-normal mb-[4px]" >Hello! My name is Akhilesh Bitla. Before I delve in, thank you so much for taking the time to learn more about me and my work! 
                             Your interest is greatly appreciated! As you probably can see, I still have a long way to go, 
                             but my commitment, passion, and unwavering determination drive me to surpass my limitations and forge a path towards a successful career.</p>
