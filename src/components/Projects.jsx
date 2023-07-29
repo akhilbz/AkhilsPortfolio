@@ -9,10 +9,10 @@ const Projects = () => {
         <div className="bg-[#140021] ml-[80px] inline-block w-[fit-content] p-3 rounded mt-[75px]">
           <h1 className='title-name text-8xl text-[#6fc] font-bold pb-1'>Projects</h1>
         </div>
-        <div className="flex-col mt-[125px] ">
+        <div className="flex-col mt-[90px] ">
           <div className="lg:flex-row flex-col flex lg:justify-between justify-center items-center lg:mr-8 lg:ml-[80px]">
             
-            <div className="border-b-2 border-t-2 my-6 border-[#140021] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col justify-center font-medium lg:text-xl text-lg ml-5 ">
+            <div className="border-b-2 border-t-2 my-6 py-4 border-[#140021] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col justify-center font-medium lg:text-xl text-lg ml-5 ">
               <p className='pb-5'>&#8226; Developed a Chrome extension designed to enhance your tab management experience and optimize
                             productivity and organization. Implemented intuitive features for effortless tab organization, including
                             quick grouping, fast searching, and more.</p>
@@ -25,7 +25,7 @@ const Projects = () => {
               <img src={Organize} alt="" className='h-[250px] w-[250px] rounded-2xl' />
               <p className='text-white text-2xl'>Organize Chrome Extension</p>
             </div>
-            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 border-[#140021] lg:hidden flex flex-col justify-center font-medium text-lg">
+            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#140021] lg:hidden flex flex-col justify-center font-medium text-lg">
               <p className='pb-5'>&#8226; Developed a Chrome extension designed to enhance your tab management experience and optimize
                             productivity and organization. Implemented intuitive features for effortless tab organization, including
                             quick grouping, fast searching, and more.</p>
@@ -41,14 +41,14 @@ const Projects = () => {
               <img src={Trove} alt="" className='h-[250px] w-[250px] rounded-2xl'/>
               <p className='text-white text-2xl'>Trove: The Lost & Found App</p>
             </div>
-            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 border-[#140021] lg:hidden flex flex-col justify-center font-medium text-lg">
+            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#140021] lg:hidden flex flex-col justify-center font-medium text-lg">
               <p className='pb-5'>&#8226; Developed a virtual service platform that allows college students to report lost items and claim lost
               valuables through a student network.</p>
               <div className='pb-5'>&#8226; Built within 24 hours with three peers and won Best Overall on Beginner’s Track Award out of 75 teams in
               HackTX 2022 (Freetail Hackers Hackathon)</div>
               <p>&#8226; Tech Stack: Java, JavaScript, Spring Framework, React Native, MongoDB, Figma</p>
             </div>
-            <div className="border-b-2 border-t-2 my-6 border-[#140021] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col justify-center font-medium lg:text-xl text-lg mr-5">
+            <div className="border-b-2 border-t-2 my-6 py-4 border-[#140021] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col justify-center font-medium lg:text-xl text-lg mr-5">
               <p className='pb-5'>&#8226; Developed a virtual service platform that allows college students to report lost items and claim lost
               valuables through a student network.</p>
               <div className='pb-5'>&#8226; Built within 24 hours with three peers and won Best Overall on Beginner’s Track Award out of 75 teams in

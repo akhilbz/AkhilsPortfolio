@@ -26,7 +26,8 @@ const Navbar = () => {
                     <Link to="edu" smooth={true} offset={550} duration={700}>Education</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
                     <Link to="experience" smooth={true} offset={200} duration={700}>Experience</Link></span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>Projects</span></li>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
+                <Link to="projects" smooth={true} offset={-70} duration={700}>Projects</Link></span></li>
             </ul>
 
             {/** Hamburger */}
@@ -63,22 +64,22 @@ const Navbar = () => {
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
                 <ul>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-tr-2xl hover:rounded-br-2xl'>
-                        <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                        <a href="https://www.linkedin.com/in/akhileshbitla/" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             LinkedIn <FaLinkedin size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#333333]'>
-                        <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                        <a href="https://github.com/akhilbz" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             GitHub <FaGithub size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#a18fd8]'>
-                        <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                        <a href="/" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Contact <BsFillPersonLinesFill size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl duration-300 bg-[#6fc2b0] rounded-br-2xl'>
-                        <a href="/" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                        <a href="https://drive.google.com/file/d/1lLdDjP1s_dRUO2RdgY3chnFZlNmMQON0/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Resume <BiFile size={30} />
                         </a>
                     </li>
