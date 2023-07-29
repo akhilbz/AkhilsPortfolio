@@ -70,7 +70,7 @@ const Experience = () => {
                                     <h1 className='text-xl text-[#FFFFE6] font-semibold border-b-4 border-[#140021] rounded'>Contact Me</h1>
                                     <input className=' mt-3 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' type='text' placeholder='Name' name='name' required/>
                                     <input className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' type='text' placeholder='Email' name='email' required/>
-                                    <textarea name='message' className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' placeholder='Quick Message' required/>
+                                    <textarea style={{resize: 'none'}} name='message' className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' placeholder='Quick Message' required/>
                                     <button className='flex  justify-center text-xl pt-1 xl:ml-[160px] ml-[60px]'>
                                     <span className='border-2 border-white rounded hover:bg-[#FFFFFF] duration-500 text-[#FFFFFF] hover:text-[#333333] hover:font-medium'>&nbsp;Let's Connect&nbsp;</span></button>
                                 </form>
