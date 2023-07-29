@@ -64,7 +64,7 @@ const Education = () => {
             <div className="w-[fit-content] h-[fit-content] flex justify-start items-center flex-col sm:pt-3 pt-1">
                 <div className="flex-col flex xl:items-end ">
                     <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-white cns-edu-title '><div className='text-[#a18fd8] text-2xl sm:text-3xl bg-[#1C1C1C] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
-                    <h3 className='text-2xl sm:text-3xl font-bold xl:justify-end justify-center flex text-[#87CEFA] cns-edu-title '> College of Natural Sciences</h3>
+                    <h3 className='text-2xl sm:text-3xl font-bold xl:justify-end justify-center flex text-[#FFA86E] cns-edu-title '> College of Natural Sciences</h3>
                     </div>
                     <div className="flex-col lg:my-[40px] my-5 rounded-2xl w-[fit-content] mx-[30px] md:mx-[150px] lg:mx-[75px] py-2 text-[#CCCCCC]">
                     <p className='flex justify-center px-3 font-normal mb-4'>I’m a rising Sophomore pursuing a CS degree with an Entrepreneurship Minor at the University of Texas at Austin. 
@@ -78,7 +78,7 @@ const Education = () => {
                     </div>
             </div>
         </div>
-        <div className="w-full h-full flex flex-col justify-center items-center bg-[#333333] pt-[140px]">
+        <div className="w-full h-full flex flex-col justify-center items-center bg-[#333333] md:pt-[140px] pt-[20px]">
             <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold justify-end flex title-name text-[#87CEFA]">Entrepreneurship Minor</h2>
             <h3 className='text-xl sm:text-2xl md:text-3xl font-bold justify-end flex text-[#CCCCCC] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
             {/* <div className="sm:w-full w-[fit-content] flex-col"> */}

@@ -45,7 +45,7 @@ const Experience = () => {
     <div name="experience" id="exper-main" className='bg-[#121212]'>
         <div className="flex flex-col justify-center w-full h-full pb-6">
             <div className="flex flex-col items-center">
-                <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold title-name text-[#87CEFA]">Experience</h1>
+                <h1 className="text-5xl sm:text-6xl xl:text-8xl md:text-7xl font-bold title-name text-[#87CEFA]">Experience</h1>
                 <div className="lg:flex hidden justify-end w-full overflow-hidden">
                     <div className="bg-[#87CEFA] h-8 flex justify-start items-center pl-1 w-[fit-content] mr-[-285px] hover:mr-[0px] duration-500 rounded-bl-2xl rounded-tl-2xl" >
                         <p className='text-xl  ml-2 font-bold '>Note: &nbsp;&nbsp;  Tap <span className='bg-[#333333] text-[#CCCCCC] rounded-sm py-2'>&nbsp;grey tiles&nbsp;</span> for description&nbsp;</p>
@@ -67,18 +67,18 @@ const Experience = () => {
                             </div>
                             <div className="flex flex-col justify-end w-[fit-content] p-4  h-[fit-content]">
                                 <form method='POST' action='https://getform.io/f/c3ee09be-c274-41e2-b2be-4455ff899d6b' className='flex flex-col max-w-[400px] items-center'>
-                                    <h1 className='text-xl text-white font-semibold border-b-4 border-[#140021] rounded'>Contact Me</h1>
-                                    <input className=' mt-3 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' type='text' placeholder='Name' name='name' required/>
-                                    <input className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' type='text' placeholder='Email' name='email' required/>
-                                    <textarea style={{resize: 'none'}} name='message' className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[200px] rounded bg-[#333333] text-white' placeholder='Quick Message' required/>
-                                    <button className='flex  justify-center text-xl pt-1 xl:ml-[160px] ml-[60px]'>
+                                    <h1 className='text-xl text-white font-semibold border-b-4 border-[#CCCCCC] rounded'>Contact Me</h1>
+                                    <input className=' mt-3 p-2 m-2 xl:w-[300px] lg:w-[250px] rounded bg-[#333333] text-white' type='text' placeholder='Name' name='name' required/>
+                                    <input className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[250px] rounded bg-[#333333] text-white' type='text' placeholder='Email' name='email' required/>
+                                    <textarea style={{resize: 'none'}} name='message' className=' mt-1 p-2 m-2 xl:w-[300px] lg:w-[250px] rounded bg-[#333333] text-white' placeholder='Quick Message' required/>
+                                    <button className='flex  justify-center text-xl pt-1 xl:ml-[160px] ml-[110px]'>
                                     <span className='border-2 border-white rounded hover:bg-[#FFFFFF] duration-500 text-[#FFFFFF] hover:text-[#333333] hover:font-medium'>&nbsp;Let's Connect&nbsp;</span></button>
                                 </form>
                             </div>
                         </div>
                     </div>
                     </div>
-                    <div id='exper-div' className="hidden bg-[#333333] ml-[80px] xl:h-[300px] h-[30`0px] flex-col xl:w-[700px] w-[600px] rounded-2xl">
+                    <div id='exper-div' className="hidden bg-[#333333] ml-[80px] xl:h-[300px] h-[300px] flex-col xl:w-[700px] w-[600px] rounded-2xl">
                         <div className="flex-row flex justify-between w-full p-3 mr-2">
                             <h3 className='text-white text-xl font-bold'>Description:</h3>
                             <AiOutlineClose onClick={() => {
@@ -94,15 +94,15 @@ const Experience = () => {
                 </div>  
 
                 <div className="lg:hidden flex w-full justify-center items-center">
-                    <div className='flex-col sm:ml-[80px] flex justify-start w-[320px] sm:w-[360px] h-[320px] sm:h-[340px] bg-[#87CEFA] items-center rounded-2xl hover:scale-110 duration-500 mb-8' style={{boxShadow: '0px 8px 20px rgba(255, 195, 0, 0.6)'}}>
-                            <img src={Medal} className='w-[200px] h-[200px] mt-3 mb-1 bg-[#d9d9d9] rounded-2xl' style={{boxShadow: '0px 8px 20px rgba(255, 195, 0, 0.6)'}}/>
+                    <div className='flex-col sm:ml-[80px] flex justify-start w-[320px] sm:w-[360px] h-[320px] sm:h-[340px] bg-[#CCCCCC] items-center rounded-2xl hover:scale-110 duration-500 mb-8' style={{boxShadow: 'rgb(217, 217, 217) 0px 4px 18px'}}>
+                            <img src={Medal} className='w-[200px] h-[200px] mt-3 mb-1 bg-[#d9d9d9] rounded-2xl'/>
                             <div className="bg-[#333333] pl-3 p-3 mt-2 sm:mt-7 h-[fit-content] click w-[full] " style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                                 <p className='font-bold text-md text-[#a19c9c]'>Searching for my next, <span className='text-[#ff9717] text-lg'>notable</span> &nbsp; <span className='border-b-2 border-[#ff9717] hover:scale-110 inline-flex duration-500 text-xl text-slate-50'>Internship.</span></p>
                             </div>
                     </div>
                 </div>
                 <div className="lg:hidden flex flex-col items-center w-full h-[fit-content] relative">
-                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg sm:w-[550px] md:w-[700px] w-[450px] h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-[#FAB000] bg-[#333333] rounded-2xl duration-500 absolute">
+                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg sm:w-[550px] md:w-[700px] w-[450px] h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-[#CCCCCC] bg-[#333333] rounded-2xl duration-500 absolute">
                         <p className='font-bold'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
                             providing ideas and suggestions for the design of the UI/UX of the product Bitsila.</p>
                         <p className='font-bold'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
@@ -130,7 +130,7 @@ const Experience = () => {
                             techStack.style.marginTop = techStackHeight + 'px';
                             setBitsilaDiv(true); 
                         }   
-                    }} className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] sm:w-[350px] z-30 h-[250px] sm:h-[280px] hover:intern_description cursor-pointer hover:scale-105 bg-[#FAB000] items-center rounded-2xl duration-500' style={{ boxShadow:'2px 0px 26px rgba(250, 176, 0, 0.6)'}}>    
+                    }} className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] sm:w-[350px] z-30 h-[250px] sm:h-[280px] hover:intern_description cursor-pointer hover:scale-105 bg-[#aba8a8] items-center rounded-2xl duration-500' style={{ boxShadow:'0px 0px 18px rgba(171, 168, 168, 0.5)'}}>    
                             <p id="tap-read" className='text-[#333333] h-0 font-light text-sm'>{bitsilaDiv ? "Tap to read" : "Close"}</p>               
                             <div className="rounded-2xl flex-col flex justify-center items-center mx-7 my-7 z-50 bg-slate-50 h-[135px] sm:h-[165px] click w-[230px] sm:w-[275px] mb-2" >
                             <a href='https://www.bitsila.com/' target="_blank">
@@ -307,7 +307,7 @@ const Experience = () => {
                 </div>
                 </div>
             </div>
-            <div id="tech-stack" className="mt-[240px] lg:mt-[40px] pt-[50px] relative">
+            <div id="tech-stack" className="mt-[240px] lg:mt-[50px] lg:pt-0 pt-[50px] relative">
                 <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold title-name text-white pt-3 flex justify-center" style={{textDecoration: 'underline'}}>My Tech Stack</h2>
                 <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#87CEFA] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Proficient</span></h3>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] pl-[90px]">
@@ -344,7 +344,7 @@ const Experience = () => {
                         <p className='text-[#FAF0E6] my-2 text-sm px-1'>Tailwind CSS</p>
                     </div>
                 </div>
-                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#666666] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Developing</span></h3>
+                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#9a9a9a] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Developing</span></h3>
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] pl-[90px]">
                     <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 ">
                         <img src={Redux} alt="Redux-icon" className='w-20 mx-4 pt-2' />

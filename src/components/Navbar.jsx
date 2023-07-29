@@ -11,14 +11,14 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#121212]  z-[1000]">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#121212] z-[1000]">
             <div className='flex'>
                 <h1 className='font-[Megrim] font-bold glitch text-3xl text-white cursor-pointer'><Link to="home" spy={true} smooth={true} offset={0} duration={700}>AKHILESH BITLA</Link></h1>
             </div>
 
             {/* menu */}
             <ul className='hidden md:flex font-medium text-white'>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
+                <li className='hover:scale-110  duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="about" smooth={true} offset={170} duration={700}>My Story</Link></span></li>
@@ -31,15 +31,15 @@ const Navbar = () => {
             </ul>
 
             {/** Hamburger */}
-            <div onClick={handleClick} className='md:hidden z-[300] duration-500'>
-                {!nav ? <HiOutlineMenuAlt4 style={{ color: '#333333'}}/> : <AiOutlineClose style={{ color: '#333333'}}/>}
+            <div onClick={handleClick} className='md:hidden z-[300] duration-500 cursor-pointer'>
+                {!nav ? <HiOutlineMenuAlt4 style={{ color: '#666666'}}/> : <AiOutlineClose className='text-[#777777] hover:text-white duration-300'/>}
             </div>
             
             {/** Mobile Menu */}
-            <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#FFFFE6] px-4 py-6 flex flex-col z-[200]'}>
-            <h1 className='font-[Megrim] font-thin text-2xl text-[#333333]'>AKHILESH BITLA</h1>
-                <ul className='items-center justify-center flex flex-col text-[#333333]'>
-                    <li className=' py-6 text-3xl justify-center'>
+            <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-[650px] rounded-bl-3xl rounded-br-3xl font-medium bg-[#222222] px-4 py-6 md:hidden flex flex-col z-[200]'}>
+            <h1 className='font-[Megrim] text-3xl text-white font-bold'>AKHILESH BITLA</h1>
+                <ul className='items-center justify-center flex flex-col text-white'>
+                    <li className=' py-6 text-3xl justify-center '>
                         <Link onClick={handleClick} to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link>
                     </li>
                     <li className=' py-6 text-3xl'>
@@ -51,12 +51,14 @@ const Navbar = () => {
                     <li className=' py-6 text-3xl'>
                         <Link onClick={handleClick} to="experience" smooth={true} offset={0} duration={700}>Experience</Link>
                     </li>
-                    <li className=' py-6 text-3xl'>Projects</li>
+                    <li className=' py-6 text-3xl'>
+                    <Link onClick={handleClick} to="projects" smooth={true} offset={-40} duration={700}>Projects</Link>
+                    </li>
                     <div className="flex w-[50%] justify-between py-5">
-                        <FaLinkedin size={30} className='cursor-pointer mobile-linkedin'/>
-                        <FaGithub size={30} className='cursor-pointer mobile-github'/>
-                        <BsFillPersonLinesFill size={30} className='cursor-pointer mobile-contact'/>
-                        <BiFile size={30} className='cursor-pointer mobile-resume'/>
+                        <a href="https://www.linkedin.com/in/akhileshbitla/" target="_blank"><FaLinkedin size={30} className='cursor-pointer text-blue-500 '/></a>
+                        <a href="https://github.com/akhilbz" target="_blank" ><FaGithub size={30} className='cursor-pointer text-[#9f9f9f]'/></a>
+                        <a href="mailto:akhilesh.bitla@utexas.edu" target="_blank"><HiOutlineMail size={30} className='cursor-pointer text-[#d0caca]'/></a>
+                        <a href="https://drive.google.com/file/d/1lLdDjP1s_dRUO2RdgY3chnFZlNmMQON0/view?usp=sharing" target="_blank"><BiFile size={30} className='cursor-pointer text-[#FFA86E]'/></a>
                     </div>
                 </ul>
             </div>
