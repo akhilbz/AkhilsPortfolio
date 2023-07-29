@@ -11,22 +11,22 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#FFFFE6] text-gray-300 z-[1000]">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#121212]  z-[1000]">
             <div className='flex'>
-                <h1 className='font-[Megrim] font-bold glitch text-3xl text-[#001220]'>AKHILESH BITLA</h1>
+                <h1 className='font-[Megrim] font-bold glitch text-3xl text-white cursor-pointer'><Link to="home" spy={true} smooth={true} offset={0} duration={700}>AKHILESH BITLA</Link></h1>
             </div>
 
             {/* menu */}
-            <ul className='hidden md:flex font-medium text-[#001220]'>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
+            <ul className='hidden md:flex font-medium text-white'>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link></span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
-                    <Link to="about" smooth={true} offset={250} duration={700}>My Story</Link></span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
+                    <Link to="about" smooth={true} offset={170} duration={700}>My Story</Link></span></li>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="edu" smooth={true} offset={550} duration={700}>Education</Link></span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="experience" smooth={true} offset={200} duration={700}>Experience</Link></span></li>
-                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#001220] border-spacing-8 duration-500 border-[#FFFFE6] px-1 inline'>
+                <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#F7760E] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                 <Link to="projects" smooth={true} offset={-70} duration={700}>Projects</Link></span></li>
             </ul>
 
@@ -68,17 +68,17 @@ const Navbar = () => {
                             LinkedIn <FaLinkedin size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#333333]'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#212121]'>
                         <a href="https://github.com/akhilbz" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             GitHub <FaGithub size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#a18fd8]'>
-                        <a href="/" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
-                            Contact <BsFillPersonLinesFill size={30} />
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl hover:rounded-br-2xl duration-300 bg-[#d0caca]'>
+                        <a href="mailto:akhilesh.bitla@utexas.edu" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                            Email <HiOutlineMail size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl duration-300 bg-[#6fc2b0] rounded-br-2xl'>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl duration-300 bg-[#F7760E] rounded-br-2xl'>
                         <a href="https://drive.google.com/file/d/1lLdDjP1s_dRUO2RdgY3chnFZlNmMQON0/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Resume <BiFile size={30} />
                         </a>

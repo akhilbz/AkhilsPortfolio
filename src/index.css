@@ -13,11 +13,11 @@
 @keyframes year-animation {
   0% {
     /* background-color: #333333; */
-    color: #a18fd8;
+    color: #87CEFA;
   }
   25% {
     /* background-color: #FFFFE6; */
-    color: #6fc2b0;
+    color: #CCCCCC;
   }
   50% {
     /* background-color: #FFFFE6; */
@@ -25,11 +25,11 @@
   }
   75% {
     /* background-color: #FFFFE6; */
-    color: #FFFFE6;
+    color: #FFFFFF;
   }
   100% {
     /* background-color: #333333; */
-    color: #a18fd8;
+    color: #87CEFA;
   }
 }
 
@@ -42,15 +42,15 @@
 @keyframes ut-animation {
   0% {
     background-color: #BF5700;
-    color: #FFFFE6;
+    color: #FFFFFF;
   }
   50% {
-    background-color: #FFFFE6;
+    background-color: #FFFFFF;
     color: #BF5700;
   }
   100% {
     background-color: #BF5700;
-    color: #FFFFE6;
+    color: #FFFFFF;
   }
 }
 .ut-animate {
@@ -104,7 +104,7 @@
   font-family: 'Libre Baskerville', serif;
 }
 .parallelogram-top {
-  background-color: #FFA86E;
+  background-color: #CCCCCC;
   /* width: 800px; */
   /* height: 85px; */
   transform: skewX(20deg);
@@ -149,7 +149,7 @@
 }
 
 .home-about-spacer {
-  aspect-ratio: 1512/400;
+  aspect-ratio: 1512/300;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -161,8 +161,8 @@
   background-image: url('./assets/layer-transitions/layers.svg');
 }
 
-.about-edu-spacer {
-  aspect-ratio: 1512/350;
+/* .about-edu-spacer {
+  aspect-ratio: 1512/300;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -172,10 +172,10 @@
 
 .about-edu-layer {
   background-image: url('./assets/layer-transitions/layers2.svg');
-}
+} */
 
 .edu-exper-spacer {
-  aspect-ratio: 1512/350;
+  aspect-ratio: 1512/300;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -215,8 +215,35 @@
   right: 0;
 }
 
+.email-highlight h1 {
+  color: white;
+}
+
+.email-highlight HiOutlineMail {
+  color: white;
+}
+
+.email-highlight:hover h1 {
+  color: #FFA86E;
+}
+
+.email-highlight:hover #mail {
+  color: #FFA86E;
+}
+
+.linkedin-highlight h1 {
+  color: white;
+}
+
+.linkedin-highlight:hover h1 {
+  color: #87CEFA;
+}
+
+.linkedin-highlight:hover #linkedIn {
+  color: rgb(37 99 235);
+}
 .exper-prjs-spacer {
-  aspect-ratio: 1512/350;
+  aspect-ratio: 1512/300;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
