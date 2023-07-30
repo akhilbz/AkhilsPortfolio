@@ -55,35 +55,28 @@ const Education = () => {
             <div  className=" flex-col flex items-center justify-center h-[fit-content] xl:pl-[80px] w-full px-2 pb-2">
             <h1 className="text-6xl sm:text-6xl md:text-8xl font-bold title-name justify-center flex text-white pb-4" style={{ textDecoration: 'underline'}}>Education</h1>
                 <img src={utAustin} alt="" className='rounded-2xl justify-center mb-4 w-[700px] flex' style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}/>
-                {/* <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold title-name justify-center ut-font ut-animate rounded-xl pb-2 flex pt-3'>University of Texas at Austin</h1> 
-                <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-[#FFFFE6] pt-2 cns-edu-title '><div className='text-[#a18fd8] text-2xl sm:text-3xl bg-[#333333] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
-                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold md:justify-end justify-center flex text-[#333333] cns-edu-title '> College of Natural Sciences</h3> */}
                 <h1 className='text-3xl font-bold title-name justify-center ut-font ut-animate rounded-xl sm:pb-2 flex py-2 px-2'>University of Texas at Austin</h1> 
             </div>
 
             <div className="w-[fit-content] h-[fit-content] flex justify-start items-center flex-col sm:pt-3 pt-1">
                 <div className="flex-col flex xl:items-end ">
-                    <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-white cns-edu-title '><div className='text-[#a18fd8] text-2xl sm:text-3xl bg-[#1C1C1C] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
+                    <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-white cns-edu-title '><div className='text-2xl sm:text-3xl bg-[#1C1C1C] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
                     <h3 className='text-2xl sm:text-3xl font-bold xl:justify-end justify-center flex text-[#FFA86E] cns-edu-title '> College of Natural Sciences</h3>
                     </div>
-                    <div className="flex-col lg:my-[40px] my-5 rounded-2xl w-[fit-content] mx-[30px] md:mx-[150px] lg:mx-[75px] py-2 text-[#CCCCCC]">
-                    <p className='flex justify-center px-3 font-normal mb-4'>I’m a rising Sophomore pursuing a CS degree with an Entrepreneurship Minor at the University of Texas at Austin. 
-                        I have completed Data Structures, Discrete Math and Computer Architecture and Organization in my coursework. In Fall 2023, 
-                        I will be learning Operating Systems. Then Algorithms in the Spring. This will conclude my core requirements for my degree.</p>
-                    <p className='flex justify-center px-3 font-normal mb-4'>Some of the organizations I’ve been part of are Texas ACM and Freetail Hackers. With a team of three friends, 
-                        I have participated in Freetail Hacker’s HackTX 2022 competition and received a “Best Overall on a Beginners’ Track Award.”
-                         More info in Projects section.</p>
-                    <p className='flex justify-center px-3 font-normal mb-4'>During my Sophomore year, I'm planning on participating in either Texas Momentum or Texas Convergent, Texas Luminescence, and FreeTail Hackers' Hackathons. 
-                        Moreover, I am excited to work on my personal projects to expand my full-stack development knowledge.</p>
+                    <div className=" flex-col flex justify-center lg:my-[20px] my-5 md:text-xl text-lg w-[fit-content] mx-[60px] md:ml-[140px] lg:mx-[200px] xl:mx-[75px] py-2 text-[#CCCCCC]">
+                    <p className='font-light mb-4'>I'm a <span className='text-white md:text-2xl text-xl font-semibold'>rising Sophomore</span> pursuing a CS degree with an <span className='text-[#87CEFA] font-semibold'>Entrepreneurship Minor</span> at the <span className='text-[#FFA86E] font-semibold'>University of Texas at Austin</span>.
+                    I've completed Data Structures, Discrete Math, and Computer Architecture and Organization. In Fall 2023, I'll be taking <span className='text-white font-semibold'>Operating Systems</span> and <span className='text-white font-semibold'>Algorithms</span> in the Spring, completing my core requirements.</p>
+                    <p className='font-light mb-4'>I've been involved in <span className='text-white font-semibold'>Texas ACM</span> and <span className='text-white font-semibold'>Freetail Hackers</span>. 
+                    My team won the <span className='text-white font-semibold'>"Best Overall on a Beginners’ Track Award"</span> at HackTX 2022. During my Sophomore year, I plan to participate in <span className='text-[#FF5050] font-semibold'>Texas Momentum</span> or <span className='text-[#87CEFA] font-semibold'>Texas Convergent</span>, <span className='text-[#FFD700] font-semibold'>Texas Luminescence</span>, and <span className='text-[#00CC66] font-semibold'>FreeTail Hackers' Hackathons</span>. 
+                    Additionally, I'm excited to work on personal projects to enhance my <span className='text-white font-semibold'>full-stack development</span> knowledge.</p>
                     </div>
             </div>
         </div>
-        <div className="w-full h-full flex flex-col justify-center items-center bg-[#333333] md:pt-[140px] pt-[20px]">
+        <div className="w-full h-full flex flex-col justify-center items-center bg-[#333333] md:pt-[40px] pt-[20px]">
             <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold justify-end flex title-name text-[#87CEFA]">Entrepreneurship Minor</h2>
             <h3 className='text-xl sm:text-2xl md:text-3xl font-bold justify-end flex text-[#CCCCCC] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
-            {/* <div className="sm:w-full w-[fit-content] flex-col"> */}
             <div className="mt-2 w-[fit-content] md:w-full flex-col lg:flex-row flex lg:items-start items-center ">
-                <div className="flex lg:ml-[70px] lg:flex-col flex-row justify-center items-start w-[fit-content]">
+                <div className="flex lg:ml-[70px] lg:flex-col flex-row md:mb-2 justify-center items-start w-[fit-content]">
                     <div className="hover:scale-95 duration-500 flex bg-[#1C1C1C] mb-3 rounded-2xl md:w-[250px] md:h-[250px] w-[200px] h-[200px] items-center ml-2 lg:ml-[0px]" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                         <img src={mccombs} alt="" className='ml-6 rounded-2xl  md:w-[200px] md:h-[200px] w-[150px] h-[150px]' style={{ boxShadow: '0 0 10px rgba(255, 165, 0, 0.5)' }}/>
                     </div>
@@ -111,24 +104,23 @@ const Education = () => {
                         </div>  
                         </div>
                     </div> 
-                    <div className='hidden lg:block text-[#CCCCCC] xl:w-[fit-content] w-0 xl:h-[512px] h-0  mx-3 p-3 rounded-2xl font-normal' style={{overflow: 'hidden'}}>
-                    <p>Ranked 2nd in the nation, the Entrepreneurship Minor at McCombs School of Business stands as a highly prestigious program.
-                        In Summer 2023, I successfully completed this rigorous minor by participating in the enriching Summer Entrepreneurship Academy (SEA). 
-                        Throughout the program's eight weeks, I had the opportunity to engage in four out of five essential classes, each contributing to my entrepreneurial education.</p>
-                        <p>At SEA, I honed essential skills, including confident and effective pitching, brainstorming innovative solutions, validating market potential for ideas, and transforming concepts into viable business models. 
-                            This transformative experience exposed me to the vital traits shared by successful entrepreneurs.</p>
-                        <p>The academy proved to be much more than a learning opportunity; it became a truly valuable experience. 
-                            I formed meaningful connections with extraordinary students from diverse backgrounds. Together, we navigated the fundamentals of entrepreneurship, fostering collaborative growth and friendship.</p>  
-                        <p>SEA has been a pivotal chapter in my academic journey, equipping me with valuable skills and empowering me to approach challenges with creativity and perseverance.</p>
+                    <div className='hidden xl:block text-[#a9a9a9] xl:w-[fit-content] w-full xl:h-[512px] h-0 p-5 font-light md:text-xl text-lg border-t-2 border-b-2 border-[#CCCCCC] rounded-t-md rounded-b-md mx-2' style={{overflowX: 'hidden'}}>
+                    <p>Ranked no. <span className='highlight-impact font-[Anton] md:text-3xl text-2xl text-white' style={{ position: 'relative', top: '3px' }}>2</span> in the nation, the <span className='text-[#FFA86E] font-semibold'>Entrepreneurship Minor at McCombs School of Business</span> is a prestigious program. 
+                        I completed this rigorous minor during the enriching  <span className='text-white font-semibold'>Summer Entrepreneurship Academy</span> (SEA) in Summer 2023. 
+                        Over eight weeks, I engaged in four of five essential classes, honing skills such as <span className='text-white font-semibold'>confident pitching</span>, <span className='text-white font-semibold'>innovative thinking</span>,<span className='text-white font-semibold'>market validation</span>, and <span className='text-white font-semibold'>business model creation</span>.</p> 
+                        
+                    <p className='pt-3'>This transformative experience taught me crucial traits of <span className='text-white font-semibold'>successful entrepreneurs</span> and allowed me to form meaningful connections with extraordinary students from diverse backgrounds.
+                        SEA has been a <span className='text-white font-[Anton] text-2xl' style={{ position: 'relative', top: '3px' }}>pivotal chapter</span> in my academic journey.</p>
                     </div>
                 </div>
                 <div className="flex-col justify-start">
-                    <div className='xl:hidden lg:ml-[70px] lg:w-[968px] md:w-[700px] w-[480px] xl:w-[fit-content] h-[fit-content] justify-center mx-3 p-3 rounded-2xl font-normal' style={{overflow: 'hidden'}}>
-                        <p className='xl:hidden block text-[#CCCCCC]'>Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset xxx`sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div className='xl:hidden text-[#CCCCCC] lg:ml-[70px] lg:w-[768px] md:w-[650px] md:ml-[55px] sm:w-[580px] w-[480px] xl:w-[fit-content] h-[fit-content] justify-center sm:px-0 px-9 py-4  font-light md:text-xl text-lg' style={{overflow: 'hidden'}}>
+                    <p>Ranked no. <span className='highlight-impact font-[Anton] md:text-3xl text-2xl text-white' style={{ position: 'relative', top: '3px' }}>2</span> in the nation, the <span className='text-[#FFA86E] font-semibold'>Entrepreneurship Minor at McCombs School of Business</span> is a prestigious program. 
+                        I completed this rigorous minor during the enriching  <span className='text-white font-semibold'>Summer Entrepreneurship Academy</span> (SEA) in Summer 2023. 
+                        Over eight weeks, I engaged in four of five essential classes, honing skills such as <span className='text-white font-semibold'>confident pitching</span>, <span className='text-white font-semibold'>innovative thinking</span>,<span className='text-white font-semibold'>market validation</span>, and <span className='text-white font-semibold'>business model creation</span>.</p> 
+                        
+                    <p className='pt-3'>This transformative experience taught me crucial traits of <span className='text-white font-semibold'>successful entrepreneurs</span> and allowed me to form meaningful connections with extraordinary students from diverse backgrounds.
+                        SEA has been a <span className='text-white font-[Anton] md:text-2xl text-xl' style={{ position: 'relative', top: '3px' }}>pivotal chapter</span> in my academic journey.</p>
                     </div>
                 </div>
             {/* </div> */}

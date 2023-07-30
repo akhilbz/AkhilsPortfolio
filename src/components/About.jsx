@@ -40,19 +40,14 @@ const About = () => {
                 <div className="w-full h-[fit-content] xl:grid xl:grid-cols-2  ">
                     <div className="lg:pl-[90px] sm:h-[fit-content] items-center flex flex-col">
                         <p className="text-5xl sm:text-8xl font-bold title-name justify-center flex pb-2 text-white" style={{ textDecoration: 'underline'}}>My Story</p>
-                        <div name="edu" className=" py-2 text-[#CCCCCC] justify-center  w-[fit-content] h-[fit-content] rounded-2xl sm:mt-[20px] mx-5">
-                            <p className=" flex justify-center  font-normal mb-[4px]" >Hello! My name is Akhilesh Bitla. Before I delve in, thank you so much for taking the time to learn more about me and my work! 
-                            Your interest is greatly appreciated! As you probably can see, I still have a long way to go, 
-                            but my commitment, passion, and unwavering determination drive me to surpass my limitations and forge a path towards a successful career.</p>
-                            <p className=" flex justify-center font-normal mb-[4px]" >Embarking on a journey with CS has been a bumpy road with all sorts of twists and turns for me, and I barely started Sophomore year. 
-                            Its a pot-load of an adventure! Sometimes it can be pretty scary and stressful. Other times, it can be as exciting as winning the lottery! 
-                            Definitely, a huge mood-swinger, and I’m sure all of my CS-major peers can relate to this.</p>
-                            <p className=" flex justify-center font-normal mb-[4px]">Most importantly, throughout my entire academic career, I have learned to embrace mistakes and cultivate a growth mindset. 
-                            I firmly believe that this mindset is not only essential for education but also crucial for excelling in internships and thriving in my professional journey. 
-                            It is this mindset that has fueled my passion for various aspects of Computer Science.</p>
-                            <p className=" flex justify-center font-normal text-base">From intricate algorithms that power efficient data processing to elegant design principles that form user-friendly interfaces, I am captivated by the endless possibilities within the realm of computer science. 
-                            Delving into full stack development presents an exciting opportunity to enhance my expertise by exploring the powerful integration between backend and frontend components 
-                            and gaining a comprehensive grasp of the holistic development process.</p>
+                        <div name="edu" className=" py-2 text-[#CCCCCC] sm:text-xl text-lg font-light w-[fit-content] h-[fit-content] sm:mt-[20px] mx-[65px]">
+                            <p className=" mb-[10px]" >Hi there! My name is <span className="font-semibold text-white text-xl sm:text-2xl">Akhilesh Bitla</span>, and I want to thank you for showing interest in me and my work. 
+                            I'm passionate about <span className="font-semibold text-white">Computer Science</span> and always striving to overcome challenges. 
+                            The journey has been exciting and stressful, but I embrace mistakes and believe in a <span className="font-semibold text-[#FFD700]">growth mindset</span>. 
+                            Computer Science offers endless possibilities, from algorithms to elegant design principles. 
+                            I'm particularly interested in <span className="font-semibold text-[#FF5050]">full-stack development</span>, where I can explore integrating backend and frontend components to create holistic solutions.</p>
+                            <p>After developing a strong experience as a <span className="font-semibold text-[#FF5050]">Full Stack developer</span>, my goal is to enter the realm of <span className="font-semibold text-[#00CC66]">AI</span> and <span className="font-semibold text-[#87CEFA]">Machine Learning</span>, and 
+                            develop scalable and efficient software tools that can make an <span className="font-semibold text-white text-xl sm:text-2xl">IMPACT</span> on people's lives.</p>
                         </div>
                     </div>
                     <div className="xl:pt-[25px]">
