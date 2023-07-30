@@ -111,12 +111,15 @@ const Education = () => {
                         </div>  
                         </div>
                     </div> 
-                    <div className='hidden lg:block xl:w-[fit-content] w-0 xl:h-[512px] h-0  mx-3 p-3 rounded-2xl font-normal' style={{overflow: 'hidden'}}>
-                        <p className='hidden xl:block text-[#CCCCCC]'>Hey! This is Akhilesh Bitla. Welcome to my life! Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-                        It was popularised in the 1960s with the release of Letraset xxx`sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div className='hidden lg:block text-[#CCCCCC] xl:w-[fit-content] w-0 xl:h-[512px] h-0  mx-3 p-3 rounded-2xl font-normal' style={{overflow: 'hidden'}}>
+                    <p>Ranked 2nd in the nation, the Entrepreneurship Minor at McCombs School of Business stands as a highly prestigious program.
+                        In Summer 2023, I successfully completed this rigorous minor by participating in the enriching Summer Entrepreneurship Academy (SEA). 
+                        Throughout the program's eight weeks, I had the opportunity to engage in four out of five essential classes, each contributing to my entrepreneurial education.</p>
+                        <p>At SEA, I honed essential skills, including confident and effective pitching, brainstorming innovative solutions, validating market potential for ideas, and transforming concepts into viable business models. 
+                            This transformative experience exposed me to the vital traits shared by successful entrepreneurs.</p>
+                        <p>The academy proved to be much more than a learning opportunity; it became a truly valuable experience. 
+                            I formed meaningful connections with extraordinary students from diverse backgrounds. Together, we navigated the fundamentals of entrepreneurship, fostering collaborative growth and friendship.</p>  
+                        <p>SEA has been a pivotal chapter in my academic journey, equipping me with valuable skills and empowering me to approach challenges with creativity and perseverance.</p>
                     </div>
                 </div>
                 <div className="flex-col justify-start">
