@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <>
         <div name="home" className="w-full h-screen bg-[#121212] z-10 px-8 sm:px-0 ">
-            <div className="max-w-[1000px] lg:mx-auto sm:ml-9 mx-auto  px-8 flex flex-col justify-center h-[750px] ">
+            <div className="max-w-[1000px] lg:mx-auto sm:ml-9 mx-auto ml-0 px-8 flex flex-col justify-center h-[750px] ">
                 <div className="flex ">
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light ">Welcome!&nbsp;</p>
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light ">My name is </p>

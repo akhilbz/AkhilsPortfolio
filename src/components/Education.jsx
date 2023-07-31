@@ -85,9 +85,9 @@ const Education = () => {
                         <img src={harkey} alt="" className='ml-6 rounded-2xl  md:w-[200px] md:h-[200px] w-[150px] h-[150px]' style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)' }}/>
                     </div>
                 </div> 
-                <div className="flex-col xl:flex-row xl:flex sm:justify-start justify-center sm:items-start items-center sm:ml-3 ">
+                <div className="flex-col xl:flex-row flex sm:ml-3 ">
                     <div className="rounded-2xl bg-center bg-cover ">
-                        <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group md:w-[700px] md:h-[512px] w-[450px] h-[300px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
+                        <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group md:w-[700px] md:h-[512px] w-auto h-[300px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                         <div className="hidden group-hover:block justify-start text-3xl p-2 text-[#FFFFFF] cursor-pointer">
                             <BsChevronCompactLeft onClick={prevSlide} size={35} />
                         </div>
