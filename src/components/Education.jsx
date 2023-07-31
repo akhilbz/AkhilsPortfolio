@@ -118,7 +118,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className="flex-col justify-start">
-                    <div className='xl:hidden text-[#CCCCCC] sm:text-start text-center lg:w-[768px] md:w-[650px] sm:px-[10px] sm:w-[580px] w-[480px] xl:w-[fit-content] h-[fit-content] justify-center py-4 font-light md:text-xl text-lg' style={{overflow: 'hidden'}}>
+                    <div className='xl:hidden text-[#CCCCCC] sm:text-start text-center lg:w-[768px] md:w-[650px] sm:px-[10px] sm:w-[580px] w-[480px] mx-[auto] xl:w-[fit-content] h-[fit-content] justify-center py-4 font-light md:text-xl text-lg overflow-hidden' style={{overflow: 'hidden'}}>
                     <p>In Summer 2023, I completed the rigorous <span className='text-[#FFA86E] font-semibold'>Entrepreneurship Minor</span> at <span className='text-[#FFA86E] font-semibold'>McCombs School of Business</span> by pursuing the enriching  <span className='text-white font-semibold'>Summer Entrepreneurship Academy (SEA)</span>.</p>
                     <p>Ranked no. <span className='highlight-impact font-[Anton] md:text-3xl text-2xl text-white' style={{ position: 'relative', top: '3px' }}>2</span> in the nation, the <span className='text-[#FFA86E] font-semibold'>Entrepreneurship Minor</span> presented a challenging yet rewarding journey, 
                     consisting of a demanding workload that I aimed to complete over the summer to make time to improve upon my entrepreneurship skills.
