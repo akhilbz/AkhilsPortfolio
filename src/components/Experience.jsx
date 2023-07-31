@@ -54,10 +54,10 @@ const Experience = () => {
             </div>
             <div className="w-full h-[fit-content] flex-col">  
                 <div className="flex lg:flex-row flex-col lg:justify-between justify-center lg:items-start items-center xl:pr-[125px] sm:pr-[80px] lg:pb-[50px] mt-8">      
-                <h2 className="md:flex lg:hidden text-4xl md:text-6xl lg:text-8xl font-bold title-name text-white pb-7 sm:pl-[80px] sm:inline-flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>          
+                <h2 className="md:flex lg:hidden text-5xl md:text-6xl lg:text-8xl sm:font-bold title-name text-white pb-7 sm:pl-[80px] sm:inline-flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>          
                 <div className="lg:flex hidden lg:flex-col">
                     <div className="flex-col">
-                    <h2 className="text-4xl md:text-6xl xl:text-8xl title-name text-white pb-7  sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
+                    <h2 className="text-5xl md:text-6xl xl:text-8xl title-name text-white pb-7  sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
                     
                     <div id='intern-div' className="ml-[80px] h-[300px] xl:w-[700px] lg:w-[600px] bg-[#666666] rounded-2xl flex-row flex">
                         <div className='flex p-1 justify-between flex-row'>
@@ -322,7 +322,7 @@ const Experience = () => {
                 </div>
             </div>
             <div id="tech-stack" className="mt-[240px] lg:mt-[50px] lg:pt-0 pt-[50px] relative">
-                <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold title-name text-white pt-3 flex justify-center" style={{textDecoration: 'underline'}}>My Tech Stack</h2>
+                <h2 className="text-5xl md:text-6xl sm:font-bold title-name text-white pt-3 flex justify-center" style={{textDecoration: 'underline'}}>My Tech Stack</h2>
                 <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#87CEFA] pt-6 flex sm:pl-[225px]  sm:justify-start w-full justify-center'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Proficient</span></h3>
                 <div className="w-full justify-center flex flex-wrap">
                 <div className="sm:w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px]">
