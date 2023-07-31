@@ -224,11 +224,11 @@
 }
 
 .email-highlight:hover h1 {
-  color: #FFA86E;
+  color: #cccccc;
 }
 
 .email-highlight:hover #mail {
-  color: #FFA86E;
+  color: #989898;
 }
 
 .linkedin-highlight h1 {
@@ -241,6 +241,18 @@
 
 .linkedin-highlight:hover #linkedIn {
   color: rgb(37 99 235);
+}
+
+.file-highlight h1 {
+  color: white;
+}
+
+.file-highlight:hover h1 {
+  color: #F7760E;
+}
+
+.file-highlight:hover #file {
+  color: #F7760E;
 }
 .exper-prjs-spacer {
   aspect-ratio: 1512/300;

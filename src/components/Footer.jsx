@@ -1,13 +1,13 @@
 import React from 'react'
 import { HiOutlineMail } from 'react-icons/hi';
 import { FaLinkedin } from 'react-icons/fa';
-
+import { BiFile } from 'react-icons/bi';
 
 
 const Footer = () => {
   return (
-    <div className='w-full xl:h-[500px] h-full bg-[#121212] flex xl:justify-between justify-center items-center'>
-         <div className="lg:ml-[80px] h-full rounded-2xl xl:flex-row flex-col justify-between flex">
+    <div className='w-full xl:h-[500px] md:h-[630px]  h-[900px] bg-[#121212] flex xl:justify-between justify-center items-center'>
+         <div className="lg:ml-[80px] rounded-2xl xl:flex-row flex-col justify-between flex">
             <div className="h-full">
                 <h1 className='text-3xl sm:text-5xl text-white font-normal flex sm:justify-start justify-center p-1 mt-8'>Interested in my work?</h1>
                 <div className='flex p-1 justify-between md:flex-row flex-col'>
@@ -30,23 +30,32 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center sm:justify-start xl:pr-4 pl-1">
+            <div className="flex justify-center h-[fit-content] md:justify-start xl:pr-4 pl-1">
                 <div className="xl:w-full w-[400px] flex flex-col xl:justify-between justify-evenly xl:ml-[50px] xl:mt-[145px] h-[200px] text-white">
                     <div className="">
                         <h1 className='xl:text-lg text-xl font-normal '>Need to write a longer message?</h1>
                         <h1 className='xl:text-lg text-xl font-normal '>Feel free to reach out to me via my socials!</h1>
                     </div>
-                    <div className="pb-[45px] w-full">
-                        <a href="mailto:akhilesh.bitla@utexas.edu">
-                        <div className="flex justify-between flex-row email-highlight">
+                    <div className=" w-full">
+                        <a href="mailto:akhilesh.bitla@utexas.edu" >
+                        <div className="flex justify-between flex-row email-highlight mb-2">
                         <HiOutlineMail id='mail' size={30} className=' duration-500'/>
                         <h1 className='flex justify-end font-normal duration-500'>akhilesh.bitla@utexas.edu</h1>
                         </div>
                         </a>
                         <a href="https://www.linkedin.com/in/akhileshbitla/" target="_blank">
-                        <div className="flex justify-between flex-row linkedin-highlight">
+                        <div className="flex justify-between flex-row linkedin-highlight pb-8">
                         <FaLinkedin id='linkedIn' className='duration-500' size={30} />
                         <h1 className='flex justify-end font-normal duration-500'>Akhilesh Bitla</h1>
+                        </div>
+                        </a>
+                    </div>
+                    <div className="flex-col w-full">
+                        <h1 className='font-normal xl:text-lg text-xl '>Grab a copy of my resume!</h1>
+                        <a href="https://drive.google.com/file/d/1-n198T_DnUOjJElbZk7zRN8Xdje9Rw5x/view?usp=sharing" target="_blank">
+                        <div className="flex justify-between flex-row file-highlight">
+                        <BiFile id='file' className='duration-500' size={30} />
+                        <h1 className='flex justify-end font-normal duration-500'>Resume</h1>
                         </div>
                         </a>
                     </div>

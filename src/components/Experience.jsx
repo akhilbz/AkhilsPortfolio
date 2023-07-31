@@ -175,104 +175,116 @@ const Experience = () => {
                 <div id='two-to-eight' className="w-full flex justify-center">
                 <div className="justify-end  pr-[170px] pt-3 lg:flex hidden">
                     <div className="pr-3 pt-[290px]">
-                        <div onClick={() => { 
-                        clearContent();
-                        const experDiv = document.getElementById('exper-div');
-                        const description = document.getElementById('exper-description');
-                        const internDiv = document.getElementById('intern-div');
-                        internDiv.style.display = 'none';
-                        experDiv.style.display = 'flex';
-                        description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "#8: \"My space has a while... probably going to Netflix & Chill in the meantime. 🍿\"";
-                        const descriptions = [p1];
-                        showContent(descriptions);
-                        }} className='xl:flex hidden flex-col justify-center ml-4 w-[20px] h-[20px] bg-[#1C1C1C] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 16px #FFFFFF' }}>
+                        <div 
+                        // onClick={() => { 
+                        // clearContent();
+                        // const experDiv = document.getElementById('exper-div');
+                        // const description = document.getElementById('exper-description');
+                        // const internDiv = document.getElementById('intern-div');
+                        // internDiv.style.display = 'none';
+                        // experDiv.style.display = 'flex';
+                        // description.style.transitionDuration = '500ms';
+                        // const p1 = document.createElement("p");
+                        // p1.innerHTML = "#8: \"My space has a while... probably going to Netflix & Chill in the meantime. 🍿\"";
+                        // const descriptions = [p1];
+                        // showContent(descriptions);
+                        // }} 
+                        className='xl:flex hidden flex-col justify-center ml-4 w-[20px] h-[20px] bg-[#1C1C1C] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 16px #FFFFFF' }}>
                         <p className='tiers-font my-1 text-white' style={{ fontSize: '0.6rem'}}>#8</p>
                         </div>
                     </div>
                     <div className="pr-7 pt-[330px]">
-                        <div onClick={() => { 
-                        clearContent();
-                        const experDiv = document.getElementById('exper-div');
-                        const description = document.getElementById('exper-description');
-                        const internDiv = document.getElementById('intern-div');
-                        internDiv.style.display = 'none';
-                        experDiv.style.display = 'flex';
-                        description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "#7: \"My space is going to take a while to fill up, but it's definitely worth the wait! 😌\"";
-                        const descriptions = [p1];
-                        showContent(descriptions);
-                        }} className='lg:flex hidden flex-col justify-center ml-4 w-[40px] h-[40px] bg-[#333333] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #333333' }}>
+                        <div 
+                        // onClick={() => { 
+                        // clearContent();
+                        // const experDiv = document.getElementById('exper-div');
+                        // const description = document.getElementById('exper-description');
+                        // const internDiv = document.getElementById('intern-div');
+                        // internDiv.style.display = 'none';
+                        // experDiv.style.display = 'flex';
+                        // description.style.transitionDuration = '500ms';
+                        // const p1 = document.createElement("p");
+                        // p1.innerHTML = "#7: \"My space is going to take a while to fill up, but it's definitely worth the wait! 😌\"";
+                        // const descriptions = [p1];
+                        // showContent(descriptions);
+                        // }} 
+                        className='lg:flex hidden flex-col justify-center ml-4 w-[40px] h-[40px] bg-[#333333] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #333333' }}>
                         <p className='tiers-font my-1 text-[#CCCCCC]' style={{ fontSize: '1rem'}}>#7</p>
                         </div>
                     </div>
                     <div className="pr-[35px] pt-[370px]">
-                        <div onClick={() => { 
-                        clearContent();
-                        const experDiv = document.getElementById('exper-div');
-                        const description = document.getElementById('exper-description');
-                        const internDiv = document.getElementById('intern-div');
-                        internDiv.style.display = 'none';
-                        experDiv.style.display = 'flex';
-                        description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "#6: \"Waiting for #5 to fill up... ⌛\"";
-                        const descriptions = [p1];
-                        showContent(descriptions);
-                        }} className='lg:flex hidden flex-col justify-center ml-4 w-[60px] h-[60px] bg-[#4F4F4F] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #4F4F4F' }}>
+                        <div 
+                        // onClick={() => { 
+                        // clearContent();
+                        // const experDiv = document.getElementById('exper-div');
+                        // const description = document.getElementById('exper-description');
+                        // const internDiv = document.getElementById('intern-div');
+                        // internDiv.style.display = 'none';
+                        // experDiv.style.display = 'flex';
+                        // description.style.transitionDuration = '500ms';
+                        // const p1 = document.createElement("p");
+                        // p1.innerHTML = "#6: \"Waiting for #5 to fill up... ⌛\"";
+                        // const descriptions = [p1];
+                        // showContent(descriptions);
+                        // }} 
+                        className='lg:flex hidden flex-col justify-center ml-4 w-[60px] h-[60px] bg-[#4F4F4F] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #4F4F4F' }}>
                         <p className='tiers-font my-1 text-[#b6b4b4] text-2xl'>#6</p>
                         </div>
                     </div>
                     <div className="pr-[35px] pt-[370px]">
-                        <div onClick={() => { 
-                        clearContent();
-                        const experDiv = document.getElementById('exper-div');
-                        const description = document.getElementById('exper-description');
-                        const internDiv = document.getElementById('intern-div');
-                        internDiv.style.display = 'none';
-                        experDiv.style.display = 'flex';
-                        description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "#5: \"Waiting for #4 to fill up... ⌛\"";
-                        const descriptions = [p1];
-                        showContent(descriptions);
-                        }} className='lg:flex hidden flex-col justify-center ml-4 w-[75px] h-[75px] bg-[#6B6B6B] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 20px rgba(107, 107, 107, 0.3)' }}>
+                        <div 
+                        // onClick={() => { 
+                        // clearContent();
+                        // const experDiv = document.getElementById('exper-div');
+                        // const description = document.getElementById('exper-description');
+                        // const internDiv = document.getElementById('intern-div');
+                        // internDiv.style.display = 'none';
+                        // experDiv.style.display = 'flex';
+                        // description.style.transitionDuration = '500ms';
+                        // const p1 = document.createElement("p");
+                        // p1.innerHTML = "#5: \"Waiting for #4 to fill up... ⌛\"";
+                        // const descriptions = [p1];
+                        // showContent(descriptions);
+                        // }} 
+                        className='lg:flex hidden flex-col justify-center ml-4 w-[75px] h-[75px] bg-[#6B6B6B] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 20px rgba(107, 107, 107, 0.3)' }}>
                         <p className='tiers-font my-1 text-[#9a9898] text-4xl'>#5</p>
                         </div>
                     </div>
                     <div className="pr-[55px] pt-[330px]">
-                        <div onClick={() => { 
-                        clearContent();
-                        const experDiv = document.getElementById('exper-div');
-                        const description = document.getElementById('exper-description');
-                        const internDiv = document.getElementById('intern-div');
-                        internDiv.style.display = 'none';
-                        experDiv.style.display = 'flex';
-                        description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "#4: \"Waiting for #3 to fill up... ⌛\"";
-                        const descriptions = [p1];
-                        showContent(descriptions);
-                        }} className='flex flex-col justify-center ml-4 w-[100px] h-[100px] bg-[#878787] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 2px 14px rgba(135, 135, 135, 0.5)' }}>
+                        <div 
+                        // onClick={() => { 
+                        // clearContent();
+                        // const experDiv = document.getElementById('exper-div');
+                        // const description = document.getElementById('exper-description');
+                        // const internDiv = document.getElementById('intern-div');
+                        // internDiv.style.display = 'none';
+                        // experDiv.style.display = 'flex';
+                        // description.style.transitionDuration = '500ms';
+                        // const p1 = document.createElement("p");
+                        // p1.innerHTML = "#4: \"Waiting for #3 to fill up... ⌛\"";
+                        // const descriptions = [p1];
+                        // showContent(descriptions);
+                        // }} 
+                        className='flex flex-col justify-center ml-4 w-[100px] h-[100px] bg-[#878787] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 2px 14px rgba(135, 135, 135, 0.5)' }}>
                         <p className='tiers-font my-1 text-[#595959] text-5xl'>#4</p>
                         </div>
                     </div>
                     <div className="pr-[60px] pt-[240px]">
-                        <div onClick={() => { 
-                        clearContent();
-                        const experDiv = document.getElementById('exper-div');
-                        const description = document.getElementById('exper-description');
-                        const internDiv = document.getElementById('intern-div');
-                        internDiv.style.display = 'none';
-                        experDiv.style.display = 'flex';
-                        description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "#3: \"We'll fill this space soon 👍.\"";
-                        const descriptions = [p1];
-                        showContent(descriptions);
-                        }} className='flex flex-col justify-center w-[150px] h-[150px] bg-[#969595] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px rgba(150, 149, 149, 0.5)' }}>
+                        <div 
+                        // onClick={() => { 
+                        // clearContent();
+                        // const experDiv = document.getElementById('exper-div');
+                        // const description = document.getElementById('exper-description');
+                        // const internDiv = document.getElementById('intern-div');
+                        // internDiv.style.display = 'none';
+                        // experDiv.style.display = 'flex';
+                        // description.style.transitionDuration = '500ms';
+                        // const p1 = document.createElement("p");
+                        // p1.innerHTML = "#3: \"We'll fill this space soon 👍.\"";
+                        // const descriptions = [p1];
+                        // showContent(descriptions);
+                        // }} 
+                        className='flex flex-col justify-center w-[150px] h-[150px] bg-[#969595] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px rgba(150, 149, 149, 0.5)' }}>
                         <p className='tiers-font my-1 text-[#333333] text-6xl py-3 '>#3</p>
                         <div className="bg-[#333333] w-full h-[30px] mt-1  items-start flex-col px-1" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}><div className="border-b-[1px] flex p-2 border-[#ff9717]"></div></div>
                     </div>
