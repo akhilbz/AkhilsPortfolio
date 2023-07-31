@@ -16,7 +16,7 @@ const Home = () => {
                 and meaningful <span className="highlight-impact top-2 font-[Anton] text-2xl text-white" style={{ position: 'relative', top: '2px' }}>IMPACT</span> on people's everyday lives.</p></div>
             </div>
         </div>
-        <div name="about" className="home-about-spacer home-about-layer"></div>
+        <div className="home-about-spacer home-about-layer"></div>
         </>
     )
 }

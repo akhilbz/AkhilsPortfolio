@@ -42,7 +42,7 @@ const Experience = () => {
 
   return (
     <>
-    <div name="experience" id="exper-main" className='bg-[#121212]'>
+    <div id="exper-main" className='bg-[#121212]'>
         <div className="flex flex-col justify-center w-full h-full pb-6">
             <div className="flex flex-col items-center">
                 <h1 className="text-5xl sm:text-6xl xl:text-8xl md:text-7xl sm:font-bold title-name text-[#87CEFA]">Experience</h1>

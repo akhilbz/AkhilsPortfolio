@@ -63,7 +63,7 @@ const Education = () => {
                     <h3 className='text-2xl sm:text-3xl md:text-3xl font-bold  md:justify-end justify-center flex text-white cns-edu-title '><div className='text-2xl sm:text-3xl bg-[#1C1C1C] md:text-4xl rounded-xl h-[fit-content] year pr-1 pl-1 mb-1' >Sophomore</div>&nbsp;&#8226; BS in Computer Science</h3>
                     <h3 className='text-2xl sm:text-3xl font-bold xl:justify-end justify-center flex text-[#FFA86E] cns-edu-title '> College of Natural Sciences</h3>
                     </div>
-                    <div className=" flex-col flex sm:text-start text-center lg:my-[20px] my-5 md:text-xl text-lg w-[fit-content] sm:mx-[60px] mx-[35px] md:ml-[140px] lg:mx-[200px] xl:mx-[75px] py-2 text-[#CCCCCC]">
+                    <div className=" flex-col flex xl:text-start text-center lg:my-[20px] my-5 md:text-xl text-lg w-[fit-content] sm:mx-[40px] mx-[35px]  lg:mx-[200px] xl:mx-[75px] py-2 text-[#CCCCCC]">
                     <p className='font-light mb-4'>I'm a <span className='text-white md:text-2xl text-xl font-semibold'>rising Sophomore</span> pursuing <span className='text-white font-semibold'>Computer Science</span> with an <span className='text-[#87CEFA] font-semibold'>Entrepreneurship Minor</span> at the <span className='text-[#FFA86E] font-semibold'>University of Texas at Austin</span>.
                     During my freshman year, I've completed Data Structures, Discrete Math, and Computer Architecture and Organization. This year, I'll be completing <span className='text-white font-semibold'>Operating Systems</span> and <span className='text-white font-semibold'>Algorithms</span>.</p>
                     <p className='font-light mb-4'>I've been involved in <span className='text-white font-semibold'>Texas ACM</span> and <span className='text-white font-semibold'>Freetail Hackers</span>. 
@@ -75,7 +75,7 @@ const Education = () => {
         </div>
         <div className="w-full h-full flex flex-col justify-center items-center bg-[#333333] md:pt-[40px] pt-[20px]">
             <h2 className="text-4xl sm:text-5xl md:text-5xl sm:font-bold justify-end flex title-name text-[#87CEFA]">Entrepreneurship Minor</h2>
-            <h3 className='text-xl sm:text-2xl md:text-3xl font-bold justify-end flex text-[#CCCCCC] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
+            <h3 className='text-xl sm:text-2xl md:text-3xl font-bold  flex text-[#CCCCCC] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
             <div className="mt-2 w-full flex-col lg:flex-row flex lg:items-start items-center justify-center ">
                 <div className="flex lg:ml-[70px] lg:flex-col flex-row md:mb-2 justify-end items-start w-[fit-content]">
                     <div className="hover:scale-95 duration-500 flex bg-[#1C1C1C] mb-3 rounded-2xl md:w-[250px] md:h-[250px] w-[200px] h-[200px] items-center  lg:ml-[0px]" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
@@ -85,7 +85,7 @@ const Education = () => {
                         <img src={harkey} alt="" className='ml-6 rounded-2xl  md:w-[200px] md:h-[200px] w-[150px] h-[150px]' style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)' }}/>
                     </div>
                 </div> 
-                <div className="flex-col xl:flex-row flex sm:ml-3 sm:w-full sm:items-center">
+                <div className="flex-col xl:flex-row flex sm:ml-3 sm:w-fit sm:items-center items-start">
                     <div className="rounded-2xl bg-center bg-cover w-fit flex-col  ">
                         <div className="w-full flex-col flex lg:items-start items-center group">
                             <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" md:w-[700px] md:h-[512px] w-[400px] h-[300px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
@@ -118,7 +118,7 @@ const Education = () => {
                     </div>
                 </div>
                 <div className="flex-col justify-start">
-                    <div className='xl:hidden text-[#CCCCCC] sm:text-start text-center lg:w-[768px] md:w-[650px] sm:px-[10px] sm:w-[580px] w-fit px-[38px] xl:w-[fit-content] h-[fit-content] justify-center py-4 font-light md:text-xl text-lg overflow-hidden' style={{overflow: 'hidden'}}>
+                    <div className='xl:hidden text-[#CCCCCC] xl:text-start text-center lg:w-[768px] md:w-[650px] sm:px-[10px] sm:w-[580px] w-fit px-[38px] xl:w-[fit-content] h-[fit-content] justify-center py-4 font-light md:text-xl text-lg overflow-hidden' style={{overflow: 'hidden'}}>
                     <p>In Summer 2023, I completed the rigorous <span className='text-[#FFA86E] font-semibold'>Entrepreneurship Minor</span> at <span className='text-[#FFA86E] font-semibold'>McCombs School of Business</span> by pursuing the enriching  <span className='text-white font-semibold'>Summer Entrepreneurship Academy (SEA)</span>.</p>
                     <p>Ranked no. <span className='highlight-impact font-[Anton] md:text-3xl text-2xl text-white' style={{ position: 'relative', top: '3px' }}>2</span> in the nation, the <span className='text-[#FFA86E] font-semibold'>Entrepreneurship Minor</span> presented a challenging yet rewarding journey, 
                     consisting of a demanding workload that I aimed to complete over the summer to make time to improve upon my entrepreneurship skills.

@@ -21,11 +21,11 @@ const Navbar = () => {
                 <li className='hover:scale-110  duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="about" smooth={true} offset={170} duration={700}>My Story</Link></span></li>
+                    <Link to="about" smooth={true} offset={-120} duration={700}>My Story</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="edu" smooth={true} offset={470} duration={700}>Education</Link></span></li>
+                    <Link to="education" smooth={true} offset={-70} duration={700}>Education</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="experience" smooth={true} offset={200} duration={700}>Experience</Link></span></li>
+                    <Link to="experience" smooth={true} offset={90} duration={700}>Experience</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#F7760E] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                 <Link to="projects" smooth={true} offset={-70} duration={700}>Projects</Link></span></li>
             </ul>
@@ -39,26 +39,26 @@ const Navbar = () => {
             <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-[650px] rounded-bl-3xl rounded-br-3xl font-medium bg-[#222222] px-4 py-[22px] md:hidden flex flex-col z-[200]'}>
             <h1 className='font-[Megrim] text-3xl text-white'>AKHILESH BITLA</h1>
                 <ul className='items-center justify-center flex flex-col text-white'>
-                    <li className=' py-6 text-3xl justify-center '>
+                    <li className=' py-6 text-3xl justify-center hover:text-[#CCCCCC] duration-300'>
                         <Link onClick={handleClick} to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link>
                     </li>
-                    <li className=' py-6 text-3xl'>
-                        <Link onClick={handleClick} to="about" smooth={true} offset={0} duration={700}>My Story</Link>  
+                    <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
+                        <Link onClick={handleClick} to="about" smooth={true} offset={-120} duration={700}>My Story</Link>  
                     </li>
-                    <li className=' py-6 text-3xl'>
-                        <Link onClick={handleClick} to="education" smooth={true} offset={-50} duration={700}>Education</Link>
+                    <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
+                        <Link onClick={handleClick} to="education" smooth={true} offset={-60} duration={700}>Education</Link>
                     </li>
-                    <li className=' py-6 text-3xl'>
+                    <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
                         <Link onClick={handleClick} to="experience" smooth={true} offset={0} duration={700}>Experience</Link>
                     </li>
-                    <li className=' py-6 text-3xl'>
+                    <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
                     <Link onClick={handleClick} to="projects" smooth={true} offset={-40} duration={700}>Projects</Link>
                     </li>
                     <div className="flex w-[50%] justify-between py-5">
                         <a href="https://www.linkedin.com/in/akhileshbitla/" target="_blank"><FaLinkedin size={30} className='cursor-pointer text-blue-500 '/></a>
                         <a href="https://github.com/akhilbz" target="_blank" ><FaGithub size={30} className='cursor-pointer text-[#9f9f9f]'/></a>
                         <a href="mailto:akhilesh.bitla@utexas.edu" target="_blank"><HiOutlineMail size={30} className='cursor-pointer text-[#d0caca]'/></a>
-                        <a href="https://drive.google.com/file/d/1-n198T_DnUOjJElbZk7zRN8Xdje9Rw5x/view?usp=sharing" target="_blank"><BiFile size={30} className='cursor-pointer text-[#FFA86E]'/></a>
+                        <a href="https://drive.google.com/file/d/1i1rQZ77h48EsLGpX3Sict4tL1PBZ88AZ/view?usp=sharing" target="_blank"><BiFile size={30} className='cursor-pointer text-[#FFA86E]'/></a>
                     </div>
                 </ul>
             </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl duration-300 bg-[#F7760E] rounded-br-2xl'>
-                        <a href="https://drive.google.com/file/d/1-n198T_DnUOjJElbZk7zRN8Xdje9Rw5x/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                        <a href="https://drive.google.com/file/d/1i1rQZ77h48EsLGpX3Sict4tL1PBZ88AZ/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Resume <BiFile size={30} />
                         </a>
                     </li>
