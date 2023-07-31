@@ -36,7 +36,7 @@ const Navbar = () => {
             </div>
             
             {/** Mobile Menu */}
-            <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-[650px] rounded-bl-3xl rounded-br-3xl font-medium bg-[#222222] px-4 py-6 md:hidden flex flex-col z-[200]'}>
+            <div className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-[650px] rounded-bl-3xl rounded-br-3xl font-medium bg-[#222222] px-4 py-[22px] md:hidden flex flex-col z-[200]'}>
             <h1 className='font-[Megrim] text-3xl text-white font-bold'>AKHILESH BITLA</h1>
                 <ul className='items-center justify-center flex flex-col text-white'>
                     <li className=' py-6 text-3xl justify-center '>

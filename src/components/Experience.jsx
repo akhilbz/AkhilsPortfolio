@@ -89,7 +89,7 @@ const Experience = () => {
                             }} className='hover:text-white text-[#7e7e7c] duration-300' size={22}/>
                         </div>
 
-                        <div id='exper-description' className="flex-col p-3 text-white text-lg font-bold"></div>
+                        <div id='exper-description' className="flex-col p-3 text-[#CCCCCC] text-lg font-bold"></div>
                     </div>
                 </div>  
 
@@ -106,7 +106,7 @@ const Experience = () => {
                         <p className='font-bold'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
                             providing ideas and suggestions for the design of the UI/UX of the product Bitsila.</p>
                         <p className='font-bold'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
-                        <p className='font-bold'>&#8226; Programming Languages: Dart & Flutter</p>
+                        <p className='font-bold'>&#8226; Tech Stack: Dart & Flutter</p>
                     </div>
                     {/* Mobile Version */}
                     <div id='bitsila-div' onClick={() => {
@@ -156,8 +156,10 @@ const Experience = () => {
                                 internDiv.style.display = 'none';
                                 description.style.transitionDuration = '500ms';
                                 const p1 = document.createElement("p");
-                                p1.innerHTML = "Searching for SWE internships, particularly in Full Stack development.";
-                                const descriptions = [p1];
+                                const p2 = document.createElement("p");
+                                p1.innerHTML = "Eagerly seeking to fill this space with my upcoming, enriching, and fulfilling internship experience.";
+                                p2.innerHTML = "Actively seeking SWE internships, with a strong interest in Full Stack development, while open to exploring other exciting SWE roles.";
+                                const descriptions = [p1, p2];
                                 showContent(descriptions);
                                 }} className='lg:flex hidden flex-col justify-start ml-8 xl:w-[400px] w-[300px] xl:h-[400px] h-[300px] mt-[60px] xl:mt-0 bg-[#CCCCCC] items-center hover:scale-110 duration-500 cursor-pointer' style={{boxShadow: '0 4px 18px #d9d9d9'}}>
                                 <h1 className='tiers-font text-7xl flex pr-3 py-[11px]'>#1</h1>
@@ -182,7 +184,7 @@ const Experience = () => {
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
-                        p1.innerHTML = "#8";
+                        p1.innerHTML = "#8: \"My space has a while... probably going to Netflix & Chill in the meantime. 🍿\"";
                         const descriptions = [p1];
                         showContent(descriptions);
                         }} className='xl:flex hidden flex-col justify-center ml-4 w-[20px] h-[20px] bg-[#1C1C1C] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 16px #FFFFFF' }}>
@@ -199,7 +201,7 @@ const Experience = () => {
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
-                        p1.innerHTML = "#7";
+                        p1.innerHTML = "#7: \"My space is going to take a while to fill up, but it's definitely worth the wait! 😌\"";
                         const descriptions = [p1];
                         showContent(descriptions);
                         }} className='lg:flex hidden flex-col justify-center ml-4 w-[40px] h-[40px] bg-[#333333] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #333333' }}>
@@ -216,7 +218,7 @@ const Experience = () => {
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
-                        p1.innerHTML = "#6";
+                        p1.innerHTML = "#6: \"Waiting for #5 to fill up... ⌛\"";
                         const descriptions = [p1];
                         showContent(descriptions);
                         }} className='lg:flex hidden flex-col justify-center ml-4 w-[60px] h-[60px] bg-[#4F4F4F] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #4F4F4F' }}>
@@ -233,7 +235,7 @@ const Experience = () => {
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
-                        p1.innerHTML = "#5";
+                        p1.innerHTML = "#5: \"Waiting for #4 to fill up... ⌛\"";
                         const descriptions = [p1];
                         showContent(descriptions);
                         }} className='lg:flex hidden flex-col justify-center ml-4 w-[75px] h-[75px] bg-[#6B6B6B] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 20px rgba(107, 107, 107, 0.3)' }}>
@@ -250,7 +252,7 @@ const Experience = () => {
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
-                        p1.innerHTML = "#4";
+                        p1.innerHTML = "#4: \"Waiting for #3 to fill up... ⌛\"";
                         const descriptions = [p1];
                         showContent(descriptions);
                         }} className='flex flex-col justify-center ml-4 w-[100px] h-[100px] bg-[#878787] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 2px 14px rgba(135, 135, 135, 0.5)' }}>
@@ -267,7 +269,7 @@ const Experience = () => {
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
                         const p1 = document.createElement("p");
-                        p1.innerHTML = "#3";
+                        p1.innerHTML = "#3: \"We'll fill this space soon 👍.\"";
                         const descriptions = [p1];
                         showContent(descriptions);
                         }} className='flex flex-col justify-center w-[150px] h-[150px] bg-[#969595] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px rgba(150, 149, 149, 0.5)' }}>
@@ -288,7 +290,7 @@ const Experience = () => {
                         const p2 = document.createElement("p");
                         p2.innerHTML = "  &#8226; Developed backend APIs and implemented UI/UX for web and mobile applications";
                         const p3 = document.createElement("p");
-                        p3.innerHTML = "&#8226; Programming Languages: Dart & Flutter";
+                        p3.innerHTML = "&#8226; Tech Stack: Dart & Flutter";
                         const descriptions = [p1, p2, p3];
                         showContent(descriptions);
                         }} className='flex flex-col xl:w-[300px] w-[250px] xl:h-[300px] h-[250px] bg-[#aba8a8] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow:'0px 0px 18px rgba(171, 168, 168, 0.5)'}}>

@@ -40,12 +40,12 @@ const About = () => {
                 <div className="w-full h-[fit-content] xl:grid xl:grid-cols-2  ">
                     <div className="lg:pl-[90px] sm:h-[fit-content] items-center flex flex-col">
                         <p className="text-5xl sm:text-8xl font-bold title-name justify-center flex pb-2 text-white" style={{ textDecoration: 'underline'}}>My Story</p>
-                        <div name="edu" className=" py-2 text-[#CCCCCC] sm:text-xl text-lg font-light w-[fit-content] h-[fit-content] sm:mt-[20px] mx-[65px]">
+                        <div name="edu" className=" py-2 text-[#CCCCCC] sm:text-xl text-lg font-light w-[fit-content] h-[fit-content] sm:mt-[20px] xl:mx-[60px] mx-[65px]">
                             <p className=" mb-[10px]" >Hi there! My name is <span className="font-semibold text-white text-xl sm:text-2xl">Akhilesh Bitla</span>, and I want to thank you for checking out my website and showing interest in my work.
                             I am passionate about <span className="font-semibold text-white">Computer Science</span> and love to develop software applications that can have a tangible impact on people’s lives.
                             My journey with CS has been exciting and stressful, but I embrace mistakes and believe in a <span className="font-semibold text-[#FFD700] text-xl sm:text-2xl">growth mindset</span>. 
-                            Along with my Computer Science education at UT Austin, I am improving my skills in <span className="font-semibold text-[#FF5050]">full-stack development</span> by exploring the integration of backend and frontend components to create holistic solutions.</p>
-                            <p className="mb-[10px]">After developing a strong experience as a <span className="font-semibold text-[#FF5050]">Full Stack developer</span>, my goal is to enter the realm of <span className="font-semibold text-[#00CC66]">AI</span> and <span className="font-semibold text-[#87CEFA]">Machine Learning</span> and
+                            Along with my Computer Science education at UT Austin, I am improving my skills in <span className="font-semibold text-[#ff6363]">full-stack development</span> by exploring the integration of backend and frontend components to create holistic solutions.</p>
+                            <p className="mb-[10px]">After developing a strong experience as a <span className="font-semibold text-[#ff6363]">Full Stack developer</span>, my goal is to enter the realm of <span className="font-semibold text-[#68fbb1]">AI</span> and <span className="font-semibold text-[#87CEFA]">Machine Learning</span> and
                             develop scalable and efficient software tools that can be used to optimize people's daily life.</p>
                             <p>I am looking for SWE internships to enhance my skills as a Full Stack Developer.</p>
                         </div>
