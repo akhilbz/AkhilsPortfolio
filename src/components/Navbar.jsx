@@ -23,7 +23,7 @@ const Navbar = () => {
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="about" smooth={true} offset={170} duration={700}>My Story</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="edu" smooth={true} offset={550} duration={700}>Education</Link></span></li>
+                    <Link to="edu" smooth={true} offset={470} duration={700}>Education</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
                     <Link to="experience" smooth={true} offset={200} duration={700}>Experience</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#F7760E] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
@@ -43,10 +43,10 @@ const Navbar = () => {
                         <Link onClick={handleClick} to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link>
                     </li>
                     <li className=' py-6 text-3xl'>
-                        <Link onClick={handleClick} to="about" smooth={true} offset={20} duration={700}>My Story</Link>  
+                        <Link onClick={handleClick} to="about" smooth={true} offset={0} duration={700}>My Story</Link>  
                     </li>
                     <li className=' py-6 text-3xl'>
-                        <Link onClick={handleClick} to="education" smooth={true} offset={0} duration={700}>Education</Link>
+                        <Link onClick={handleClick} to="education" smooth={true} offset={-50} duration={700}>Education</Link>
                     </li>
                     <li className=' py-6 text-3xl'>
                         <Link onClick={handleClick} to="experience" smooth={true} offset={0} duration={700}>Experience</Link>

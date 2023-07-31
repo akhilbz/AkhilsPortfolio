@@ -53,9 +53,9 @@ const Education = () => {
         <>
         <div name="education"  className="w-full h-full sm:flex bg-[#333333] flex pt-[50px] xl:flex-row flex-col ">
             <div  className=" flex-col flex items-center justify-center h-[fit-content] xl:pl-[80px] w-full px-2 pb-2">
-            <h1 className="text-6xl sm:text-6xl md:text-8xl font-bold title-name justify-center flex text-white pb-4" style={{ textDecoration: 'underline'}}>Education</h1>
+            <h1 className="text-6xl sm:text-6xl md:text-8xl sm:font-bold title-name justify-center flex text-white pb-4" style={{ textDecoration: 'underline'}}>Education</h1>
                 <img src={utAustin} alt="" className='rounded-2xl justify-center mb-4 w-[700px] flex' style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}/>
-                <h1 className='text-3xl font-bold title-name justify-center ut-font ut-animate rounded-xl sm:pb-2 flex py-2 px-2'>University of Texas at Austin</h1> 
+                <h1 className='sm:text-3xl text-2xl font-bold justify-center ut-font ut-animate rounded-xl sm:pb-2 flex py-2 px-2'>University of Texas at Austin</h1> 
             </div>
 
             <div className="w-[fit-content] h-[fit-content] flex justify-start items-center flex-col sm:pt-3 pt-1">

@@ -118,8 +118,8 @@ const Experience = () => {
                         console.log(exper_main_width);
                         if (bitsilaDiv) {
                             var techStackHeight = bitsila.offsetHeight;
-                            bitsila.style.marginTop = "220px";
-                            techStackHeight += 220;   
+                            bitsila.style.marginTop = "230px";
+                            techStackHeight += 230;   
                             bitsilaText.classList.add("show");
                             techStack.style.marginTop = techStackHeight + 'px';
                             setBitsilaDiv(false); 

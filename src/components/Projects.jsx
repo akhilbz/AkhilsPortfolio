@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="h-[fit-content] pb-[50px]">
         <div className="w-full flex justify-center lg:justify-start">
           <div className="bg-[#121212] lg:ml-[80px]  w-[fit-content] p-3 rounded-xl">
-            <h1 className='title-name text-8xl text-[#F7760E] font-bold pb-1'>Projects</h1>
+            <h1 className='title-name sm:text-8xl text-5xl text-[#F7760E] sm:font-bold pb-1'>Projects</h1>
           </div>
         </div>
         <div className="flex-col mt-[90px] ">
