@@ -89,7 +89,7 @@ const Experience = () => {
                             }} className='hover:text-white text-[#7e7e7c] duration-300' size={22}/>
                         </div>
 
-                        <div id='exper-description' className="flex-col p-3 text-[#CCCCCC] text-lg font-bold"></div>
+                        <div id='exper-description' className="flex-col p-3 text-[#CCCCCC] text-lg font-light"></div>
                     </div>
                 </div>  
 
@@ -103,10 +103,10 @@ const Experience = () => {
                 </div>
                 <div className="lg:hidden flex flex-col items-center w-full h-[fit-content] relative">
                     <div id='bitsila-text' className=" text-base flex items-center sm:text-lg sm:w-[550px] md:w-[700px] w-[400px] h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-[#CCCCCC] bg-[#333333] rounded-2xl duration-500 absolute">
-                        <p className='font-bold'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
+                        <p className='font-light'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
                             providing ideas and suggestions for the design of the UI/UX of the product Bitsila.</p>
-                        <p className='font-bold'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
-                        <p className='font-bold'>&#8226; Tech Stack: Dart & Flutter</p>
+                        <p className='font-light'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
+                        <p className='font-light'>&#8226; Tech Stack: Dart & Flutter</p>
                     </div>
                     {/* Mobile Version */}
                     <div id='bitsila-div' onClick={() => {

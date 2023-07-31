@@ -74,7 +74,7 @@ const Education = () => {
             </div>
         </div>
         <div className="w-full h-full flex flex-col justify-center items-center bg-[#333333] md:pt-[40px] pt-[20px]">
-            <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold justify-end flex title-name text-[#87CEFA]">Entrepreneurship Minor</h2>
+            <h2 className="text-4xl sm:text-5xl md:text-5xl sm:font-bold justify-end flex title-name text-[#87CEFA]">Entrepreneurship Minor</h2>
             <h3 className='text-xl sm:text-2xl md:text-3xl font-bold justify-end flex text-[#CCCCCC] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
             <div className="mt-2 w-full flex-col lg:flex-row flex lg:items-start items-center justify-center ">
                 <div className="flex lg:ml-[70px] lg:flex-col flex-row md:mb-2 justify-end items-start w-[fit-content]">
