@@ -45,7 +45,7 @@ const Experience = () => {
     <div name="experience" id="exper-main" className='bg-[#121212]'>
         <div className="flex flex-col justify-center w-full h-full pb-6">
             <div className="flex flex-col items-center">
-                <h1 className="text-5xl sm:text-6xl xl:text-8xl md:text-7xl font-bold title-name text-[#87CEFA]">Experience</h1>
+                <h1 className="text-5xl sm:text-6xl xl:text-8xl md:text-7xl sm:font-bold title-name text-[#87CEFA]">Experience</h1>
                 <div className="lg:flex hidden justify-end w-full overflow-hidden">
                     <div className="bg-[#87CEFA] h-8 flex justify-start items-center pl-1 w-[fit-content] mr-[-285px] hover:mr-[0px] duration-500 rounded-bl-2xl rounded-tl-2xl" >
                         <p className='text-xl  ml-2 font-bold '>Note: &nbsp;&nbsp;  Tap <span className='bg-[#333333] text-[#CCCCCC] rounded-sm py-2'>&nbsp;grey tiles&nbsp;</span> for description&nbsp;</p>
@@ -57,7 +57,7 @@ const Experience = () => {
                 <h2 className="md:flex lg:hidden text-4xl md:text-6xl lg:text-8xl font-bold title-name text-white pb-7 sm:pl-[80px] sm:inline-flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>          
                 <div className="lg:flex hidden lg:flex-col">
                     <div className="flex-col">
-                    <h2 className="text-4xl md:text-6xl xl:text-8xl font-bold title-name text-white pb-7  sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
+                    <h2 className="text-4xl md:text-6xl xl:text-8xl title-name text-white pb-7  sm:pl-[80px] sm:inline-flex flex sm:justify-start justify-center" style={{textDecoration: 'underline'}}>Internships</h2>
                     
                     <div id='intern-div' className="ml-[80px] h-[300px] xl:w-[700px] lg:w-[600px] bg-[#666666] rounded-2xl flex-row flex">
                         <div className='flex p-1 justify-between flex-row'>
@@ -323,74 +323,78 @@ const Experience = () => {
             </div>
             <div id="tech-stack" className="mt-[240px] lg:mt-[50px] lg:pt-0 pt-[50px] relative">
                 <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold title-name text-white pt-3 flex justify-center" style={{textDecoration: 'underline'}}>My Tech Stack</h2>
-                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#87CEFA] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Proficient</span></h3>
-                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] pl-[90px]">
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#87CEFA] pt-6 flex sm:pl-[225px]  sm:justify-start w-full justify-center'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Proficient</span></h3>
+                <div className="w-full justify-center flex flex-wrap">
+                <div className="sm:w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px]">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={Java} alt="Java-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2'>Java</p>
                     </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={JS} alt="JS-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2'>JavaScript</p>
                     </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={React_logo} alt="React-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2'>React</p>
                     </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={C} alt="C-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2 '>C Programming</p>
                     </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={HTML} alt="HTML-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2'>HTML</p>
                     </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={CSS} alt="CSS-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2'>CSS</p>
                     </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={Bootstrap} alt="Bootstrap-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2 pt-3'>Bootstrap</p>
                     </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
+                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={Tailwind} alt="Tailwind-icon" className='w-20 mx-4 pt-2' />
                         <p className='text-[#FAF0E6] my-2 text-sm px-1'>Tailwind CSS</p>
                     </div>
                 </div>
-                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#9a9a9a] pt-3 pl-[205px]'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Developing</span></h3>
-                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] pl-[90px]">
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 ">
-                        <img src={Redux} alt="Redux-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6]  my-2'>Redux</p>
-                    </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
-                        <img src={React_logo} alt="React-native-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6] my-2 px-1'>React Native</p>
-                    </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
-                        <img src={MySQL} alt="MySQL-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6] my-2 px-1'>MySQL</p>
-                    </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
-                        <img src={MongoDB} alt="MongoDB-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6] my-2 px-1'>MongoDB</p>
-                    </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
-                        <img src={Webpack} alt="Webpack-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6] my-2 px-1'>Webpack</p>
-                    </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
-                        <img src={Ruby} alt="Ruby-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6] my-2 px-1'>Ruby</p>
-                    </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
-                        <img src={Rails} alt="Rails-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6]  my-2 px-1'>Ruby on Rails</p>
-                    </div>
-                    <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1">
-                        <img src={Flutter} alt="Flutter-icon" className='w-[70px] mx-4 pt-2' />
-                        <p className='text-[#FAF0E6] my-2 px-1'>Flutter</p>
+                </div>
+                <h3 className='text-2xl sm:text-3xl md:text-4xl font-bold cns-edu-title text-[#9a9a9a] pt-3 sm:pl-[225px]  sm:justify-start w-full justify-center flex'><span className='border-b-4 border-spacing-y-6 hover:border-white border-spacing-8 duration-500 border-[#121212] px-1 inline'>Developing</span></h3>
+                <div className="w-full justify-center flex flex-wrap">
+                    <div className="sm:w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8 xl:pl-[225px] lg:pl-[70px] md:pl-[30px] sm:pl-[20px] ">
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={Redux} alt="Redux-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6]  my-2'>Redux</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={React_logo} alt="React-native-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>React Native</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={MySQL} alt="MySQL-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>MySQL</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={MongoDB} alt="MongoDB-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>MongoDB</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={Webpack} alt="Webpack-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>Webpack</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={Ruby} alt="Ruby-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>Ruby</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={Rails} alt="Rails-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6]  my-2 px-1'>Ruby on Rails</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={Flutter} alt="Flutter-icon" className='w-[70px] mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>Flutter</p>
+                        </div>
                     </div>
                 </div>
             </div>

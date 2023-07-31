@@ -77,7 +77,7 @@ const Education = () => {
             <h2 className="text-4xl sm:text-5xl md:text-5xl font-bold justify-end flex title-name text-[#87CEFA]">Entrepreneurship Minor</h2>
             <h3 className='text-xl sm:text-2xl md:text-3xl font-bold justify-end flex text-[#CCCCCC] cns-edu-title sm:pt-3 pt-2'>Harkey Institute for Entrepreneurial Studies</h3>
             <div className="mt-2 w-full flex-col lg:flex-row flex lg:items-start items-center justify-center ">
-                <div className="flex lg:ml-[70px] lg:flex-col flex-row md:mb-2 justify-center items-start w-full">
+                <div className="flex lg:ml-[70px] lg:flex-col flex-row md:mb-2 justify-end items-start w-[fit-content]">
                     <div className="hover:scale-95 duration-500 flex bg-[#1C1C1C] mb-3 rounded-2xl md:w-[250px] md:h-[250px] w-[200px] h-[200px] items-center  lg:ml-[0px]" style={{ boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }}>
                         <img src={mccombs} alt="" className='ml-6 rounded-2xl  md:w-[200px] md:h-[200px] w-[150px] h-[150px]' style={{ boxShadow: '0 0 10px rgba(255, 165, 0, 0.5)' }}/>
                     </div>
@@ -85,9 +85,9 @@ const Education = () => {
                         <img src={harkey} alt="" className='ml-6 rounded-2xl  md:w-[200px] md:h-[200px] w-[150px] h-[150px]' style={{ boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)' }}/>
                     </div>
                 </div> 
-                <div className="flex-col xl:flex-row flex sm:ml-3 w-full justify-center">
-                    <div className="rounded-2xl bg-center bg-cover ">
-                        <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" group md:w-[700px] md:h-[512px] w-[400px] h-[300px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
+                <div className="flex-col xl:flex-row flex sm:ml-3 sm:w-full sm:items-center">
+                    <div className="rounded-2xl bg-center bg-cover w-full flex-col flex lg:items-start items-center ">
+                        <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" md:w-[700px] md:h-[512px] w-[400px] h-[300px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                         <div className="hidden group-hover:block justify-start text-3xl p-2 text-[#FFFFFF] cursor-pointer">
                             <BsChevronCompactLeft onClick={prevSlide} size={35} />
                         </div>
