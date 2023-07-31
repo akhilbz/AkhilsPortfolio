@@ -33,7 +33,7 @@ const Projects = () => {
               <img src={Organize} alt="" className='h-[250px] w-[250px] rounded-2xl'/>
               <p className='text-white text-2xl'>Organize Chrome Extension</p>
             </div>
-            <div className="border-b-2 border-t-2 sm:mx-[120px]  my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
+            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
               <p className='pb-5'>&#8226; Developed a Chrome extension designed to enhance your tab management experience and optimize
                             productivity and organization. Implemented intuitive features for effortless tab organization, including
                             quick grouping, fast searching, and more.</p>
@@ -61,7 +61,7 @@ const Projects = () => {
               {/* </div> */}
               <p className='text-white text-2xl p-2'>Trove: The Lost & Found App</p>
             </div>
-            <div className="border-b-2 border-t-2 sm:mx-[120px]  my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
+            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
               <p className='pb-5'>&#8226; Developed a virtual service platform that allows college students to report lost items and claim lost
               valuables through a student network.</p>
               <div className='pb-5'>&#8226; Built within 24 hours with three peers and won Best Overall on Beginner’s Track Award out of 75 teams in
