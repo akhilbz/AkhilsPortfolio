@@ -118,8 +118,8 @@ const Experience = () => {
                         console.log(exper_main_width);
                         if (bitsilaDiv) {
                             var techStackHeight = bitsila.offsetHeight;
-                            bitsila.style.marginTop = "200px";
-                            techStackHeight += 200;   
+                            bitsila.style.marginTop = "220px";
+                            techStackHeight += 220;   
                             bitsilaText.classList.add("show");
                             techStack.style.marginTop = techStackHeight + 'px';
                             setBitsilaDiv(false); 
@@ -340,7 +340,7 @@ const Experience = () => {
                     </div>
                     <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={C} alt="C-icon" className='w-20 mx-4 pt-2' />
-                        <p className='text-[#FAF0E6] my-2 '>C Programming</p>
+                        <p className='text-[#FAF0E6] my-2 '>C</p>
                     </div>
                     <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                         <img src={HTML} alt="HTML-icon" className='w-20 mx-4 pt-2' />

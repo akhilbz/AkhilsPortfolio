@@ -40,7 +40,7 @@ const About = () => {
                 <div className="w-full h-[fit-content] xl:grid xl:grid-cols-2  ">
                     <div className="lg:pl-[90px] sm:h-[fit-content] items-center flex flex-col">
                         <p className="text-5xl sm:text-8xl font-bold title-name justify-center flex pb-2 text-white" style={{ textDecoration: 'underline'}}>My Story</p>
-                        <div name="edu" className=" py-2 text-[#CCCCCC] sm:text-xl text-lg font-light w-[fit-content] h-[fit-content] sm:text-start text-center sm:mt-[20px] xl:pl-[55px] xl:mx-[0px] md:mx-[70px] sm:mx-[40px] px-[35px]">
+                        <div name="edu" className=" py-2 text-[#CCCCCC] sm:text-xl text-lg font-light w-[fit-content] h-[fit-content] sm:text-start text-center sm:mt-[20px] xl:pl-[55px] xl:mx-[0px] md:mx-[70px] sm:mx-[40px] ">
                             <p className=" mb-[10px]" >Hi there! My name is <span className="font-semibold text-white text-xl sm:text-2xl">Akhilesh Bitla</span>, and I want to thank you for checking out my website and showing interest in my work.
                             I am passionate about <span className="font-semibold text-white">Computer Science</span> and love to develop software applications that can have a tangible impact on people’s lives.
                             My journey with CS has been exciting and stressful, but I embrace mistakes and believe in a <span className="font-semibold text-[#FFD700] text-xl sm:text-2xl">growth mindset</span>. 
