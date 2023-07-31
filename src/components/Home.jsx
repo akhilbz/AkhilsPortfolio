@@ -4,8 +4,8 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const Home = () => {
     return (
         <>
-        <div name="home" className="w-full h-screen bg-[#121212] z-10 px-8 sm:px-0 ">
-            <div className="max-w-[1000px] lg:mx-auto sm:ml-9 ml-0 px-8 flex flex-col justify-center h-[750px] ">
+        <div name="home" className="w-screen h-screen bg-[#121212] z-10 px-5 sm:px-0 ">
+            <div className="w-fit lg:mx-auto sm:ml-9 ml-0 px-4 flex flex-col justify-center h-[750px] ">
                 <div className="flex">
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light ">Welcome!&nbsp;</p>
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light ">My name is </p>
