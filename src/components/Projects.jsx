@@ -25,11 +25,11 @@ const Projects = () => {
             </div>
             <div className="w-[400px] h-[400px] bg-[#121212] flex-col z-10 flex justify-center lg:py-9 items-center rounded-xl hover:scale-105 duration-500 overflow-hidden">
               {/* <p id='tap-read' className='text-white h-0 lg:pb-9 pb-[70px] font-light text-sm flex lg:hidden'>Tap to read</p>*/}
-              <div className="w-full flex justify-end ml-[90px] overflow-hidden">
+              {/* <div className="w-full flex justify-end ml-[90px] overflow-hidden">
                 <div className=" bg-white hover:bg-black hover:text-white duration-500 h-9 flex flex-col rounded-bl-xl rounded-tl-xl justify-center w-[90px] z-50 ">
                   <a href="https://github.com/akhilbz/Organize" target='_blank'><FaGithub size={30} className='ml-2'/></a>
                 </div>
-              </div>
+              </div> */}
               <img src={Organize} alt="" className='h-[250px] w-[250px] rounded-2xl'/>
               <p className='text-white text-2xl'>Organize Chrome Extension</p>
             </div>
