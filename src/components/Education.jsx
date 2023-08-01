@@ -131,7 +131,7 @@ const Education = () => {
             {/* </div> */}
         </div>
        
-        
+        <div name="experience" className="edu-exper-spacer edu-exper-layer"></div>
         </>
     )
 }
