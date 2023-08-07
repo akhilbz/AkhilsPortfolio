@@ -52,7 +52,7 @@ const Footer = () => {
                     </div>
                     <div className="flex-col w-full">
                         <h1 className='font-normal xl:text-lg text-xl '>Grab a copy of my resume!</h1>
-                        <a href="https://drive.google.com/file/d/1H261MBKlxgBTmRsVQUdDH93xQYpcf0CF/view?usp=sharing" target="_blank">
+                        <a href="https://drive.google.com/file/d/1ZZawTDV2TIYcxs_20CS_tcjB3_SeJQky/view?usp=sharing" target="_blank">
                         <div className="flex justify-between flex-row file-highlight">
                         <BiFile id='file' className='duration-500' size={30} />
                         <h1 className='flex justify-end font-normal duration-500'>Resume</h1>

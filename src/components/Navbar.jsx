@@ -58,7 +58,7 @@ const Navbar = () => {
                         <a href="https://www.linkedin.com/in/akhileshbitla/" target="_blank"><FaLinkedin size={30} className='cursor-pointer text-blue-500 '/></a>
                         <a href="https://github.com/akhilbz" target="_blank" ><FaGithub size={30} className='cursor-pointer text-[#9f9f9f]'/></a>
                         <a href="mailto:akhilesh.bitla@utexas.edu" target="_blank"><HiOutlineMail size={30} className='cursor-pointer text-[#d0caca]'/></a>
-                        <a href="https://drive.google.com/file/d/1H261MBKlxgBTmRsVQUdDH93xQYpcf0CF/view?usp=sharing" target="_blank"><BiFile size={30} className='cursor-pointer text-[#FFA86E]'/></a>
+                        <a href="https://drive.google.com/file/d/1ZZawTDV2TIYcxs_20CS_tcjB3_SeJQky/view?usp=sharing" target="_blank"><BiFile size={30} className='cursor-pointer text-[#FFA86E]'/></a>
                     </div>
                 </ul>
             </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl duration-300 bg-[#F7760E] rounded-br-2xl'>
-                        <a href="https://drive.google.com/file/d/1H261MBKlxgBTmRsVQUdDH93xQYpcf0CF/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                        <a href="https://drive.google.com/file/d/1ZZawTDV2TIYcxs_20CS_tcjB3_SeJQky/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Resume <BiFile size={30} />
                         </a>
                     </li>
