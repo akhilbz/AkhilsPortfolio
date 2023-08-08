@@ -2,8 +2,8 @@ import React, { useCallback, useState } from 'react'
 import HTML from '../assets/stack-icons/html.png';
 import CSS from '../assets/stack-icons/css.png';
 import React_logo from '../assets/stack-icons/react.png';
-import Java from '../assets/stack-icons/java.png';
 import JS from '../assets/stack-icons/javascript.png';
+import Java from '../assets/stack-icons/java.png';
 import C from '../assets/stack-icons/C.png';
 import Bootstrap from '../assets/stack-icons/bootstrap.png';
 import Redux from '../assets/stack-icons/redux.svg';
