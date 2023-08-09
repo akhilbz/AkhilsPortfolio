@@ -38,6 +38,7 @@ const Projects = () => {
             <img src={Redux} alt="" className=' w-7 mx-2 hover:scale-95 duration-500' />
             <img src={Bootstrap} alt="" className=' w-7 mx-2 hover:scale-95 duration-500' />
             <img src={Webpack} alt="" className=' w-7 mx-2 hover:scale-95 duration-500' />
+            <img src={Figma} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
             </div>
               <p className='py-3 px-2'><span className='font-bold text-2xl text-[#8dd9f7]'>Organize</span> is a chrome extension designed to enhance your tab management experience and optimize
                             productivity and organization. Implemented intuitive features for effortless tab organization, including
@@ -63,6 +64,7 @@ const Projects = () => {
               <img src={Redux} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
               <img src={Bootstrap} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
               <img src={Webpack} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={Figma} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
               </div>
                 <p className='py-3 px-2'><span className='font-bold text-xl text-[#8dd9f7]'>Organize</span> is a chrome extension designed to enhance your tab management experience and optimize
                               productivity and organization. Implemented intuitive features for effortless tab organization, including
@@ -95,7 +97,7 @@ const Projects = () => {
               </div>
               <p className='py-3'><span className='font-bold text-xl text-[#c2adff]'>Trove</span> is a virtual service platform that allows college students to report lost items and claim lost
               valuables through a student network. Trove was built as a hackathon project with three peers and a time constraint of 24 hours. Our team won the <span className='text-[#FFD700] text-xl font-bold'>Best Overall Beginner Hack Award</span> out of  <span className='text-[#FFD700] text-xl font-bold'>75 teams</span> in
-              HackTX 2022 (Freetail Hackers Hackathon).</p>
+              HackTX 2022 (Hosted by Freetail Hackers).</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
                 <a href="https://devpost.com/software/found-b1p3x7" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] font-semibold rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[25px] w-[25px]'/>&nbsp;Devpost&nbsp;</span></a>
@@ -120,7 +122,7 @@ const Projects = () => {
               </div>
               <p className='py-3'><span className='font-bold text-2xl text-[#c2adff]'>Trove</span> is a virtual service platform that allows college students to report lost items and claim lost
               valuables through a student network. Trove was built as a hackathon project with three peers and a time constraint of 24 hours. Our team won the <span className='text-[#FFD700] text-2xl font-bold'>Best Overall Beginner Hack Award</span> out of  <span className='text-[#FFD700] text-2xl font-bold'>75 teams</span> in
-              HackTX 2022 (Freetail Hackers Hackathon).</p>
+              HackTX 2022 (Hosted by Freetail Hackers).</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
                 <a href="https://devpost.com/software/found-b1p3x7" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] font-semibold rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-2xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[32px] w-[32px]'/>&nbsp;Devpost&nbsp;</span></a>

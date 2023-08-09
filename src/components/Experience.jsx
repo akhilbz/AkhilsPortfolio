@@ -16,6 +16,8 @@ import Webpack from '../assets/stack-icons/webpack.png';
 import Ruby from '../assets/stack-icons/ruby.png';
 import Rails from '../assets/stack-icons/rails.png';
 import Tailwind from '../assets/stack-icons/tailwind.png';
+import SpringBoot from '../assets/stack-icons/springboot.svg';
+import Figma from '../assets/stack-icons/figma.svg';
 import Eyes from '../assets/cloud-eyes.gif';
 import Medal from '../assets/medal.png';
 import { loadSlim } from "tsparticles-slim";
@@ -25,10 +27,10 @@ import Bitsila from '../assets/stack-icons/bitsila.png';
 const Experience = () => {
     const [bitsilaDiv, setBitsilaDiv] = useState(true);
 
-    function showContent(paragraphs) {
+    function showContent(items) {
         const container = document.getElementById("exper-description");
-        paragraphs.forEach((paragraph) => {
-          container.appendChild(paragraph);
+        items.forEach((item) => {
+          container.appendChild(item);
         });
       }
 
@@ -38,6 +40,10 @@ const Experience = () => {
         paragraphs.forEach((paragraph) => {
         paragraph.remove();
         });
+        const divs = container.querySelectorAll("div");
+        divs.forEach((div) => {
+        div.remove();
+        })
       }
 
   return (
@@ -89,7 +95,7 @@ const Experience = () => {
                             }} className='hover:text-white text-[#7e7e7c] duration-300' size={22}/>
                         </div>
 
-                        <div id='exper-description' className="flex-col p-3 text-[#CCCCCC] text-lg font-light"></div>
+                        <div id='exper-description' className="flex-col p-3 text-white text-lg font-light"></div>
                     </div>
                 </div>  
 
@@ -102,11 +108,18 @@ const Experience = () => {
                     </div>
                 </div>
                 <div className="lg:hidden flex flex-col items-center w-full h-[fit-content] relative">
-                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg sm:w-[550px] md:w-[700px] w-[400px] h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-[#CCCCCC] bg-[#333333] rounded-2xl duration-500 absolute">
-                        <p className='font-light'>&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by
-                            providing ideas and suggestions for the design of the UI/UX of the product Bitsila.</p>
-                        <p className='font-light'>&#8226; Developed backend APIs and implemented UI/UX for web and mobile applications</p>
-                        <p className='font-light'>&#8226; Tech Stack: Dart & Flutter</p>
+                    <div id='bitsila-text' className=" text-base flex items-center sm:text-lg sm:w-[550px] md:w-[700px] w-[400px] h-[fit-content] sm:hidden flex-col p-3 mb-3 sm:ml-[80px] text-white bg-[#333333] rounded-2xl duration-500 absolute">
+                        <div className="flex-row  flex w-full ">
+                            <p>Tech Stack:</p>
+                            <img src={Flutter} alt="" className='w-[18px] h-[18px] mt-[3px] mx-[6px]' />
+                            <p>Flutter</p>
+                            <img src={Dart} alt="" className=' w-[18px] h-[18px] mt-[3px] mx-[6px]' />
+                            <p>Dart</p>
+                        </div>
+                        <p className='font-light'>&#8226; Contributed to the development of modules for <span class="text-[#ffae6b] font-bold text-lg">Order Management & Marketing Promotions </span> 
+                         by providing ideas and suggestions for the design of the UI/UX of the product  <span class="text-[#FF4D00] font-bold text-lg">Bitsila</span>.</p>
+                        <p className='font-light'>&#8226; Utilized <span class="font-bold">RESTful APIs</span> and developed <span class="font-bold">front-end functionality</span> for web and mobile applications.</p>
+                        
                     </div>
                     {/* Mobile Version */}
                     <div id='bitsila-div' onClick={() => {
@@ -157,8 +170,9 @@ const Experience = () => {
                                 description.style.transitionDuration = '500ms';
                                 const p1 = document.createElement("p");
                                 const p2 = document.createElement("p");
-                                p1.innerHTML = "Eagerly seeking to fill this space with my upcoming, enriching, and fulfilling internship experience.";
-                                p2.innerHTML = "Actively seeking SWE internships, with a strong interest in Full Stack development, while open to exploring other exciting SWE roles.";
+                                p1.innerHTML = `Eagerly seeking to fill this space with my <span class="font-bold">upcoming, enriching, and fulfilling internship experience.</span>`;
+                                p2.innerHTML = p2.innerHTML = `Actively seeking <span class="font-bold text-xl text-[#87CEFA]">SWE internships</span>, with a strong interest in <span class="font-bold text-xl text-[#FFD700]">Full Stack development</span>, while open to exploring other exciting SWE roles.`;
+
                                 const descriptions = [p1, p2];
                                 showContent(descriptions);
                                 }} className='lg:flex hidden flex-col justify-start ml-8 xl:w-[400px] w-[300px] xl:h-[400px] h-[300px] mt-[60px] xl:mt-0 bg-[#CCCCCC] items-center hover:scale-110 duration-500 cursor-pointer' style={{boxShadow: '0 4px 18px #d9d9d9'}}>
@@ -297,13 +311,42 @@ const Experience = () => {
                         internDiv.style.display = 'none';
                         experDiv.style.display = 'flex';
                         description.style.transitionDuration = '500ms';
-                        const p1 = document.createElement("p");
-                        p1.innerHTML = "&#8226; Contributed to the development of modules for Order Management & Marketing Promotions by providing ideas and suggestions for the design of the UI/UX of the product Bitsila.";
+                        const d1 = document.createElement('div');
+                        d1.classList.add('flex-row', 'flex', 'w-full');
+                        const p1 = document.createElement('p');
+                        p1.textContent = 'Tech Stack:';
+                        const i1 = document.createElement('img');
+                        i1.src = Flutter; 
+                        i1.alt = '';
+                        i1.style.height = '22px';
+                        i1.style.width = '22px';
+                        i1.style.marginTop = '3px';
+                        i1.style.marginLeft = '6px';
+                        i1.style.marginRight = '6px';
+                        const i2 = document.createElement('img');
+                        i2.src = Dart; 
+                        i2.alt = '';
+                        i2.style.marginTop = '3px';
+                        i2.style.marginLeft = '6px';
+                        i2.style.marginRight = '6px';
+                        i2.style.height = '22px';
+                        i2.style.width = '22px';
+
+                        const p4= document.createElement('p');
+                        p4.innerHTML = 'Flutter,';
+                        const p5 = document.createElement('p');
+                        p5.innerHTML = 'Dart';
+                        d1.appendChild(p1);
+                        d1.appendChild(i1);
+                        d1.appendChild(p4);
+                        d1.appendChild(i2);
+                        d1.appendChild(p5);
+                        p1.innerHTML = "Tech Stack: ";
                         const p2 = document.createElement("p");
-                        p2.innerHTML = "  &#8226; Developed backend APIs and implemented UI/UX for web and mobile applications";
+                        p2.innerHTML = `&#8226; Contributed to the development of modules for <span class="text-[#ffae6b] font-bold text-xl">Order Management & Marketing Promotions</span> by providing ideas and suggestions for the design of the UI/UX of the product  <span class="text-[#FF4D00] font-bold text-xl">Bitsila</span>.`;
                         const p3 = document.createElement("p");
-                        p3.innerHTML = "&#8226; Tech Stack: Dart & Flutter";
-                        const descriptions = [p1, p2, p3];
+                        p3.innerHTML = `&#8226; Utilized <span class="font-bold">RESTful APIs</span> and developed <span class="font-bold">front-end functionality</span> for web and mobile applications.`;
+                        const descriptions = [d1, p2, p3];
                         showContent(descriptions);
                         }} className='flex flex-col xl:w-[300px] w-[250px] xl:h-[300px] h-[250px] bg-[#aba8a8] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow:'0px 0px 18px rgba(171, 168, 168, 0.5)'}}>
                     <p className='tiers-font my-1 text-[#2b2a2a] text-4xl flex pb-1'>#2</p>
@@ -380,20 +423,20 @@ const Experience = () => {
                             <p className='text-[#FAF0E6] my-2 px-1'>MongoDB</p>
                         </div>
                         <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={SpringBoot} alt="Webpack-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>Spring Boot</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                             <img src={Webpack} alt="Webpack-icon" className='w-20 mx-4 pt-2' />
                             <p className='text-[#FAF0E6] my-2 px-1'>Webpack</p>
                         </div>
                         <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
-                            <img src={Ruby} alt="Ruby-icon" className='w-20 mx-4 pt-2' />
-                            <p className='text-[#FAF0E6] my-2 px-1'>Ruby</p>
-                        </div>
-                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
-                            <img src={Rails} alt="Rails-icon" className='w-20 mx-4 pt-2' />
-                            <p className='text-[#FAF0E6]  my-2 px-1'>Ruby on Rails</p>
-                        </div>
-                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
                             <img src={Flutter} alt="Flutter-icon" className='w-[70px] mx-4 pt-2' />
                             <p className='text-[#FAF0E6] my-2 px-1'>Flutter</p>
+                        </div>
+                        <div className="shadow-sm hover:font-bold hover:scale-110 hover:shadow-[#FFFFE6] w-[fit-content] h-[fit-content] duration-500 rounded-2xl p-1 sm:mx-0 mx-8">
+                            <img src={Ruby} alt="Ruby-icon" className='w-20 mx-4 pt-2' />
+                            <p className='text-[#FAF0E6] my-2 px-1'>Ruby</p>
                         </div>
                     </div>
                 </div>
