@@ -46,7 +46,7 @@ const Projects = () => {
               <p className='py-3 px-2'>This project is my first standalone front-end project that uses chrome developer APIs to manage and update the state of tabs and its properties through the extension.</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
-              <span className='border-2 border-[#F7760E]  h-[50px] font-semibold rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+              <span className='border-2 border-[#F7760E]  h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
               </button>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Projects = () => {
                 <p className='py-3 px-2'>This project is my first standalone front-end project that uses chrome developer APIs to manage and update the state of tabs and its properties through the extension.</p>
                 <div className="flex-row flex w-full justify-center">
                 <button className='flex mx-3'>
-                <span className='border-2 border-[#F7760E] sm:h-[50px] font-semibold rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+                <span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
                 </button>
                 </div>
             </div>
@@ -100,10 +100,10 @@ const Projects = () => {
               HackTX 2022 (Hosted by Freetail Hackers).</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
-                <a href="https://devpost.com/software/found-b1p3x7" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] font-semibold rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[25px] w-[25px]'/>&nbsp;Devpost&nbsp;</span></a>
+                <a href="https://devpost.com/software/found-b1p3x7" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[25px] w-[25px]'/>&nbsp;Devpost&nbsp;</span></a>
                 </button>
                 <button className='flex mx-3'>
-                  <a href="https://www.youtube.com/watch?v=Zl_hXwML1_o" target="_blank"><span className='border-2 border-[#F7760E] sm:h-[50px] font-semibold rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
+                  <a href="https://www.youtube.com/watch?v=Zl_hXwML1_o" target="_blank"><span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
                 </button>
                 </div>
             </div>
@@ -125,10 +125,10 @@ const Projects = () => {
               HackTX 2022 (Hosted by Freetail Hackers).</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
-                <a href="https://devpost.com/software/found-b1p3x7" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] font-semibold rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-2xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[32px] w-[32px]'/>&nbsp;Devpost&nbsp;</span></a>
+                <a href="https://devpost.com/software/found-b1p3x7" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-2xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[32px] w-[32px]'/>&nbsp;Devpost&nbsp;</span></a>
                 </button>
                 <button className='flex mx-3' >
-                <a href="https://www.youtube.com/watch?v=Zl_hXwML1_o" target="_blank"><span className='border-2 border-[#F7760E] sm:h-[50px] font-semibold rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
+                <a href="https://www.youtube.com/watch?v=Zl_hXwML1_o" target="_blank"><span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
                 </button>
                 </div>
             </div>
@@ -155,15 +155,15 @@ const Projects = () => {
               <p className='pb-4 px-2'>Tutorial by <a href="https://www.youtube.com/watch?v=5PdEmeopJVQ" target='_blank' className='hover:text-[#F7760E] underline duration-300'>freeCodeCamp.org</a></p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
-                <a href="https://github.com/akhilbz/moviedb_clone" target='_blank'><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] font-semibold rounded hover:bg-white bg-[#F7760E] duration-500  xl:px-2 flex items-center text-2xl text-[#121212]'>&nbsp;<FaGithub />&nbsp;GitHub&nbsp;</span></a>
+                <a href="https://github.com/akhilbz/moviedb_clone" target='_blank'><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-white bg-[#F7760E] duration-500  xl:px-2 flex items-center text-2xl text-[#121212]'>&nbsp;<FaGithub />&nbsp;GitHub&nbsp;</span></a>
                 </button>
               <button className='flex mx-3'>
-              <span className='border-2 border-[#F7760E]  h-[50px] font-semibold rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+              <span className='border-2 border-[#F7760E]  h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
               </button>
               </div>
             </div>
             <div className="sm:w-[400px] w-[350px] sm:h-[400px] h-[350px] bg-[#121212] flex-col z-10 flex justify-center lg:py-9 items-center rounded-xl hover:scale-105 duration-500 overflow-hidden">
-              <img src={MovieDB} alt="" className=' sm:max-w-[375px] max-w-[300px] w-[100%] sm:h-full h-[250px] rounded-2xl' style={{aspectRatio: '3022/1614'}}/>
+              <img src={MovieDB} alt="" className=' sm:max-w-[375px] max-w-[320px] w-[100%] sm:h-full h-[250px] rounded-2xl' style={{aspectRatio: '3022/1614'}}/>
               <p className='text-white text-2xl flex p-2'>MovieDB Clone</p>
             </div>
             <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
@@ -187,10 +187,10 @@ const Projects = () => {
 
                 <div className="flex-row flex w-full justify-center">
                 <button className='flex mx-3'>
-                <a href="https://github.com/akhilbz/moviedb_clone" target='_blank'><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] font-semibold rounded hover:bg-white bg-[#F7760E] duration-500  xl:px-2 flex items-center text-xl text-[#121212]'>&nbsp;<FaGithub />&nbsp;GitHub&nbsp;</span></a>
+                <a href="https://github.com/akhilbz/moviedb_clone" target='_blank'><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-white bg-[#F7760E] duration-500  xl:px-2 flex items-center text-xl text-[#121212]'>&nbsp;<FaGithub />&nbsp;GitHub&nbsp;</span></a>
                 </button>
                 <button className='flex mx-3'>
-                <span className='border-2 border-[#F7760E] sm:h-[50px] font-semibold rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+                <span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
                 </button>
                 </div>
             </div>

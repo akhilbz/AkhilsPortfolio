@@ -4,6 +4,7 @@ import KUTE from 'kute.js';
 import { useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from 'react-scroll';
+import { FaFolderOpen, FaBriefcase } from 'react-icons/fa';
 
 const Home = () => {
     // useEffect(() => {
@@ -51,17 +52,17 @@ const Home = () => {
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light z-50">My name is </p>
                 </div>
                 <h1 className="text-5xl sm:text-6xl md:text-7xl text-white sm:font-semibold title-name z-50">Akhilesh Bitla</h1>
-                <div className="parallelogram-top my-2 lg:w-[800px] md:w-[700px] w-[350px] h-[45px] sm:w-[580px] sm:h-[60px] lg:h-[85px] z-10 overflow-hidden"><h2 className="text-3xl sm:text-5xl lg:text-7xl sm:h-[65px] pt-1 sm:pr-0 md:pr-3 text-[#333333] sm:font-bold title-name text-center z-10">CS Student @ UT Austin</h2></div>
-                <div className="parallelogram-btm my-1 md:my-3 md:mx-[-10px] w-[325px] h-[125px] lg:w-[750px] md:w-[650px] lg:h-[85px] md:h-[100px] sm:w-[550px] z-10 overflow-hidden"><p className="py-2 px-4 text-base sm:text-xl mx-[10px] text-white font-medium max-w-[750px] z-10">I'm passionate about designing and developing software applications that have a tangible 
+                <div className="parallelogram-top my-2 lg:w-[800px] md:w-[700px] w-[350px] h-[45px] sm:w-[580px] sm:h-[60px] lg:h-[85px] z-10 overflow-hidden"><h2 className="text-3xl sm:text-5xl lg:text-7xl sm:h-[65px] pt-1 sm:pr-0 md:pr-3 text-[#333333] sm:font-bold font-normal title-name text-center z-10">CS Student @ UT Austin</h2></div>
+                <div className="parallelogram-btm my-1 md:my-3 md:mx-[-10px] w-[325px] h-[125px] lg:w-[750px] md:w-[650px] lg:h-[85px] md:h-[100px] sm:w-[550px] z-10 overflow-hidden"><p className=" sm:py-1 py-2 sm:pb-2 px-4 text-normal sm:text-xl mx-[10px] text-white font-medium max-w-[750px] z-10">I'm passionate about designing and developing software applications that have a tangible 
                 and meaningful <span className="highlight-impact top-2 font-[Anton] text-2xl text-white" style={{ position: 'relative', top: '2px' }}>IMPACT</span> on people's everyday lives.</p></div>
-                <div className="flex-row flex w-full justify-start lg:ml-[100px] md:ml-[80px] sm:ml-[50px] ml-[-5px]  md:mt-0 mt-2">
+                <div className="flex-row flex w-full justify-start lg:ml-[100px] md:ml-[80px] sm:ml-[50px] ml-[-28px]  md:mt-0 mt-2">
                     <button className='flex mx-3'>
-                       <span className='border-2  hover:border-[#87CEFA] border-white sm:h-[50px] font-semibold rounded bg-white hover:bg-[#87CEFA] duration-500  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 text-[#121212]'>
-                       <Link to="experience" smooth={true} offset={0} duration={700}>&nbsp;View Experience&nbsp;</Link></span>
+                    <Link to="experience" smooth={true} offset={0} duration={700}><span className='border-2  hover:border-[#87CEFA] border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-white hover:bg-[#87CEFA] duration-500  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 text-[#121212]'>
+                    &nbsp;<FaBriefcase />&nbsp;View Experience&nbsp;</span></Link>
                     </button>
                     <button className='flex mx-3'>
-                        <span className='border-2 border-white sm:h-[50px] font-semibold rounded hover:border-[#F7760E]  duration-500 text-white  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 hover:text-[#F7760E]'>
-                            <Link to="projects" smooth={true} offset={-70} duration={700}>&nbsp;View Projects&nbsp;</Link></span>
+                    <Link to="projects" smooth={true} offset={-70} duration={700}><span className='border-2 border-white sm:h-[50px] sm:font-semibold font-normal rounded w-fit flex-row hover:border-[#F7760E] duration-500 text-white  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 hover:text-[#F7760E]'>
+                    &nbsp;<FaFolderOpen />&nbsp;View Projects&nbsp;</span></Link>
                     </button>
                 </div>
                 {/* <section className="grey-blob lg:flex hidden">
