@@ -115,9 +115,9 @@ const Experience = () => {
                             <img src={Dart} alt="" className=' w-[18px] h-[18px] mt-[3px] mx-[6px]' />
                             <p>Dart</p>
                         </div>
-                        <p className='font-light'>&#8226; Contributed to the development of modules for <span class="text-[#ffae6b] font-bold text-lg">Order Management & Marketing Promotions </span> 
-                         by providing ideas and suggestions for the design of the UI/UX of the product  <span class="text-[#FF4D00] font-bold text-lg">Bitsila</span>.</p>
-                        <p className='font-light'>&#8226; Utilized <span class="font-bold">RESTful APIs</span> and developed <span class="font-bold">front-end functionality</span> for web and mobile applications.</p>
+                        <p className='font-light'>&#8226; Contributed to the development of modules for <span class="text-[#ffae6b] font-normal text-md">Order Management & Marketing Promotions </span> 
+                         by providing ideas and suggestions for the design of the UI/UX of the product  <span class="text-[#FF4D00] font-normal text-md">Bitsila</span>.</p>
+                        <p className='font-light'>&#8226; Utilized <span class="font-normal">RESTful APIs</span> and developed <span class="font-normal">front-end functionality</span> for web and mobile applications.</p>
                         
                     </div>
                     {/* Mobile Version */}
