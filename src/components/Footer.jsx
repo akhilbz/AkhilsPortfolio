@@ -68,7 +68,7 @@ const Footer = () => {
                                 </a>
                             </div>
                             <div className="xl:hidden flex-row flex justify-end items-end w-full h-full mt-[26px]">
-                                <p className='text-[#989898] font-bold text-lg'>Portfolio Stack:</p>
+                                <p className='text-[#989898] sm:font-bold font-normal text-lg'>Portfolio Stack:</p>
                                 <img src={React_logo} alt="" className=' w-7 mx-2 hover:scale-95 duration-500' />
                                 <img src={JS} alt="" className=' w-7 mx-2 hover:scale-95 duration-500' />
                                 <img src={HTML} alt="" className=' w-7 mx-2 hover:scale-95 duration-500' />
@@ -88,23 +88,23 @@ const Footer = () => {
                     </div>
                     <div className="pb-2 w-full">
                         <a href="mailto:akhilesh.bitla@utexas.edu" >
-                        <div className="flex justify-between flex-row email-highlight mb-2">
+                        <div className="flex justify-between items-center flex-row email-highlight mb-2">
                         <HiOutlineMail id='mail' size={30} className=' duration-500'/>
                         <h1 className='flex justify-end font-normal duration-500'>akhilesh.bitla@utexas.edu</h1>
                         </div>
                         </a>
                         <a href="https://www.linkedin.com/in/akhileshbitla/" target="_blank">
-                        <div className="flex justify-between flex-row linkedin-highlight ">
+                        <div className="flex justify-between items-center flex-row linkedin-highlight ">
                         <FaLinkedin id='linkedIn' className='duration-500' size={30} />
                         <h1 className='flex justify-end font-normal duration-500'>Akhilesh Bitla</h1>
                         </div>
                         </a>
                     </div>
-                    <div className="xl:flex hidden flex-col w-fit h-fit">
-                        <div className="flex-col w-full">
+                    <div className="xl:flex hidden flex-col w-full h-fit">
+                        <div className="flex-col w-full ">
                             <h1 className='font-normal xl:text-lg text-xl '>Grab a copy of my resume!</h1>
                             <a href="https://drive.google.com/file/d/1Zx3wc-JART5E9OzYha70eQpxcsCZ7Kno/view?usp=sharing" target="_blank">
-                            <div className="flex justify-between flex-row file-highlight">
+                            <div className="flex justify-between w-full items-center flex-row file-highlight">
                             <BiFile id='file' className='duration-500' size={30} />
                             <h1 className='flex justify-end font-normal duration-500'>Resume</h1>
                             </div>
@@ -114,7 +114,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="xl:flex hidden flex-col justify-end items-end w-fit h-full overflow-hidden px-4 xl:mt-[145px]">
-                <p className='text-[#989898] font-bold text-md overflow-hidden flex text-right'>Portfolio Stack:</p>
+                <p className='text-[#989898] sm:font-bold font-normal text-md overflow-hidden flex text-right'>Portfolio Stack:</p>
                 <img src={React_logo} alt="" className=' w-7 my-2 hover:scale-110 duration-500' />
                 <img src={JS} alt="" className=' w-7 my-2 hover:scale-110 duration-500' />
                 <img src={HTML} alt="" className=' w-7 my-2 hover:scale-110 duration-500' />

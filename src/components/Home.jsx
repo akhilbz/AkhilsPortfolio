@@ -57,11 +57,11 @@ const Home = () => {
                 and meaningful <span className="highlight-impact top-2 font-[Anton] text-2xl text-white" style={{ position: 'relative', top: '2px' }}>IMPACT</span> on people's everyday lives.</p></div>
                 <div className="flex-row flex w-full justify-start lg:ml-[100px] md:ml-[80px] sm:ml-[50px]   md:mt-0 mt-2">
                     <button className='flex mx-3'>
-                    <Link to="experience" smooth={true} offset={0} duration={700}><span className='border-2  hover:border-[#87CEFA] border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-white hover:bg-[#87CEFA] duration-500  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 text-[#121212]'>
+                    <Link to="experience" smooth={true} offset={0} duration={900}><span className='border-2  hover:border-[#87CEFA] border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-white hover:bg-[#87CEFA] duration-500  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 text-[#121212]'>
                     &nbsp;<FaBriefcase />&nbsp;View Experience&nbsp;</span></Link>
                     </button>
                     <button className='flex mx-3'>
-                    <Link to="projects" smooth={true} offset={-70} duration={700}><span className='border-2 border-white sm:h-[50px] sm:font-semibold font-normal rounded w-fit flex-row hover:border-[#F7760E] duration-500 text-white  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 hover:text-[#F7760E]'>
+                    <Link to="projects" smooth={true} offset={-70} duration={900}><span className='border-2 border-white sm:h-[50px] sm:font-semibold font-normal rounded w-fit flex-row hover:border-[#F7760E] duration-500 text-white  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 hover:text-[#F7760E]'>
                     &nbsp;<FaFolderOpen />&nbsp;View Projects&nbsp;</span></Link>
                     </button>
                 </div>

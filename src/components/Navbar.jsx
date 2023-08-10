@@ -19,15 +19,15 @@ const Navbar = () => {
             {/* menu */}
             <ul className='hidden md:flex font-medium text-white'>
                 <li className='hover:scale-110  duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link></span></li>
+                    <Link to="home" spy={true} smooth={true} offset={0} duration={900}>Home</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="about" smooth={true} offset={-120} duration={700}>My Story</Link></span></li>
+                    <Link to="about" smooth={true} offset={-120} duration={900}>My Story</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="education" smooth={true} offset={-70} duration={700}>Education</Link></span></li>
+                    <Link to="education" smooth={true} offset={-70} duration={900}>Education</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#87CEFA] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                    <Link to="experience" smooth={true} offset={90} duration={700}>Experience</Link></span></li>
+                    <Link to="experience" smooth={true} offset={90} duration={900}>Experience</Link></span></li>
                 <li className='hover:scale-110 navbar-btns duration-500'><span className='border-b-4 border-spacing-y-6 hover:border-[#F7760E] border-spacing-8 duration-500 border-[#121212] px-1 inline'>
-                <Link to="projects" smooth={true} offset={-70} duration={700}>Projects</Link></span></li>
+                <Link to="projects" smooth={true} offset={-70} duration={900}>Projects</Link></span></li>
             </ul>
 
             {/** Hamburger */}
@@ -40,19 +40,19 @@ const Navbar = () => {
             <h1 className='font-[Megrim] text-3xl text-white'>AKHILESH BITLA</h1>
                 <ul className='items-center justify-center flex flex-col text-white'>
                     <li className=' py-6 text-3xl justify-center hover:text-[#CCCCCC] duration-300'>
-                        <Link onClick={handleClick} to="home" spy={true} smooth={true} offset={0} duration={700}>Home</Link>
+                        <Link onClick={handleClick} to="home" spy={true} smooth={true} offset={0} duration={900}>Home</Link>
                     </li>
                     <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
-                        <Link onClick={handleClick} to="about" smooth={true} offset={-120} duration={700}>My Story</Link>  
+                        <Link onClick={handleClick} to="about" smooth={true} offset={-120} duration={900}>My Story</Link>  
                     </li>
                     <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
-                        <Link onClick={handleClick} to="education" smooth={true} offset={-60} duration={700}>Education</Link>
+                        <Link onClick={handleClick} to="education" smooth={true} offset={-60} duration={900}>Education</Link>
                     </li>
                     <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
-                        <Link onClick={handleClick} to="experience" smooth={true} offset={0} duration={700}>Experience</Link>
+                        <Link onClick={handleClick} to="experience" smooth={true} offset={0} duration={900}>Experience</Link>
                     </li>
                     <li className=' py-6 text-3xl hover:text-[#CCCCCC] duration-300'>
-                    <Link onClick={handleClick} to="projects" smooth={true} offset={-40} duration={700}>Projects</Link>
+                    <Link onClick={handleClick} to="projects" smooth={true} offset={-40} duration={900}>Projects</Link>
                     </li>
                     <div className="flex w-[50%] justify-between py-5">
                         <a href="https://www.linkedin.com/in/akhileshbitla/" target="_blank"><FaLinkedin size={30} className='cursor-pointer text-blue-500 '/></a>

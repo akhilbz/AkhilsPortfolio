@@ -43,7 +43,7 @@ const Projects = () => {
               <p className='py-3 px-2'><span className='font-bold text-2xl text-[#8dd9f7]'>Organize</span> is a chrome extension designed to enhance your tab management experience and optimize
                             productivity and organization. Implemented intuitive features for effortless tab organization, including
                             quick grouping, fast searching, and more.</p>
-              <p className='py-3 px-2'>This project is my first standalone front-end project that uses chrome developer APIs to manage and update the state of tabs and its properties through the extension.</p>
+              <p className='py-3 px-2'>This project is my <span className='text-xl text-[#FFD700]'>first standalone front-end project</span> that uses chrome developer APIs to manage and update the state of tabs and its properties through the extension.</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
               <span className='border-2 border-[#F7760E]  h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
@@ -66,10 +66,10 @@ const Projects = () => {
               <img src={Webpack} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               <img src={Figma} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               </div>
-                <p className='py-3 px-2'><span className='font-bold text-xl text-[#8dd9f7]'>Organize</span> is a chrome extension designed to enhance your tab management experience and optimize
+                <p className='py-3 px-2'><span className='font-normal text-xl text-[#8dd9f7]'>Organize</span> is a chrome extension designed to enhance your tab management experience and optimize
                               productivity and organization. Implemented intuitive features for effortless tab organization, including
                               quick grouping, fast searching, and more.</p>
-                <p className='py-3 px-2'>This project is my first standalone front-end project that uses chrome developer APIs to manage and update the state of tabs and its properties through the extension.</p>
+                <p className='py-3 px-2'>This project is my <span className='text-lg text-[#FFD700]'>first standalone front-end project</span> that uses Chrome developer APIs to manage and update the state of tabs and their properties through the extension.</p>
                 <div className="flex-row flex w-full justify-center">
                 <button className='flex mx-3'>
                 <span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
@@ -95,8 +95,8 @@ const Projects = () => {
               <img src={SpringBoot} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               <img src={Figma} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               </div>
-              <p className='py-3'><span className='font-bold text-xl text-[#c2adff]'>Trove</span> is a virtual service platform that allows college students to report lost items and claim lost
-              valuables through a student network. Trove was built as a hackathon project with three peers and a time constraint of 24 hours. Our team won the <span className='text-[#FFD700] text-xl font-bold'>Best Overall Beginner Hack Award</span> out of  <span className='text-[#FFD700] text-xl font-bold'>75 teams</span> in
+              <p className='py-3'><span className='font-normal text-xl text-[#c2adff]'>Trove</span> is a virtual service platform that allows college students to report lost items and claim lost
+              valuables through a student network. Trove was built as a hackathon project with three peers and a time constraint of 24 hours. Our team won the <span className='text-[#FFD700] text-lg font-normal'>Best Overall Beginner Hack Award</span> out of  <span className='text-[#FFD700] text-lg font-normal'>75 teams</span> in
               HackTX 2022 (Hosted by Freetail Hackers).</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
@@ -121,7 +121,7 @@ const Projects = () => {
               <img src={Figma} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
               </div>
               <p className='py-3'><span className='font-bold text-2xl text-[#c2adff]'>Trove</span> is a virtual service platform that allows college students to report lost items and claim lost
-              valuables through a student network. Trove was built as a hackathon project with three peers and a time constraint of 24 hours. Our team won the <span className='text-[#FFD700] text-2xl font-bold'>Best Overall Beginner Hack Award</span> out of  <span className='text-[#FFD700] text-2xl font-bold'>75 teams</span> in
+              valuables through a student network. Trove was built as a hackathon project with three peers and a time constraint of 24 hours. Our team won the <span className='text-[#FFD700] text-xl font-bold'>Best Overall Beginner Hack Award</span> out of <span className='text-[#FFD700] text-xl font-bold'>75 teams</span> in
               HackTX 2022 (Hosted by Freetail Hackers).</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
@@ -150,8 +150,8 @@ const Projects = () => {
             </div>
               <p className='py-3 px-2'><span className='font-bold text-2xl text-[#5eefbf]'>MovieDB Clone</span> is a simplified version of MovieDB. 
               The primary objective of this project was to attain a deeper understanding of the back-end infrastructure.
-              I watched a video tutorial to develop this project to get a further understanding of RESTful APIs and how data was managed and accessed from the MongoDB database. 
-              This was a valuable project experience, helping me deepen my knowledge of the back-end aspect of full-stack development.</p>
+              I watched a video tutorial to develop this project to get a further understanding of RESTful APIs and how data was managed and accessed from the <span className='text-xl text-[#47A248]'>MongoDB database</span>. 
+              This was a valuable project experience, helping me deepen my knowledge of the <span className='text-xl text-[#8dd9f7]'>back-end aspect</span>  of full-stack development.</p>
               <p className='pb-4 px-2'>Tutorial by <a href="https://www.youtube.com/watch?v=5PdEmeopJVQ" target='_blank' className='hover:text-[#F7760E] underline duration-300'>freeCodeCamp.org</a></p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
@@ -178,10 +178,10 @@ const Projects = () => {
               <img src={MongoDB} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               <img src={SpringBoot} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               </div>
-                <p className='py-3 px-2'><span className='font-bold text-xl text-[#5eefbf]'>MovieDB Clone</span> is a simplified version of MovieDB. 
+                <p className='py-3 px-2'><span className='font-normal text-xl text-[#5eefbf]'>MovieDB Clone</span> is a simplified version of MovieDB. 
               The primary objective of this project was to attain a deeper understanding of the back-end infrastructure.
-              I watched a video tutorial to develop this project to get a further understanding of RESTful APIs and how data was managed and accessed from the MongoDB database. 
-              This was a valuable project experience, helping me deepen my knowledge of the back-end aspect of full-stack development.</p>
+              I watched a video tutorial to develop this project to get a further understanding of RESTful APIs and how data was managed and accessed from the <span className='text-lg text-[#47A248]'>MongoDB database</span>. 
+              This was a valuable project experience, helping me deepen my knowledge of the <span className='text-lg text-[#8dd9f7]'>back-end aspect</span> of full-stack development.</p>
               <p className='pb-4 px-2'>Tutorial by <a href="https://www.youtube.com/watch?v=5PdEmeopJVQ" target='_blank' className='text-[#F7760E] underline'>freeCodeCamp.org</a></p>
 
 
