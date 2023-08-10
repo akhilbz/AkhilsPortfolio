@@ -28,7 +28,7 @@ const Projects = () => {
         <div className="flex-col mt-[90px] ">
           <div className="lg:flex-row flex-col flex lg:justify-between justify-center items-center lg:mr-8 lg:ml-[80px]">
             
-            <div className="border-b-2 border-t-2 my-6 py-4 border-[#F7760E] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col text-white justify-center font-medium xl:text-xl text-lg ml-5 ">
+            <div id="side1" className="border-b-2 border-t-2 my-6 py-4 border-[#F7760E] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col text-white justify-center font-medium xl:text-xl text-lg ml-5 ">
             <div className="flex-row flex px-2">
             <p>Tech Stack:</p>
             <img src={React_logo} alt="" className=' w-7 mx-2 hover:scale-95 duration-500' />
@@ -54,17 +54,17 @@ const Projects = () => {
               <img src={Organize} alt="" className='h-[250px] w-[250px] rounded-2xl'/>
               <p className='text-white text-2xl flex'>Organize Chrome Extension</p>
             </div>
-            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
-              <div className="flex-row flex justify-center w-full ">
+            <div id="under1" className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
+              <div className="flex-row flex justify-center items-center w-full ">
               <p>Tech Stack:</p>
-              <img src={React_logo} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={JS} alt="" className=' w-8 h-8  mx-2 hover:scale-95 duration-500' />
-              <img src={HTML} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={CSS} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={Redux} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={Bootstrap} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={Webpack} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={Figma} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={React_logo} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={JS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1  hover:scale-95 duration-500' />
+              <img src={HTML} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={CSS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Redux} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Bootstrap} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Webpack} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Figma} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               </div>
                 <p className='py-3 px-2'><span className='font-bold text-xl text-[#8dd9f7]'>Organize</span> is a chrome extension designed to enhance your tab management experience and optimize
                               productivity and organization. Implemented intuitive features for effortless tab organization, including
@@ -83,17 +83,17 @@ const Projects = () => {
                   <img src={Trove} alt="" className='h-[250px] w-[250px] rounded-2xl'/>
               <p className='text-white text-2xl p-2'>Trove: The Lost & Found App</p>
             </div>
-            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
+            <div id='under2' className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
             <div className="flex-row flex justify-center items-center w-full ">
               <p>Tech Stack:</p>
-              <img src={React_logo} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={JS} alt="" className=' w-8 h-8  mx-2 hover:scale-95 duration-500' />
-              <img src={HTML} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={CSS} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={Java} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={MongoDB} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={SpringBoot} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
-              <img src={Figma} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={React_logo} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={JS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={HTML} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={CSS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Java} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={MongoDB} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={SpringBoot} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Figma} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               </div>
               <p className='py-3'><span className='font-bold text-xl text-[#c2adff]'>Trove</span> is a virtual service platform that allows college students to report lost items and claim lost
               valuables through a student network. Trove was built as a hackathon project with three peers and a time constraint of 24 hours. Our team won the <span className='text-[#FFD700] text-xl font-bold'>Best Overall Beginner Hack Award</span> out of  <span className='text-[#FFD700] text-xl font-bold'>75 teams</span> in
@@ -108,8 +108,8 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className="border-b-2 border-t-2 my-6 py-4 border-[#F7760E] text-white xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col justify-center font-medium xl:text-xl text-lg mr-5">
-              <div className="flex-row  flex w-full ">
+            <div id='side2' className="border-b-2 border-t-2 my-6 py-4 border-[#F7760E] text-white xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col justify-center font-medium xl:text-xl text-lg mr-5">
+              <div className="flex-row flex w-full ">
               <p>Tech Stack:</p>
               <img src={React_logo} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
               <img src={JS} alt="" className=' w-8 h-8  mx-2 hover:scale-95 duration-500' />
@@ -136,7 +136,7 @@ const Projects = () => {
 
           <div className="lg:flex-row flex-col flex lg:justify-between justify-center items-center lg:mr-8 lg:ml-[80px]  mt-7 sm:mt-[80px]">
             
-            <div className="border-b-2 border-t-2 my-6 py-4 border-[#F7760E] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col text-white justify-center font-medium xl:text-xl text-lg ml-5 ">
+            <div id='side3' className="border-b-2 border-t-2 my-6 py-4 border-[#F7760E] xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col text-white justify-center font-medium xl:text-xl text-lg ml-5 ">
             <div className="flex-row flex px-2 justify-start items-center w-full">
               <p>Tech Stack:</p>
               <img src={React_logo} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
@@ -166,17 +166,17 @@ const Projects = () => {
               <img src={MovieDB} alt="" className=' sm:max-w-[375px] max-w-[320px] w-[100%] sm:h-full h-[250px] rounded-2xl' style={{aspectRatio: '3022/1614'}}/>
               <p className='text-white text-2xl flex p-2'>MovieDB Clone</p>
             </div>
-            <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
+            <div id='under3' className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
               <div className="flex-row flex justify-center items-center w-full ">
               <p className='flex'>Tech Stack:</p>
-              <img src={React_logo} alt="" className='sm:w-8 w-7 sm:h-8 h-7 mx-2 hover:scale-95 duration-500' />
-              <img src={JS} alt="" className=' sm:w-8 w-7 sm:h-8 h-7   mx-2 hover:scale-95 duration-500' />
-              <img src={HTML} alt="" className=' sm:w-8 w-7 sm:h-8 h-7  mx-2 hover:scale-95 duration-500' />
-              <img src={CSS} alt="" className=' sm:w-8 w-7 sm:h-8 h-7  mx-2 hover:scale-95 duration-500' />
-              <img src={Java} alt="" className=' sm:w-8 w-7 sm:h-8 h-7  mx-2 hover:scale-95 duration-500' />
-              <img src={Bootstrap} alt="" className='sm:w-8 w-7 sm:h-8 h-7  mx-2 hover:scale-95 duration-500' />
-              <img src={MongoDB} alt="" className='sm:w-8 w-7 sm:h-8 h-7  mx-2 hover:scale-95 duration-500' />
-              <img src={SpringBoot} alt="" className='sm:w-8 w-7 sm:h-8 h-7  mx-2 hover:scale-95 duration-500' />
+              <img src={React_logo} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={JS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={HTML} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={CSS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Java} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Bootstrap} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={MongoDB} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={SpringBoot} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
               </div>
                 <p className='py-3 px-2'><span className='font-bold text-xl text-[#5eefbf]'>MovieDB Clone</span> is a simplified version of MovieDB. 
               The primary objective of this project was to attain a deeper understanding of the back-end infrastructure.

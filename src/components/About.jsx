@@ -44,11 +44,11 @@ const About = () => {
                         <div className=" py-2 text-[#CCCCCC] sm:text-xl text-lg font-light w-[fit-content] h-[fit-content] xl:text-start text-center sm:mt-[20px] xl:ml-9 xl:mx-[0px] md:mx-[80px] sm:mx-[40px] mx-[35px]" style={{overflowY: 'hidden'}}>
                             <p className=" mb-[10px]" >Hi there! My name is <span className="font-semibold text-white text-xl sm:text-2xl">Akhilesh Bitla</span>, and I want to thank you for checking out my website and showing interest in my work.
                             I am passionate about <span className="font-semibold text-white">Computer Science</span> and love to develop software applications that can have a tangible impact on people’s lives.
-                            My journey with CS has been exciting and stressful, but I embrace mistakes and believe in a <span className="font-semibold text-[#FFD700] text-xl sm:text-2xl">growth mindset</span>. 
+                            My journey with CS has been both thrilling and challenging, yet I embrace mistakes and firmly uphold the value of a <span className="font-semibold text-[#FFD700] text-xl sm:text-2xl">growth mindset</span>. 
                             Along with my Computer Science education at UT Austin, I am improving my skills in <span className="font-semibold text-white">full-stack development</span> by exploring the integration of backend and frontend components to create holistic solutions.</p>
                             <p className="mb-[10px]">After developing a strong experience as a <span className="font-semibold text-white">Full Stack developer</span>, my goal is to enter the realm of <span className="font-semibold text-[#a1fecf]">AI</span> and <span className="font-semibold text-[#87CEFA]">Machine Learning</span> and
                             develop scalable and efficient software tools that can be used to optimize people's daily life.</p>
-                            <p>I am looking for SWE internships to enhance my skills as a Full Stack Developer.</p>
+                            <p>I am looking for <span className="font-semibold text-white">SWE Internships</span> to enhance my skills as a <span className="font-semibold text-white">Full Stack developer</span>.</p>
                         </div>
                         </div>
                     </div>

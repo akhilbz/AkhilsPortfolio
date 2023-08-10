@@ -64,12 +64,12 @@ const Education = () => {
                     <h3 className='text-2xl sm:text-3xl font-bold xl:justify-end justify-center flex text-[#FFA86E] cns-edu-title '> College of Natural Sciences</h3>
                     </div>
                     <div className=" flex-col flex xl:text-start text-center lg:my-[20px] my-5 md:text-xl text-lg w-[fit-content] sm:mx-[40px] mx-[35px]  lg:mx-[200px] xl:mx-[75px] py-2 text-[#CCCCCC]">
-                    <p className='font-light mb-4'>I'm a <span className='text-white md:text-2xl text-xl font-semibold'>rising Sophomore</span> pursuing <span className='text-white font-semibold'>Computer Science</span> with an <span className='text-[#87CEFA] font-semibold'>Entrepreneurship Minor</span> at the <span className='text-[#FFA86E] font-semibold'>University of Texas at Austin</span>.
-                    During my freshman year, I've completed Data Structures, Discrete Math, and Computer Architecture and Organization. This year, I'll be completing <span className='text-white font-semibold'>Operating Systems</span> and <span className='text-white font-semibold'>Algorithms</span>.</p>
-                    <p className='font-light mb-4'>I've been involved in <span className='text-white font-semibold'>Texas ACM</span> and <span className='text-white font-semibold'>Freetail Hackers</span>. 
-                    Participating in my first hackathon at HackTX 2022, my team and I won the <span className='text-white font-semibold'>"Best Overall Beginner Hack Award."</span></p> 
-                    <p>This year, I plan to participate in either <span className=''>Texas Momentum</span> or <span className=''>Texas Convergent</span>, <span className=''>Texas Luminescence</span>, and <span className=''>FreeTail Hacker's Hackathons</span>. 
-                    Additionally, I'm excited to work on personal projects to enhance my <span className='text-white font-semibold'>full-stack development</span> skills.</p>
+                    <p className='font-light mb-2'>I'm a <span className='text-white md:text-2xl text-xl font-semibold'>rising Sophomore</span> pursuing <span className='text-white font-semibold'>Computer Science</span> with an <span className='text-[#87CEFA] font-semibold'>Entrepreneurship Minor</span> at the <span className='text-[#FFA86E] font-semibold'>University of Texas at Austin</span>.</p>
+                    <p>Freshman Year Relevant Coursework:</p> 
+                    <p className='mb-2'><span className='text-white font-semibold'>Data Structures</span>, <span className='text-white font-semibold'>Discrete Math</span>, and <span className='text-white font-semibold'>Computer Architecture and Organization.</span></p>
+                    <p className='mb-2'>Next Class: <span className='text-white font-semibold'>Operating Systems</span></p>
+                    <p className='font-light'>Organizations I'm involved in:</p> 
+                    <p><span className='text-white font-semibold mb-4'>Texas ACM</span>, <span className='text-white font-semibold'>Freetail Hackers</span>.</p> 
                     </div>
             </div>
         </div>
