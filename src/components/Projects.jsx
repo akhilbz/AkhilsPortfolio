@@ -163,8 +163,8 @@ const Projects = () => {
               </div>
             </div>
             <div className="sm:w-[400px] w-[350px] sm:h-[400px] h-[350px] bg-[#121212] flex-col z-10 flex justify-center lg:py-9 items-center rounded-xl hover:scale-105 duration-500 overflow-hidden">
-              <img src={MovieDB} alt="" className=' max-w-[385px] w-[100%] h-full rounded-2xl' style={{aspectRatio: '3022/1614'}}/>
-              <p className='text-white text-2xl flex'>MovieDB Clone</p>
+              <img src={MovieDB} alt="" className=' sm:max-w-[375px] max-w-[300px] w-[100%] sm:h-full h-[250px] rounded-2xl' style={{aspectRatio: '3022/1614'}}/>
+              <p className='text-white text-2xl flex p-2'>MovieDB Clone</p>
             </div>
             <div className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
               <div className="flex-row flex justify-center items-center w-full ">

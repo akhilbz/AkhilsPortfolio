@@ -47,7 +47,7 @@ const Experience = () => {
 
   return (
     <>
-    <div name="experience" id="exper-main" className='bg-[#121212]'>
+    <div name="experience"  id="exper-main" className='bg-[#121212]'>
         <div className="flex flex-col justify-center w-full h-full pb-6">
             <div className="flex flex-col items-center">
                 <h1 className="text-5xl sm:text-6xl xl:text-8xl md:text-7xl sm:font-bold title-name text-[#87CEFA]">Experience</h1>
@@ -142,7 +142,7 @@ const Experience = () => {
                             techStack.style.marginTop = techStackHeight + 'px';
                             setBitsilaDiv(true); 
                         }   
-                    }} className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] sm:w-[350px] z-30 h-[250px] sm:h-[280px] hover:intern_description cursor-pointer hover:scale-105 bg-[#aba8a8] items-center rounded-2xl duration-500' style={{ boxShadow:'0px 0px 18px rgba(171, 168, 168, 0.5)'}}>    
+                    }}  className='lg:hidden flex flex-col sm:ml-[80px] absolute w-[280px] sm:w-[350px] z-30 h-[250px] sm:h-[280px] hover:intern_description cursor-pointer hover:scale-105 bg-[#aba8a8] items-center rounded-2xl duration-500' style={{ boxShadow:'0px 0px 18px rgba(171, 168, 168, 0.5)'}}>    
                             <p id="tap-read" className='text-[#333333] h-0 font-light text-sm'>{bitsilaDiv ? "Tap to read" : "Close"}</p>               
                             <div className="rounded-2xl flex-col flex justify-center items-center mx-7 my-7 z-50 bg-slate-50 h-[135px] sm:h-[165px] click w-[230px] sm:w-[275px] mb-2" >
                             <a href='https://www.bitsila.com/' target="_blank">
