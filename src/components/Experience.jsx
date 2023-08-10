@@ -91,7 +91,7 @@ const Experience = () => {
                                 const internDiv = document.getElementById('intern-div');
                                 experDiv.style.display = 'none';
                                 internDiv.style.display = 'flex';
-                            }} className='hover:text-white text-[#7e7e7c] duration-300' size={22}/>
+                            }} className='hover:text-white text-[#7e7e7c] duration-300 cursor-pointer' size={22}/>
                         </div>
 
                         <div id='exper-description' className="flex-col p-3 text-white text-lg font-light"></div>
