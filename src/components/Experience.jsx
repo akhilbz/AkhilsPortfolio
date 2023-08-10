@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react'
+import React, { useState } from 'react'
 import HTML from '../assets/stack-icons/html.png';
 import CSS from '../assets/stack-icons/css.png';
 import React_logo from '../assets/stack-icons/react.png';
@@ -20,7 +20,6 @@ import SpringBoot from '../assets/stack-icons/springboot.svg';
 import Figma from '../assets/stack-icons/figma.svg';
 import Eyes from '../assets/cloud-eyes.gif';
 import Medal from '../assets/medal.png';
-import { loadSlim } from "tsparticles-slim";
 import { AiOutlineClose } from 'react-icons/ai';
 
 import Bitsila from '../assets/stack-icons/bitsila.png';
@@ -43,7 +42,7 @@ const Experience = () => {
         const divs = container.querySelectorAll("div");
         divs.forEach((div) => {
         div.remove();
-        })
+        });
       }
 
   return (

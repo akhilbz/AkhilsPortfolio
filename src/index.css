@@ -161,6 +161,26 @@
   background-image: url('./assets/layer-transitions/layers.svg');
 }
 
+.blob-motion {
+  position: absolute;
+  transform: translateY(-60%) translateX(-15%);
+}
+
+.blob-motion2 {
+  position: absolute;
+  transform: translateY(-65%) translateX(-23%);
+}
+
+.blob-motion3 {
+  position: absolute;
+  transform: translateY(-75%) translateX(-19%);
+}
+
+.blob-motion4 {
+  position: absolute;
+  transform: translateY(-75%) translateX(-10%);
+}
+
 /* .about-edu-spacer {
   aspect-ratio: 1512/300;
   width: 100%;
