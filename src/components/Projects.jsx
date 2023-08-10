@@ -46,7 +46,7 @@ const Projects = () => {
               <p className='py-3 px-2'>This project is my <span className='text-xl text-[#FFD700]'>first standalone front-end project</span> that uses chrome developer APIs to manage and update the state of tabs and its properties through the extension.</p>
               <div className="flex-row flex w-full justify-center">
               <button className='flex mx-3'>
-              <span className='border-2 border-[#F7760E]  h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+              <a href="https://www.loom.com/share/24335b615bf646e3b0e337809b947cee?sid=a7c8b91b-361b-40c3-a171-bc704669e753" target='_blank'><span className='border-2 border-[#F7760E] h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
               </button>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Projects = () => {
                 <p className='py-3 px-2'>This project is my <span className='text-lg text-[#FFD700]'>first standalone front-end project</span> that uses Chrome developer APIs to manage and update the state of tabs and their properties through the extension.</p>
                 <div className="flex-row flex w-full justify-center">
                 <button className='flex mx-3'>
-                <span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+                <a href="https://www.loom.com/share/24335b615bf646e3b0e337809b947cee?sid=a7c8b91b-361b-40c3-a171-bc704669e753" target='_blank'><span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
                 </button>
                 </div>
             </div>
@@ -158,7 +158,7 @@ const Projects = () => {
                 <a href="https://github.com/akhilbz/moviedb_clone" target='_blank'><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-white bg-[#F7760E] duration-500  xl:px-2 flex items-center text-2xl text-[#121212]'>&nbsp;<FaGithub />&nbsp;GitHub&nbsp;</span></a>
                 </button>
               <button className='flex mx-3'>
-              <span className='border-2 border-[#F7760E]  h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+              <a href="https://www.loom.com/share/ed7a09308003493db3afd0bf595b2dc6?sid=63fbe098-7b6e-4ff6-95e2-083c1481e855" target='_blank'><span className='border-2 border-[#F7760E]  h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2 flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
               </button>
               </div>
             </div>
@@ -190,7 +190,7 @@ const Projects = () => {
                 <a href="https://github.com/akhilbz/moviedb_clone" target='_blank'><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-white bg-[#F7760E] duration-500  xl:px-2 flex items-center text-xl text-[#121212]'>&nbsp;<FaGithub />&nbsp;GitHub&nbsp;</span></a>
                 </button>
                 <button className='flex mx-3'>
-                <span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span>
+                <a href="https://www.loom.com/share/ed7a09308003493db3afd0bf595b2dc6?sid=63fbe098-7b6e-4ff6-95e2-083c1481e855" target='_blank'><span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
                 </button>
                 </div>
             </div>
