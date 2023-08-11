@@ -121,6 +121,7 @@
   transform: skewX(-20deg);
 }
 
+
 .parallelogram-btm p {
   transform: skewX(20deg);
 }
