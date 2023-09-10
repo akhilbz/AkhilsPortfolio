@@ -52,8 +52,8 @@ const Experience = () => {
             <div className="flex flex-col items-center">
                 <h1 className="text-5xl sm:text-6xl xl:text-8xl md:text-7xl sm:font-bold title-name text-[#87CEFA]">Experience</h1>
                 <div className="lg:flex hidden justify-end w-full overflow-hidden">
-                    <div className="bg-[#87CEFA] h-8 flex justify-start items-center pl-1 w-[fit-content] mr-[-285px] hover:mr-[0px] duration-500 rounded-bl-2xl rounded-tl-2xl" >
-                        <p className='text-xl  ml-2 font-bold '>Note: &nbsp;&nbsp;  Tap <span className='bg-[#333333] text-[#CCCCCC] rounded-sm py-2'>&nbsp;grey tiles&nbsp;</span> for description&nbsp;</p>
+                    <div className="bg-[#87CEFA] h-8 flex justify-start items-center pl-1 w-[fit-content] mr-[-280px] hover:mr-[0px] duration-500 rounded-bl-2xl rounded-tl-2xl" >
+                        <p className='text-xl  ml-2 font-medium'>Note: &nbsp;&nbsp;  Tap <span className='bg-[#333333] text-[#CCCCCC] rounded-sm py-2'>&nbsp;grey tiles&nbsp;</span> for description&nbsp;</p>
                     </div>
                 </div>
             </div>

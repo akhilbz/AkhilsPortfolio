@@ -88,7 +88,7 @@ const Education = () => {
                 <div className="flex-col xl:flex-row flex sm:ml-3 sm:w-fit sm:items-center items-start">
                     <div className="rounded-2xl bg-center bg-cover w-fit flex-col  ">
                         <div className="w-full flex-col flex lg:items-start items-center group">
-                            <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" md:w-[700px] md:h-[512px] w-[400px] h-[300px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
+                            <div style={{backgroundImage: `url(${gallery[currIndex].url})`, boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.75)' }} className=" xl:w-[700px] lg:w-[660px] md:w-[680px] md:h-[512px] w-[400px] h-[300px] items-center flex justify-between rounded-2xl bg-center bg-cover duration-500">
                             <div className="sm:hidden block group-hover:block justify-start text-3xl p-2 text-[#FFFFFF] cursor-pointer">
                                 <BsChevronCompactLeft onClick={prevSlide} size={35} />
                             </div>
