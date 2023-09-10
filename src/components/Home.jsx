@@ -52,10 +52,10 @@ const Home = () => {
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light z-50">My name is </p>
                 </div>
                 <h1 className="text-5xl sm:text-6xl md:text-7xl text-white sm:font-semibold title-name z-50">Akhilesh Bitla</h1>
-                <div className="parallelogram-top my-2  lg:w-[800px] md:w-[700px] w-[350px] h-[45px] sm:w-[580px] sm:h-[60px] lg:h-[85px] z-10 overflow-hidden"><h2 className="text-3xl sm:text-5xl lg:text-7xl sm:h-[65px] pt-1 sm:pr-0 md:pr-3 text-[#333333] sm:font-bold font-normal title-name text-center z-10">CS Student @ UT Austin</h2></div>
-                <div className="parallelogram-btm my-1 md:my-3 md:mx-[-10px] w-[350px] h-[125px] lg:w-[750px] md:w-[650px] lg:h-[85px] md:h-[100px] sm:w-[550px] z-10 overflow-hidden"><p className=" sm:py-1 py-2 sm:pb-2 px-4 text-normal sm:text-xl mx-[10px] text-white font-medium max-w-[750px] z-10">I'm passionate about designing and developing software applications that have a tangible 
+                <div className="parallelogram-top my-2  lg:w-[800px] md:w-[520px] w-[350px] h-[45px] sm:w-[510px] sm:h-[60px] lg:h-[85px] z-10 overflow-hidden"><h2 className="text-3xl sm:text-5xl lg:text-7xl sm:h-[65px] pt-1 sm:pr-0 md:pr-3 text-[#333333] sm:font-bold font-normal title-name text-center z-10">CS Student @ UT Austin</h2></div>
+                <div className="parallelogram-btm my-1 md:my-3  w-[350px]  lg:w-[750px] md:w-[520px] md:pl-2 lg:h-[85px] sm:h-[105px] sm:w-[500px] z-10 overflow-hidden"><p className=" sm:py-1 py-2 sm:pb-2 px-4 text-normal sm:text-xl mx-[10px] text-white font-medium max-w-[750px] z-10">I'm passionate about designing and developing software applications that have a tangible 
                 and meaningful <span className="highlight-impact top-2 font-[Anton] text-2xl text-white" style={{ position: 'relative', top: '2px' }}>IMPACT</span> on people's everyday lives.</p></div>
-                <div className="flex-row flex w-full sm:justify-start justify-center lg:ml-[100px] md:ml-[80px] sm:ml-[50px] ml-[-10px]  md:mt-0 mt-2">
+                <div className="flex-row flex w-full sm:justify-start justify-center lg:ml-[100px] md:ml-[30px] sm:ml-[30px] ml-[-10px]  md:mt-0 mt-2">
                     <button className='flex mx-3'>
                     <Link to="experience" smooth={true} offset={0} duration={900}><span className='border-2  hover:border-[#87CEFA] border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-white hover:bg-[#87CEFA] duration-500  xl:px-2 flex items-center lg:text-2xl sm:text-xl text-md sm:px-2 py-1 text-[#121212]'>
                     &nbsp;<FaBriefcase />&nbsp;View Experience&nbsp;</span></Link>
@@ -65,6 +65,7 @@ const Home = () => {
                     &nbsp;<FaFolderOpen />&nbsp;View Projects&nbsp;</span></Link>
                     </button>
                 </div>
+                {/* Blob Animations */}
                 {/* <section className="grey-blob lg:flex hidden">
                 <svg className="blob-motion" id="visual" viewBox="0 0 890 800" width="890" height="800" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                     <g transform="translate(515.2660999381692 354.31824078722696)"><path id="blob1" d="M153.1 -184.3C199.1 -143.9 237.4 -96.3 263.7 -33.7C290.1 28.9 304.4 106.5 279 171.1C253.6 235.7 188.5 287.5 112.7 319.3C36.8 351.1 -49.8 363 -128.1 339.8C-206.4 316.6 -276.4 258.3 -305.7 186.6C-335 115 -323.6 30 -294.8 -37.8C-266 -105.6 -219.8 -156.2 -167.7 -195.6C-115.7 -234.9 -57.9 -262.9 -2.1 -260.4C53.6 -257.8 107.1 -224.7 153.1 -184.3" fill="#212020"></path></g>

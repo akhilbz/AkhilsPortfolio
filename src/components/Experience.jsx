@@ -185,8 +185,8 @@ const Experience = () => {
                     </div>
                 </div>
                 
-                <div id='two-to-eight' className="w-full flex justify-center">
-                <div className="justify-end  pr-[170px] pt-3 lg:flex hidden">
+                <div id='two-to-eight' className="w-full flex justify-center overflow-hidden pr-[130px]">
+                <div className="justify-end pt-3 lg:flex hidden">
                     <div className="pr-3 pt-[290px]">
                         <div 
                         // onClick={() => { 
@@ -221,7 +221,7 @@ const Experience = () => {
                         // const descriptions = [p1];
                         // showContent(descriptions);
                         // }} 
-                        className='lg:flex hidden flex-col justify-center ml-4 w-[40px] h-[40px] bg-[#333333] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #333333' }}>
+                        className='xl:flex hidden flex-col justify-center ml-4 w-[40px] h-[40px] bg-[#333333] items-center hover:scale-110 duration-500 cursor-pointer' style={{ boxShadow: '0px 0px 14px #333333' }}>
                         <p className='tiers-font my-1 text-[#CCCCCC]' style={{ fontSize: '1rem'}}>#7</p>
                         </div>
                     </div>

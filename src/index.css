@@ -6,9 +6,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* styles.css or main.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 
 @keyframes year-animation {
   0% {
@@ -289,11 +291,12 @@
 }
 @layer base {
   body {
-    @apply font-[Raleway];
+    font-family: 'Raleway', sans-serif;
     font-weight: 200;
   }
   li {
-    @apply px-4;
-    @apply cursor-pointer;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    cursor: pointer;
   }
 }
