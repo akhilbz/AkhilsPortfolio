@@ -60,7 +60,7 @@ const Footer = () => {
                         <div className="xl:hidden flex flex-col w-fit h-full pl-1 pt-[35px]">
                             <div className="flex-col w-full text-white">
                                 <h1 className='font-normal xl:text-lg text-xl '>Grab a copy of my resume!</h1>
-                                <a href="https://drive.google.com/file/d/1TtZ2NMfesMGUMx47oK_28CIx2L7fjNVI/view?usp=sharing" target="_blank">
+                                <a href="https://drive.google.com/file/d/1ZTDoAC9ZSaAog6bVUk8mphCToL5_Dsm-/view?usp=sharing" target="_blank">
                                 <div className="flex justify-between flex-row file-highlight pt-[2px]">
                                 <BiFile id='file' className='duration-500' size={30} />
                                 <h1 className='flex justify-end font-normal duration-500'>Resume</h1>
@@ -103,7 +103,7 @@ const Footer = () => {
                     <div className="xl:flex hidden flex-col w-full h-fit">
                         <div className="flex-col w-full ">
                             <h1 className='font-normal xl:text-lg text-xl '>Grab a copy of my resume!</h1>
-                            <a href="https://drive.google.com/file/d/1RpkbCDTamKTxGeHf9OOpBNZ-a-jlmXIO/view?usp=sharing" target="_blank">
+                            <a href="https://drive.google.com/file/d/1ZTDoAC9ZSaAog6bVUk8mphCToL5_Dsm-/view?usp=sharing" target="_blank">
                             <div className="flex justify-between w-full items-center flex-row file-highlight">
                             <BiFile id='file' className='duration-500' size={30} />
                             <h1 className='flex justify-end font-normal duration-500'>Resume</h1>
