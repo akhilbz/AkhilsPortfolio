@@ -68,7 +68,7 @@ const Education = () => {
                         <p className='text-center'>Relevant Coursework:</p> 
                         <p className='mb-2 text-center'><span className='text-white md:text-2xl text-xl font-semibold'>Data Structures</span>, <span className='text-white md:text-2xl text-xl font-semibold'>Discrete Math</span>,
                             <span className='text-white md:text-2xl text-xl font-semibold'>Computer Architecture & Organization.</span>, and <span className='text-white md:text-2xl text-xl font-semibold'>Operating Systems.</span></p>
-                        <p className='mb-2 text-center'>Current Class: <span className='text-[#FFA86E] md:text-2xl text-xl font-semibold'>Software Engineering (CS373)</span></p>
+                        <p className='mb-2 text-center'>Current Class: <span className='text-[#FFA86E] md:text-2xl text-xl font-semibold'>Software Engineering </span></p>
                         <p className='font-light text-center'>Organizations I'm involved in:</p> 
                         <p className='text-center'> <span className='text-[#FF3636] md:text-2xl text-xl font-semibold'>Texas Momentum</span>, <span className='text-white md:text-2xl text-xl font-semibold mb-4'>Texas ACM</span></p> 
                     </div>
