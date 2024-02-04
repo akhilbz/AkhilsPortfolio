@@ -65,11 +65,12 @@ const Education = () => {
                     </div>
                     <div className=" flex-col flex xl:text-start text-center lg:my-[20px] my-5 md:text-xl text-lg w-[fit-content] sm:mx-[40px] mx-[35px]  lg:mx-[200px] xl:mx-[75px] py-2 text-[#CCCCCC]">
                         <p className='font-light mb-2'>I'm a <span className='text-white md:text-2xl text-xl font-semibold'>rising Sophomore</span> pursuing <span className='text-white font-semibold'>Computer Science</span> with an <span className='text-[#87CEFA] font-semibold'>Entrepreneurship Minor</span> at the <span className='text-[#FFA86E] font-semibold'>University of Texas at Austin</span>.</p>
-                        <p className='text-center'>Freshman Year Relevant Coursework:</p> 
-                        <p className='mb-2 text-center'><span className='text-white md:text-2xl text-xl font-semibold'>Data Structures</span>, <span className='text-white md:text-2xl text-xl font-semibold'>Discrete Math</span>, and <span className='text-white md:text-2xl text-xl font-semibold'>Computer Architecture and Organization.</span></p>
-                        <p className='mb-2 text-center'>Current Class: <span className='text-[#FFA86E] md:text-2xl text-xl font-semibold'>Operating Systems</span></p>
+                        <p className='text-center'>Relevant Coursework:</p> 
+                        <p className='mb-2 text-center'><span className='text-white md:text-2xl text-xl font-semibold'>Data Structures</span>, <span className='text-white md:text-2xl text-xl font-semibold'>Discrete Math</span>,
+                            <span className='text-white md:text-2xl text-xl font-semibold'>Computer Architecture & Organization.</span>, and <span className='text-white md:text-2xl text-xl font-semibold'>Operating Systems.</span></p>
+                        <p className='mb-2 text-center'>Current Class: <span className='text-[#FFA86E] md:text-2xl text-xl font-semibold'>Software Engineering (CS373)</span></p>
                         <p className='font-light text-center'>Organizations I'm involved in:</p> 
-                        <p className='text-center'><span className='text-white md:text-2xl text-xl font-semibold mb-4'>Texas ACM</span>, <span className='text-[#FF3636] md:text-2xl text-xl font-semibold'>Texas Momentum</span>.</p> 
+                        <p className='text-center'> <span className='text-[#FF3636] md:text-2xl text-xl font-semibold'>Texas Momentum</span>, <span className='text-white md:text-2xl text-xl font-semibold mb-4'>Texas ACM</span></p> 
                     </div>
             </div>
         </div>
