@@ -1,5 +1,6 @@
 import React from 'react'
 import Trove from '../assets/trove.png';
+import AccounTech from '../assets/accountech.png';
 import Organize from '../assets/organize-logo.png';
 import { FaGithub, FaYoutube,  } from 'react-icons/fa';
 import Devpost from '../assets/devpost.svg';
@@ -15,6 +16,10 @@ import MongoDB from '../assets/stack-icons/mongo.png';
 import MovieDB from '../assets/moviedb.png';
 import SpringBoot from '../assets/stack-icons/springboot.svg';
 import Figma from '../assets/stack-icons/figma.svg';
+import Node from '../assets/stack-icons/node.png';
+import GPT from '../assets/stack-icons/gpt.png';
+import GCP from '../assets/stack-icons/google_cloud.png';
+import Tailwind from '../assets/stack-icons/tailwind.png';
 
 const Projects = () => {
   return (
@@ -191,6 +196,62 @@ const Projects = () => {
                 </button>
                 <button className='flex mx-3'>
                 <a href="https://www.loom.com/share/ed7a09308003493db3afd0bf595b2dc6?sid=63fbe098-7b6e-4ff6-95e2-083c1481e855" target='_blank'><span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
+                </button>
+                </div>
+            </div>
+          </div>
+
+          <div className="lg:flex-row flex-col flex lg:justify-between justify-center items-center lg:mr-8 lg:ml-[80px] mt-7 sm:mt-[80px]">
+            <div className="sm:w-[400px] w-[350px] sm:h-[400px] h-[350px]  bg-[#121212] flex-col flex justify-center lg:py-9 items-center rounded-xl hover:scale-105 duration-500 overflow-hidden">
+                  <img src={AccounTech} alt="" className='h-[250px] w-[250px] rounded-2xl'/>
+              <p className='text-white text-2xl p-2'>AccounTech: Keeps You in Check</p>
+            </div>
+            <div id='under4' className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
+            <div className="flex-row flex justify-center items-center w-full ">
+              <p>Tech Stack:</p>
+              <img src={React_logo} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={JS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={HTML} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={CSS} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Tailwind} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Node} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={GPT} alt="" className='rounded-lg sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={GCP} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              <img src={Figma} alt="" className='sm:w-8 sm:h-8 sm:mx-2 w-7 h-7 mx-1 hover:scale-95 duration-500' />
+              </div>
+              <p className='py-3'><span className='font-normal text-xl text-[#1db954]'>AccounTech</span> is a <span className='font-normal text-xl text-[#c2adff]'>GPT4-powered</span> virtual accountant for credit/debit cardholders to assist them with their finances. 
+              The AI accountant follows a <span className='text-[#FFD700] text-lg font-normal'>reactive feedback system</span>, providing immediate feedback on every transaction made. Built within 24 hours with three peers for HackTX 2023 (Hosted by Freetail Hackers).</p>
+              <div className="flex-row flex w-full justify-center">
+              <button className='flex mx-3'>
+                <a href="https://devpost.com/software/accoun-tech" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[25px] w-[25px]'/>&nbsp;Devpost&nbsp;</span></a>
+                </button>
+                <button className='flex mx-3'>
+                  <a href="https://www.youtube.com/watch?v=NWfa8gtDus8" target="_blank"><span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
+                </button>
+                </div>
+            </div>
+
+            <div id='side4' className="border-b-2 border-t-2 my-6 py-4 border-[#F7760E] text-white xl:w-[750px] lg:w-[500px] hidden lg:flex flex-col justify-center font-medium xl:text-xl text-lg mr-5">
+              <div className="flex-row flex w-full ">
+              <p>Tech Stack:</p>
+              <img src={React_logo} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={JS} alt="" className=' w-8 h-8  mx-2 hover:scale-95 duration-500' />
+              <img src={HTML} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={CSS} alt="" className=' w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={Tailwind} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={Node} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={GPT} alt="" className='rounded-lg w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              <img src={GCP} alt="" className='w-[30px] h-[30px] mx-2 hover:scale-95 duration-500' />
+              <img src={Figma} alt="" className='w-8 h-8 mx-2 hover:scale-95 duration-500' />
+              </div>
+              <p className='py-3'><span className='font-bold text-2xl text-[#1db954]'>AccounTech</span> is a <span className='font-bold text-xl text-[#c2adff]'>GPT4-powered</span> virtual accountant for credit/debit cardholders to assist them with their finances. 
+              The AI accountant follows a <span className='text-[#FFD700] text-xl font-bold'>reactive feedback system</span>, providing immediate feedback on every transaction made. Built within 24 hours with three peers for HackTX 2023 (Hosted by Freetail Hackers).</p>
+              <div className="flex-row flex w-full justify-center">
+              <button className='flex mx-3'>
+                <a href="https://devpost.com/software/accoun-tech" target="_blank"><span className='border-2 border-[#F7760E] hover:border-white sm:h-[50px] sm:font-semibold font-normal rounded bg-[#F7760E] hover:bg-white duration-500 xl:px-2  flex items-center text-2xl text-[#121212]'>&nbsp;<img src={Devpost} alt="" className='h-[32px] w-[32px]'/>&nbsp;Devpost&nbsp;</span></a>
+                </button>
+                <button className='flex mx-3' >
+                <a href="https://www.youtube.com/watch?v=NWfa8gtDus8" target="_blank"><span className='border-2 border-[#F7760E] sm:h-[50px] sm:font-semibold font-normal rounded hover:bg-[#F7760E] duration-500 text-[#F7760E] xl:px-2  flex items-center text-2xl hover:text-[#121212]'>&nbsp;<FaYoutube />&nbsp;Demo&nbsp;</span></a>
                 </button>
                 </div>
             </div>
