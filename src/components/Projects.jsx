@@ -204,7 +204,7 @@ const Projects = () => {
           <div className="lg:flex-row flex-col flex lg:justify-between justify-center items-center lg:mr-8 lg:ml-[80px] mt-7 sm:mt-[80px]">
             <div className="sm:w-[400px] w-[350px] sm:h-[400px] h-[350px]  bg-[#121212] flex-col flex justify-center lg:py-9 items-center rounded-xl hover:scale-105 duration-500 overflow-hidden">
                   <img src={AccounTech} alt="" className='h-[250px] w-[250px] rounded-2xl'/>
-              <p className='text-white text-2xl p-2'>AccounTech: Keeps You in Check</p>
+              <p className='text-white text-2xl p-2'>AccounTech</p>
             </div>
             <div id='under4' className="border-b-2 border-t-2 sm:mx-[120px] mx-[60px] my-6 py-4 border-[#F7760E] text-white lg:hidden flex flex-col justify-center font-medium sm:text-lg text-base">
             <div className="flex-row flex justify-center items-center w-full ">
