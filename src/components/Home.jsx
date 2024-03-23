@@ -47,6 +47,7 @@ const Home = () => {
         <>
         <div name="home" className="w-screen h-screen bg-[#121212] z-10 px-8 sm:px-0 flex justify-center">
             <div className="w-fit lg:mx-auto sm:ml-9 ml-0 px-4 flex flex-col justify-center h-[750px] ">
+                
                 <div className="flex">
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light z-50">Welcome!&nbsp;</p>
                 <p className="text-[#87CEFA] text-2xl sm:text-3xl font-light z-50">My name is </p>
