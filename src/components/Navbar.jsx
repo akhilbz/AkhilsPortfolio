@@ -81,7 +81,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] hover:rounded-tr-2xl duration-300 bg-[#F7760E] rounded-br-2xl'>
-                        <a href="https://drive.google.com/file/d/1-JkleGnL56bo0OGOLTnq7gNwatn7fMSk/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
+                        <a href="https://drive.google.com/file/d/10E1r588pOHy5HrneQDmTV8QEzUpj4yZm/view?usp=sharing" target="_blank" className='w-[160px] h-[60px] flex font-semibold justify-between items-center text-white'>
                             Resume <BiFile size={30} />
                         </a>
                     </li>
