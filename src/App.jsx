@@ -22,9 +22,9 @@ function App() {
         <p onClick={() => setShowAlert(true)} className=" text-sm font-normal text-yellow-300 pr-3 hover:scale-110 duration-500 cursor-pointer">Maintenance Alert: {dateString}</p>
         </div>
       )}
-      {showAlert && (<div className="absolute mt-[85px] w-fit flex end-2 bg-yellow-300 text-black p-2 rounded-lg shadow-md space-x-2 text-center justify-center">
+      {showAlert && (<div className="absolute mt-[85px] w-fit flex end-2 bg-yellow-300 text-black p-2 rounded-lg shadow-md space-x-2  items-center">
       <button onClick={() => setShowAlert(false)} className="text-black ">&times;</button>
-      <p className=" font-normal">🚧 Updating the Experience Section to match my resume. Your patience is appreciated! 🚧</p>
+      <p className="text-sm font-normal">🚧 Updating the Experience Section to match my resume. Your patience is appreciated! 🚧</p>
       </div>)}
       <Home />
       <About />
