@@ -24,7 +24,7 @@ function App() {
       )}
       {showAlert && (<div className="absolute mt-[85px] w-fit  ml-2 flex end-2 bg-yellow-300 text-black p-2 rounded-lg shadow-md space-x-2  items-center">
       <button onClick={() => setShowAlert(false)} className="text-black ">&times;</button>
-      <p className="text-sm font-normal">🚧 Updating the Experience Section to match my resume. Your patience is appreciated! 🚧</p>
+      <p className="text-sm font-normal">🚧 Updating the Experience and Projects Section to match my resume. Your patience is appreciated! 🚧</p>
       </div>)}
       <Home />
       <About />
